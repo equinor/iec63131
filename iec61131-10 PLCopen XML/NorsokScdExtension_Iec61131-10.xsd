@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:ppx="www.iec.ch/public/TC65SC65BWG7TF10" 
+                        xmlns:rxt="www.iec.ch/public/TC65SC65BWG7TF10/Recommendation" 
+                        xmlns:dgm="www.iec.ch/public/tc65iec63131" targetNamespace="www.iec.ch/public/tc65iec63131"
+                        elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="www.iec.ch/public/TC65SC65BWG7TF10" />
+  <xs:annotation>
+    <xs:documentation>Draft partial proposal for extension of IEC61131-10 for the support of IEC63131 encoding.
+                      The purpose of this draft is preliminarily to serve as illustration and basis for discussion.
+                      Target namespace identifier to be determined, ie, dummy placeholder 'www.iec.ch/public/tc65iec63131' to be replaced.
+                      Note that usage of &lt;xs:redefine&gt; is deprecated (in favor of override), but used because it is simpler for illustration purposes for now.
+    </xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="ActionIec63131">
+    <xs:annotation>
+      <xs:documentation>Extends action class with IEC 63131 action properties. 
+                        IEC 63131 properties Value and Tag:Terminal (or Connection ref) are encoded into 'Inline' 
+                        using ST language, Latch property encoded through the appropriate use of the 
+                        action qualifiers (P1, P0) for each action, eg, by not resetting a variable value in the 
+                        step exit action (that was set on step entry, ie, latch).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ppx:Action">
+        <xs:attribute name="serviceDescription" type="xs:string" />
+        <xs:attribute name="drawingReference" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StepIec63131">
+    <xs:annotation>
+      <xs:documentation>Extends step class with IEC 63131 step properties.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ppx:Step">
+        <xs:attribute name="serviceDescription" type="xs:string" />
+        <xs:attribute name="tMinDuration" type="xs:duration" use="optional" />
+        <xs:attribute name="tMaxDuration" type="xs:duration" use="optional" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StartStepIec63131">
+    <xs:annotation>
+      <xs:documentation>Extends step class with IEC 63131 start step properties.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ppx:Step">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="kbTagRef" type="xs:string" use="required" />
+          <xs:element minOccurs="1" maxOccurs="1" name="scdRef" type="xs:string" use="required" />
+        </xs:sequence>
+        <xs:attribute name="serviceDescription" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ConditionIec63131">
+    <xs:annotation>
+      <xs:documentation>Extends base IEC 61131-10 type 'Predicate' with IEC 63131 condition properties. 
+                        Might be reason to extend type 'Condition' instead?
+                        We require the end result to support these new attributes for multiple TextualPredicate entries (as part of one 'Condition' or each as a separate 'Condition' element).
+                        IEC 63131 properties Tag:Terminal (or Connection ref), comparator and value are encoded into and decoded from Inline/body (of type TextualPredicate), with language ST.
+                        Instances of this extended type can be referenced through its super-class membership, without needing to modify the type expectation of the .
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ppx:Predicate">
+        <xs:attribute name="serviceDescription" type="xs:string" />
+        <xs:attribute name="drawingReference" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcessLine">
+    <xs:annotation>
+      <xs:documentation>Extends base IEC 61131-10 type 'CommonObjectBase' with necessary properties to encode and restore IEC 63131 process lines. 
+                        (CommonObjectBase is an abstract class with GraphicalObjectBase as its base, and has position and size properties)
+                        .
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ppx:CommonObjectBase">
+        <xs:annotation>
+          <xs:documentation>Might want to create a supporting type to regulate format of point list. 
+                            Relative positions of the points in the list. Origin is the anchor position of the process line.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="relPosPointList" type="xs:string" />
+        <xs:annotation>
+          <xs:documentation>Thickness could be restricted to two enumerated choices: major and minor.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="thickness" type="xs:processLineThickness" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DataSourceIec63131">
+    <xs:annotation>
+      <xs:documentation>Candidate for removal, name not necessary (not mandated by IEC 63131).
+                        Extends base IEC 61131-10 type 'DataSource' with a fixed name property (reserving 'identifier' for GUID/UUID).
+                        Intended usage: output terminal of device/instrument.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ppx:DataSource">
+        <xs:attribute name="name" type="xs:string" fixed="out" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:redefine schemaLocation="www.iec.ch/public/TC65SC65BWG7TF10">
+    <xs:complexType name="FbdObjectBase" abstract="true">
+      <xs:annotation>
+        <xs:documentation>Redefines IEC 61131-10 type 'FBDObjectBase' for the purpose of injecting support for layer and NoteRef properties' for all types having 'FBDObjectBase' as an ancestor type.
+        </xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+        <xs:extension base="ppx:FbdObjectBase">
+          <xs:attribute name="layer" type="dgm:layer" use="optional" default=12 />
+          <xs:attribute name="noteRef" type="dgm:noteRef" use="optional" default="" />
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:redefine>
+  <xs:override schemaLocation="www.iec.ch/public/TC65SC65BWG7TF10">
+    <xs:complexType name="Block" abstract="true">
+      <xs:annotation>
+        <xs:documentation>Redefines IEC 61131-10 type 'Block' for the purpose of ...
+        </xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+        <xs:extension base="ppx:Block">
+          <xs:attribute name="layer" type="dgm:layer" use="optional" default=12 />
+          <xs:attribute name="noteRef" type="dgm:noteRef" use="optional" default="" />
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:override>
+  <xs:complexType name="BlockIec63131" abstract="true">
+    <xs:annotation>
+      <xs:documentation>Extends..
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ppx:Block">
+        <xs:attribute name="typeName" type="xs:iec63131TypeName" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="layer">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value=11 />
+      <xs:maxInclusive value=999 />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="noteRef">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([Nn]ote|NOTE):?\s?\d+\" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="processLineThickness">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="minor" />
+      <xs:enumeration value="major" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="iec63131TypeName">
+    <xs:annotation>
+      <xs:documentation>Likely most elementary function blocks (EFB) defined in IEC 63131 can be encoded as basic IEC 61131-10 types (?).
+                        If they do need encoding as 'Block', then most likely they can share restrictions with IEC 63131 Function Blocks?
+      </xs:documentation>
+    </xs:annotation>
+    <xs:union>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="CA" />
+        <xs:enumeration value="CS" />
+        <xs:enumeration value="HA" />
+        <xs:enumeration value="HB" />
+        <xs:enumeration value="KB" />
+        <xs:enumeration value="LB" />
+        <xs:enumeration value="MA" />
+        <xs:enumeration value="MAS" />
+        <xs:enumeration value="MB" />
+        <xs:enumeration value="OA" />
+        <xs:enumeration value="QA" />
+        <xs:enumeration value="SB" />
+        <xs:enumeration value="SBB" />
+        <xs:enumeration value="SBC" />
+        <xs:enumeration value="SBE" />
+        <xs:enumeration value="SBV" />
+        <xs:enumeration value="ForwardHighest" />
+        <xs:enumeration value="ForwardLowest" />
+        <xs:enumeration value="ForwardSelected" />
+        <xs:enumeration value="NodeSplit" />
+      </xs:restriction>
+      <xs:annotation>
+        <xs:documentation>Also allow any alphanumeric string beginning with a hash symbol ('#', customized FB).</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="^#[A-Za-z0-9]*$" />
+      </xs:restriction>
+    </xs:union>
+  </xs:simpleType>
+</xs:schema>
