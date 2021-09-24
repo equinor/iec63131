@@ -6,14 +6,19 @@
                         elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="www.iec.ch/public/TC65SC65BWG7TF10" />
   <xs:annotation>
-    <xs:documentation>Extension of IEC61131-10 for the support of IEC63131 encoding.
-                      Target namespace identifier to be determined, ie, dummy placeholder 'www.iec.ch/public/tc65iec63131' to be replaced
+    <xs:documentation>Draft partial proposal for extension of IEC61131-10 for the support of IEC63131 encoding.
+                      The purpose of this draft is preliminarily to serve as illustration and basis for discussion.
+                      Target namespace identifier to be determined, ie, dummy placeholder 'www.iec.ch/public/tc65iec63131' to be replaced.
+                      Note that usage of &lt;xs:redefine&gt; is deprecated (in favor of override), but used because it is simpler for illustration purposes for now.
     </xs:documentation>
   </xs:annotation>
   <xs:complexType name="ActionIec63131">
     <xs:annotation>
-      <xs:documentation>Extends action class with IEC 63131 action properties. IEC 63131 properties Value and Tag:Terminal (or Connection ref) are encoded into Inline using ST language, 
-                        Latch property encoded through the appropriate use of the action qualifiers (P1, P0) for each action, eg, omitting variable value resetting in the step exit action.</xs:documentation>
+      <xs:documentation>Extends action class with IEC 63131 action properties. 
+                        IEC 63131 properties Value and Tag:Terminal (or Connection ref) are encoded into 'Inline' 
+                        using ST language, Latch property encoded through the appropriate use of the 
+                        action qualifiers (P1, P0) for each action, eg, by not resetting a variable value in the 
+                        step exit action (that was set on step entry, ie, latch).</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="ppx:Action">
