@@ -25,7 +25,7 @@
       <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
       <WriterVersion>5.6.2.0</WriterVersion>
       <WriterRelease>5.6.2.0</WriterRelease>
-      <LastWritingDateTime>2021-09-27T12:48:37.9303123</LastWritingDateTime>
+      <LastWritingDateTime>2021-09-27T12:54:17.0293797</LastWritingDateTime>
       <WriterProjectTitle>unspecified</WriterProjectTitle>
       <WriterProjectID>unspecified</WriterProjectID>
     </WriterHeader>
@@ -41831,7 +41831,18 @@
         <Attribute Name="DocumentReference" AttributeDataType="xs:string" />
         <Attribute Name="Tag" AttributeDataType="xs:string" />
         <Attribute Name="Terminal" AttributeDataType="xs:string" />
-        <Attribute Name="Comparator" AttributeDataType="xs:string" />
+        <Attribute Name="Comparator" AttributeDataType="xs:string">
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>&gt;</RequiredValue>
+              <RequiredValue>&lt;</RequiredValue>
+              <RequiredValue>=</RequiredValue>
+              <RequiredValue>&lt;&gt;</RequiredValue>
+              <RequiredValue>&gt;=</RequiredValue>
+              <RequiredValue>&lt;=</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
         <Attribute Name="Value" AttributeDataType="xs:string" />
         <Attribute Name="ServiceDescription" AttributeDataType="xs:string" />
         <ExternalInterface Name="Y" ID="4a26713d-2b6f-44fa-9159-7dc75ef8ceff" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y">
