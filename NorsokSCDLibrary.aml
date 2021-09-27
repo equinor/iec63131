@@ -25,7 +25,7 @@
       <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
       <WriterVersion>5.6.2.0</WriterVersion>
       <WriterRelease>5.6.2.0</WriterRelease>
-      <LastWritingDateTime>2021-09-27T12:54:17.0293797</LastWritingDateTime>
+      <LastWritingDateTime>2021-09-27T13:17:46.746587</LastWritingDateTime>
       <WriterProjectTitle>unspecified</WriterProjectTitle>
       <WriterProjectID>unspecified</WriterProjectID>
     </WriterHeader>
@@ -41518,16 +41518,6 @@
   <SystemUnitClassLib Name="SequenceElementLibrary">
     <Version>0</Version>
     <SystemUnitClass Name="StandardSequenceElementClass" ID="88885783-b0c3-417e-bdf0-a604c923ff8f">
-      <Attribute Name="Layer" AttributeDataType="xs:string">
-        <Constraint Name="Standard">
-          <NominalScaledType>
-            <RequiredValue>11</RequiredValue>
-            <RequiredValue>12</RequiredValue>
-            <RequiredValue>13</RequiredValue>
-            <RequiredValue>14</RequiredValue>
-          </NominalScaledType>
-        </Constraint>
-      </Attribute>
       <Attribute Name="X" AttributeDataType="xs:decimal" Unit="mm" />
       <Attribute Name="Y" AttributeDataType="xs:decimal" Unit="mm" />
       <SystemUnitClass Name="Start" ID="6a804ccb-cbcb-4193-bcdc-7451a33a6f58" RefBaseClassPath="SequenceElementLibrary/StandardSequenceElementClass">
