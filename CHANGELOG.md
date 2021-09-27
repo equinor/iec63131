@@ -14,10 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added standard element for AML document version
 - New SystemUnitClass with Name="SequenceDiagram" under DocumentClassLibrary
 - Added LegalValues constraint to Comparator attribute of SequenceElementLibrary/StandardSequenceElementClass/Condition
+- Added ElementaryFunctionLibrary/NorsokElementaryFunctionClass/Selector/MemoryDominantR and MemoryDominantS
 
 ### Removed
 
 - Removed "Layer" attribute from SequenceElementLibrary/StandardSequenceElementClass
+- Removed ElementaryFunctionLibrary/NorsokElementaryFunctionClass/Selector/Memory class
 
 ## [0.0.8] - 2021-08-01
 

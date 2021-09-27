@@ -25,7 +25,7 @@
       <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
       <WriterVersion>5.6.2.0</WriterVersion>
       <WriterRelease>5.6.2.0</WriterRelease>
-      <LastWritingDateTime>2021-09-27T13:17:46.746587</LastWritingDateTime>
+      <LastWritingDateTime>2021-09-27T13:43:11.304204</LastWritingDateTime>
       <WriterProjectTitle>unspecified</WriterProjectTitle>
       <WriterProjectID>unspecified</WriterProjectID>
     </WriterHeader>
@@ -35021,7 +35021,7 @@
             </Attribute>
           </ExternalInterface>
         </SystemUnitClass>
-        <SystemUnitClass Name="Memory" RefBaseClassPath="ElementaryFunctionLibrary/NorsokElementaryFunctionClass/Selector">
+        <SystemUnitClass Name="MemoryDominantR" RefBaseClassPath="ElementaryFunctionLibrary/NorsokElementaryFunctionClass/Selector">
           <Description>Memory element (S=set, R=reset)</Description>
           <Attribute Name="Layer" AttributeDataType="xs:string">
             <Description>Additional layers can be added by the project</Description>
@@ -35203,6 +35203,253 @@
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y" ID="3cdd6c3f-395b-a240-a1e9-93571e1e29bc">
+            <Description>Normal function output</Description>
+            <Attribute Name="Active" AttributeDataType="xs:boolean">
+              <Description>Placed on SCD</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>true</RequiredValue>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalType" AttributeDataType="xs:string">
+              <Description>Signal class and direction</Description>
+              <DefaultValue />
+              <Value>DO</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>DO</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Signal Interface</RequiredValue>
+                  <RequiredValue>Bus Interface</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+              <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+        </SystemUnitClass>
+        <SystemUnitClass Name="MemoryDominantS" RefBaseClassPath="ElementaryFunctionLibrary/NorsokElementaryFunctionClass/Selector" ID="">
+          <Description>Memory element (S=set, R=reset)</Description>
+          <Attribute Name="Layer" AttributeDataType="xs:string">
+            <Description>Additional layers can be added by the project</Description>
+            <DefaultValue />
+            <Value />
+            <Constraint Name="Standard">
+              <NominalScaledType>
+                <RequiredValue>11</RequiredValue>
+                <RequiredValue>12</RequiredValue>
+                <RequiredValue>13</RequiredValue>
+                <RequiredValue>14</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="X" Unit="mm" AttributeDataType="xs:decimal">
+            <Description>X: The abscissa of a point is the signed measure of its projection on the primary axis</Description>
+            <DefaultValue />
+            <Value />
+          </Attribute>
+          <Attribute Name="Y" Unit="mm" AttributeDataType="xs:decimal">
+            <Description>Y: The ordinate of a point is the signed measure of its projection on the secondary axis</Description>
+            <DefaultValue />
+            <Value />
+          </Attribute>
+          <Attribute Name="ControlNode" AttributeDataType="xs:string">
+            <Description>Control system node</Description>
+            <DefaultValue />
+            <Value />
+          </Attribute>
+          <Attribute Name="SymbolType" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue>SW</DefaultValue>
+            <Value />
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>SW</RequiredValue>
+                <RequiredValue>HW</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="Notation" AttributeDataType="xs:string">
+            <Description>Character in symbol</Description>
+            <DefaultValue />
+            <Value>M</Value>
+          </Attribute>
+          <Attribute Name="NoteRef" AttributeDataType="xs:string">
+            <Description>Reference to Drawing Note</Description>
+            <DefaultValue />
+            <Value />
+          </Attribute>
+          <ExternalInterface Name="R" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/R" ID="540bf08f-0a44-4ab1-8355-34f67825bc73">
+            <Description>reset</Description>
+            <Attribute Name="Active" AttributeDataType="xs:boolean">
+              <Description>Placed on SCD</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>true</RequiredValue>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalType" AttributeDataType="xs:string">
+              <Description>Signal class and direction</Description>
+              <DefaultValue />
+              <Value>DI</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>DI</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Signal Interface</RequiredValue>
+                  <RequiredValue>Bus Interface</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+              <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="S" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/S" ID="2dac78f3-4999-4c77-861e-3d51cf68b295">
+            <Description>set</Description>
+            <Attribute Name="Active" AttributeDataType="xs:boolean">
+              <Description>Placed on SCD</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>true</RequiredValue>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalType" AttributeDataType="xs:string">
+              <Description>Signal class and direction</Description>
+              <DefaultValue />
+              <Value>DI</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>DI</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Signal Interface</RequiredValue>
+                  <RequiredValue>Bus Interface</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+              <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y" ID="33d858cb-7b0d-4eb9-9230-53eb141c42fc">
             <Description>Normal function output</Description>
             <Attribute Name="Active" AttributeDataType="xs:boolean">
               <Description>Placed on SCD</Description>
