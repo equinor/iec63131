@@ -14,6 +14,9 @@
       <WriterProjectID />
     </WriterHeader>
   </AdditionalInformation>
+  <AdditionalInformation DocumentVersions="Recommendations">
+    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.9 DRAFT" />
+  </AdditionalInformation>
   <AdditionalInformation>
     <WriterHeader>
       <WriterName>AutomationML Editor</WriterName>
@@ -22,7 +25,7 @@
       <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
       <WriterVersion>5.6.2.0</WriterVersion>
       <WriterRelease>5.6.2.0</WriterRelease>
-      <LastWritingDateTime>2021-09-27T11:17:42.2097596</LastWritingDateTime>
+      <LastWritingDateTime>2021-09-27T12:16:42.1951372</LastWritingDateTime>
       <WriterProjectTitle>unspecified</WriterProjectTitle>
       <WriterProjectID>unspecified</WriterProjectID>
     </WriterHeader>
