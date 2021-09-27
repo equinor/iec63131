@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added several attributes from typical SW report format during "AML workshop 2 - attributes"
 - Added repository scope of work description and some rules around issue creation (and rejection/voiding) in README.md
 - Added standard element for AML document version
+- New SystemUnitClass with Name="SequenceDiagram" under DocumentClassLibrary
 
 ## [0.0.8] - 2021-08-01
 
