@@ -46,8 +46,8 @@
     <xs:complexContent>
       <xs:extension base="ppx:Step">
         <xs:sequence>
-          <xs:element minOccurs="1" maxOccurs="1" name="kbTagRef" type="xs:string" use="required" />
-          <xs:element minOccurs="1" maxOccurs="1" name="scdRef" type="xs:string" use="required" />
+          <xs:element minOccurs="1" maxOccurs="1" name="kbTagRef" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="scdRef" type="xs:string" />
         </xs:sequence>
         <xs:attribute name="serviceDescription" type="xs:string" />
       </xs:extension>
@@ -82,12 +82,10 @@
           <xs:documentation>Might want to create a supporting type to regulate format of point list. 
                             Relative positions of the points in the list. Origin is the anchor position of the process line.
           </xs:documentation>
-        </xs:annotation>
-        <xs:attribute name="relPosPointList" type="xs:string" />
-        <xs:annotation>
           <xs:documentation>Thickness could be restricted to two enumerated choices: major and minor.</xs:documentation>
         </xs:annotation>
-        <xs:attribute name="thickness" type="xs:processLineThickness" />
+        <xs:attribute name="relPosPointList" type="xs:string" />
+        <xs:attribute name="thickness" type="dgm:processLineThickness" />
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -104,6 +102,7 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <!-- redefines and overrides had to be moved to separate .xsd with same target namespace as the types being redefined/overridden
   <xs:redefine schemaLocation="www.iec.ch/public/TC65SC65BWG7TF10">
     <xs:complexType name="FbdObjectBase" abstract="true">
       <xs:annotation>
@@ -112,7 +111,7 @@
       </xs:annotation>
       <xs:complexContent>
         <xs:extension base="ppx:FbdObjectBase">
-          <xs:attribute name="layer" type="dgm:layer" use="optional" default=12 />
+          <xs:attribute name="layer" type="dgm:layer" use="optional" default='12' />
           <xs:attribute name="noteRef" type="dgm:noteRef" use="optional" default="" />
         </xs:extension>
       </xs:complexContent>
@@ -126,12 +125,13 @@
       </xs:annotation>
       <xs:complexContent>
         <xs:extension base="ppx:Block">
-          <xs:attribute name="layer" type="dgm:layer" use="optional" default=12 />
+          <xs:attribute name="layer" type="dgm:layer" use="optional" default='12' />
           <xs:attribute name="noteRef" type="dgm:noteRef" use="optional" default="" />
         </xs:extension>
       </xs:complexContent>
     </xs:complexType>
   </xs:override>
+  -->
   <xs:complexType name="BlockIec63131" abstract="true">
     <xs:annotation>
       <xs:documentation>Extends..
@@ -139,19 +139,19 @@
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="ppx:Block">
-        <xs:attribute name="typeName" type="xs:iec63131TypeName" use="required"/>
+        <xs:attribute name="typeNameIec63131" type="dgm:iec63131TypeName" use="required"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:simpleType name="layer">
     <xs:restriction base="xs:integer">
-      <xs:minInclusive value=11 />
-      <xs:maxInclusive value=999 />
+      <xs:minInclusive value='11' />
+      <xs:maxInclusive value='999' />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="noteRef">
     <xs:restriction base="xs:string">
-      <xs:pattern value="([Nn]ote|NOTE):?\s?\d+\" />
+      <xs:pattern value="([Nn]ote|NOTE):?\s?[0-9]+\s?" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="processLineThickness">
@@ -161,40 +161,43 @@
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="iec63131TypeName">
+    <xs:union memberTypes="dgm:iec63131TypeNameStandard dgm:iec63131TypeNameCustom" />
+  </xs:simpleType>
+  <xs:simpleType name="iec63131TypeNameStandard">
     <xs:annotation>
       <xs:documentation>Likely most elementary function blocks (EFB) defined in IEC 63131 can be encoded as basic IEC 61131-10 types (?).
                         If they do need encoding as 'Block', then most likely they can share restrictions with IEC 63131 Function Blocks?
       </xs:documentation>
     </xs:annotation>
-    <xs:union>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="CA" />
-        <xs:enumeration value="CS" />
-        <xs:enumeration value="HA" />
-        <xs:enumeration value="HB" />
-        <xs:enumeration value="KB" />
-        <xs:enumeration value="LB" />
-        <xs:enumeration value="MA" />
-        <xs:enumeration value="MAS" />
-        <xs:enumeration value="MB" />
-        <xs:enumeration value="OA" />
-        <xs:enumeration value="QA" />
-        <xs:enumeration value="SB" />
-        <xs:enumeration value="SBB" />
-        <xs:enumeration value="SBC" />
-        <xs:enumeration value="SBE" />
-        <xs:enumeration value="SBV" />
-        <xs:enumeration value="ForwardHighest" />
-        <xs:enumeration value="ForwardLowest" />
-        <xs:enumeration value="ForwardSelected" />
-        <xs:enumeration value="NodeSplit" />
-      </xs:restriction>
-      <xs:annotation>
-        <xs:documentation>Also allow any alphanumeric string beginning with a hash symbol ('#', customized FB).</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-        <xs:pattern value="^#[A-Za-z0-9]*$" />
-      </xs:restriction>
-    </xs:union>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CA" />
+      <xs:enumeration value="CS" />
+      <xs:enumeration value="HA" />
+      <xs:enumeration value="HB" />
+      <xs:enumeration value="KB" />
+      <xs:enumeration value="LB" />
+      <xs:enumeration value="MA" />
+      <xs:enumeration value="MAS" />
+      <xs:enumeration value="MB" />
+      <xs:enumeration value="OA" />
+      <xs:enumeration value="QA" />
+      <xs:enumeration value="SB" />
+      <xs:enumeration value="SBB" />
+      <xs:enumeration value="SBC" />
+      <xs:enumeration value="SBE" />
+      <xs:enumeration value="SBV" />
+      <xs:enumeration value="ForwardHighest" />
+      <xs:enumeration value="ForwardLowest" />
+      <xs:enumeration value="ForwardSelected" />
+      <xs:enumeration value="NodeSplit" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="iec63131TypeNameCustom">
+    <xs:annotation>
+      <xs:documentation>Allow any alphanumeric string beginning with a hash symbol ('#', customized FB).</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="^#[A-Za-z0-9]*$" />
+    </xs:restriction>
   </xs:simpleType>
 </xs:schema>
