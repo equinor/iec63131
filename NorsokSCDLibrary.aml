@@ -24104,7 +24104,7 @@
             </SystemUnitClass>
           </SystemUnitClass>
           <SystemUnitClass Name="SafetyReliefValve" RefBaseClassPath="DeviceClassLibrary/Device/InlineDevice/Valve" />
-          <SystemUnitClass Name="SelfregulationgControlValve" RefBaseClassPath="DeviceClassLibrary/Device/InlineDevice/Valve" />
+          <SystemUnitClass Name="SelfregulatingControlValve" RefBaseClassPath="DeviceClassLibrary/Device/InlineDevice/Valve" />
           <SystemUnitClass Name="SolenoidValve" RefBaseClassPath="DeviceClassLibrary/Device/InlineDevice/Valve">
             <ExternalInterface Name="In" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In" ID="44504f04-5e53-cd40-a9df-1dedc7989e37">
               <Description>Input Reference Signal</Description>
@@ -24395,7 +24395,7 @@
           <Description>Atmospheric or Low-Pressure Storage Tank</Description>
         </SystemUnitClass>
         <SystemUnitClass Name="Burner" RefBaseClassPath="DeviceClassLibrary/Device/StaticProcessingEquipment" />
-        <SystemUnitClass Name="Caiasson" RefBaseClassPath="DeviceClassLibrary/Device/StaticProcessingEquipment" />
+        <SystemUnitClass Name="Caisson" RefBaseClassPath="DeviceClassLibrary/Device/StaticProcessingEquipment" />
         <SystemUnitClass Name="Eductor" RefBaseClassPath="DeviceClassLibrary/Device/StaticProcessingEquipment">
           <Description>Eductor or Ejector</Description>
         </SystemUnitClass>
