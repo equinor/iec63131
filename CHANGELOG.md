@@ -20,6 +20,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Removed "Layer" attribute from SequenceElementLibrary/StandardSequenceElementClass
 - Removed ElementaryFunctionLibrary/NorsokElementaryFunctionClass/Selector/Memory class
+- Removed unnecessary inherited attributes overridings
+- Removed SignalType attribute
+- Removed WriterHeader's from library
 
 ## [0.0.8] - 2021-08-01
 
