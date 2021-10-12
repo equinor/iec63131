@@ -15,6 +15,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New SystemUnitClass with Name="SequenceDiagram" under DocumentClassLibrary
 - Added LegalValues constraint to Comparator attribute of SequenceElementLibrary/StandardSequenceElementClass/Condition
 - Added ElementaryFunctionLibrary/NorsokElementaryFunctionClass/Selector/MemoryDominantR and MemoryDominantS
+- New SystemUnitClassLib, with Name="ContextHidingStructure"
+- New InterfaceClass with Name="ContextHidingFlowClass", with members:
+  - ContextHidingFlowIn, ContextHidingFlowOut
+- New SystemUnitClass with Name="ContextHiding" under DocumentClassLibrary
+- New SystemUnitClassLib with Name="ContextHidingElementLibrary", with members:
+  - Context, Transition
 
 ### Removed
 
