@@ -14,3 +14,8 @@ Issues shall be strictly limited to the defined scope of work.
 
 If an issue is raised that falls outside the scope of work it shall be closed without further action (ie, void and null).  
 Standard reply to be given: "This falls outside the scope of this repo, please raise your issue via appropriate channels."
+
+## Git LFS for binary files
+
+Git LFS is enabled in this repository and set up to track Excel files (.xlsx), see .gitattributes config file.  
+Git LFS locking is not configured (not expecting multiple people to edit same Excel file).  
