@@ -1307,7 +1307,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
         <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
         <Attribute Name="LimitConfirmedStateClosed" AttributeDataType="xs:decimal" />
         <Attribute Name="LimitConfirmedStateOpened" AttributeDataType="xs:decimal" />
@@ -2598,7 +2598,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WL" ID="ccc7a8f5-a591-0b40-8a9e-accd11013bdb">
           <Description>Warning alarm L</Description>
@@ -2657,7 +2657,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WV" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WV" ID="5d9df37b-810c-7e43-91bd-31fe7e81110e">
           <Description>Deviation alarm (warning)</Description>
@@ -2716,7 +2716,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="6419e2e5-c6f3-5e4a-9d96-949928d12c24">
           <Description>Normal function input</Description>
@@ -3297,7 +3297,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YR" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YR" ID="ffdc3b78-653f-0547-8d69-c4dc02307743">
           <Description>Reference setpoint value</Description>
@@ -3421,7 +3421,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
         <Attribute Name="LimitConfirmedStateClosed" AttributeDataType="xs:decimal" />
         <Attribute Name="SteadyOutput" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
@@ -4363,7 +4363,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="XF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/XF" ID="3025f084-afb2-4643-a1f6-a10263835a5d">
           <Description>External fault</Description>
@@ -4688,7 +4688,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YG" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YG" ID="97664257-08aa-0a4e-90f0-ced9f87bb8f1">
           <Description>Output valve position</Description>
@@ -6559,15 +6559,15 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="LB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Latching of Binary signal, ie PSD level block</Description>
         <Attribute Name="FaultAlarmPriority" AttributeDataType="xs:int" />
         <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="FaultAlarmDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="FaultAlarmTimeDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
         <ExternalInterface Name="RX" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/R/RX" ID="a23b536b-c56e-d043-9eff-cae8eda5e9fd">
           <Description>Reset latched output</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -6944,7 +6944,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="ALL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/A/ALL" ID="e8cb86fd-3904-ca49-a47f-f4a1ec33d6cc">
           <Description>Action alarm LL</Description>
@@ -7003,7 +7003,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BB" ID="e744ddcc-1c1f-9447-a5e3-035296451f43">
           <Description>Status blocked</Description>
@@ -7391,7 +7391,7 @@
           </Attribute>
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BXHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BXHH" ID="7cda4fbc-f63c-c84c-9edf-69255ca10f72">
           <Description>Status event HH</Description>
@@ -7449,7 +7449,7 @@
           </Attribute>
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BXL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BXL" ID="1bb86249-3c6a-ea44-8f48-032482579c72">
           <Description>Status event L</Description>
@@ -7507,7 +7507,7 @@
           </Attribute>
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BXLL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BXLL" ID="830973f8-c16e-e442-8550-c59f0401dc96">
           <Description>Status event LL</Description>
@@ -7565,7 +7565,7 @@
           </Attribute>
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="FBHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/F/FBHH" ID="3a54d048-54b3-eb4e-ac3e-956d0a307a10">
           <Description>Force blocking alarm HH</Description>
@@ -8026,7 +8026,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WL" ID="4dc440c5-958e-7e41-8de2-5ff66af86dad">
           <Description>Warning alarm - WL</Description>
@@ -8085,7 +8085,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="f562d27b-2c1e-2c44-bd99-8b064b3c65ab">
           <Description>Normal function input</Description>
@@ -8331,7 +8331,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="MAS" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
@@ -8393,7 +8393,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="ALL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/A/ALL" ID="7da83e4b-c698-7744-8d46-00f70ff53bc1">
           <Description>Action alarm LL</Description>
@@ -8450,7 +8450,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BU" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BU" ID="3b4c83d4-cc36-644a-958c-8820477719cd">
           <Description>Status suppressed</Description>
@@ -8629,7 +8629,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WL" ID="e37d40d8-cad5-8b43-a716-587a006b96e8">
           <Description>Warning alarm - WL</Description>
@@ -8686,7 +8686,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="c70083b1-bb25-774c-a217-7af74bb8fb4f">
           <Description>Normal function input</Description>
@@ -9535,7 +9535,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="MB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
@@ -9595,7 +9595,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BB" ID="2bc001b6-0fdd-b64b-8ca8-260e5f9ef326">
           <Description>Status blocked</Description>
@@ -10018,7 +10018,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/X" ID="fb9e25aa-adfa-7646-9604-613005be9979">
           <Description>External function input with optional Invert</Description>
@@ -10266,7 +10266,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="OA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
@@ -10282,7 +10282,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
         <Attribute Name="LimitConfirmedStateClosed" AttributeDataType="xs:decimal" />
         <Attribute Name="LimitConfirmedStateOpened" AttributeDataType="xs:decimal" />
         <Attribute Name="MinRangeOutput" AttributeDataType="xs:decimal" />
@@ -11248,7 +11248,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="d781c08f-de46-7446-af20-8662ed18a2eb">
           <Description>Normal function input</Description>
@@ -11695,7 +11695,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YG" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YG" ID="47d14b05-f9b8-3349-9d3a-771bcaeab1cf">
           <Description>Output valve position</Description>
@@ -11825,7 +11825,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BBHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BBHH" ID="61ff7d5c-edfe-9741-9a35-daf5c78b63fd">
           <Description>Status blocked alarm HH</Description>
@@ -12048,7 +12048,7 @@
           </Attribute>
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="FBHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/F/FBHH" ID="08c563b2-848b-4445-900d-03b4476af738">
           <Description>Force blocking alarm HH</Description>
@@ -12442,7 +12442,7 @@
           <Attribute Name="Limit" AttributeDataType="xs:decimal" />
           <Attribute Name="Priority" AttributeDataType="xs:int" />
           <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="5f73bcb3-9e71-9047-82ae-8dc648e2d4e1">
           <Description>Normal function input</Description>
@@ -12810,13 +12810,13 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control be means of binary signal for shutdown</Description>
         <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
         <ExternalInterface Name="BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BB" ID="94b5ddee-89ac-4f42-8d82-3c3dc5d36b04">
           <Description>Status blocked</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -13237,7 +13237,7 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
           <Attribute Name="Latched" AttributeDataType="xs:boolean" />
         </ExternalInterface>
         <ExternalInterface Name="YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YF" ID="f3979842-e4dc-ac43-a9ec-a6db7a9fc652">
@@ -13295,15 +13295,15 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SBB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Breaker control by means of binary control action of an electrical breaker</Description>
         <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
         <Attribute Name="SafeguardingAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="SafeguardingAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="SafeguardingAlarmTimeDelay" AttributeDataType="xs:duration" />
         <Attribute Name="TravelTimeDisconnect" AttributeDataType="xs:duration" />
         <Attribute Name="TravelTimeConnect" AttributeDataType="xs:duration" />
         <Attribute Name="StartUpState" AttributeDataType="xs:string">
@@ -15316,7 +15316,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YH" ID="8417f059-f05f-bd43-810d-be95510ad8de">
           <Description>Pulsed normal function output high</Description>
@@ -17268,7 +17268,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YQ" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YQ" ID="1fd43fd1-30e9-ce48-b67c-1f2e832b8e12">
           <Description>Number requested</Description>
@@ -17330,8 +17330,8 @@
         <Description>Switching control by means of a binary control action of electrical power devices</Description>
         <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
         <Attribute Name="SafeguardingAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="SafeguardingAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="SafeguardingAlarmTimeDelay" AttributeDataType="xs:duration" />
         <Attribute Name="OutsideModeType" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
@@ -17341,7 +17341,7 @@
           </Constraint>
         </Attribute>
         <Attribute Name="FeedbackTime" AttributeDataType="xs:duration" />
-        <Attribute Name="TimeBeforeActionWhenLossOfFeedback" AttributeDataType="xs:duration" />
+        <Attribute Name="TimeDelayBeforeActionWhenLossOfFeedback" AttributeDataType="xs:duration" />
         <Attribute Name="FaultAction" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
@@ -19274,7 +19274,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YH" ID="38af9507-5e1a-954b-a52d-05da5710bc81">
           <Description>Pulsed normal function output high</Description>
@@ -19404,8 +19404,8 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="SafeguardingAlarmDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="SafeguardingAlarmTimeDelay" AttributeDataType="xs:duration" />
         <Attribute Name="OutsideModeType" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
@@ -21154,7 +21154,7 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Delay" AttributeDataType="xs:duration" />
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YH" ID="4c637206-c6f5-b442-bec0-8f4f8ac4361f">
           <Description>Pulsed normal function output high</Description>
@@ -28228,12 +28228,9 @@
         <DefaultValue />
         <Value />
       </Attribute>
+      <Attribute Name="TimeDelayOff" AttributeDataType="xs:duration" />
       <Attribute Name="AlarmsToHide" AttributeDataType="">
-        <Attribute Name="AlarmToHide1" AttributeDataType="">
-          <Attribute Name="Tag" AttributeDataType="xs:string" />
-          <Attribute Name="Alarm" AttributeDataType="xs:string" />
-          <Attribute Name="OffDelay" AttributeDataType="xs:duration" />
-        </Attribute>
+        <Attribute Name="AlarmToHide1" AttributeDataType="" />
       </Attribute>
       <ExternalInterface Name="FlowIn" ID="a005ed67-242f-4538-aaf5-dfcd6494155e" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowIn">
         <Attribute Name="Direction" AttributeDataType="xs:string">
