@@ -2,7 +2,7 @@
   <AdditionalInformation AutomationMLVersion="2.0" />
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.9 DRAFT" />
+    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.9" />
   </AdditionalInformation>
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
@@ -23048,7 +23048,7 @@
           <Attribute Name="Notation" AttributeDataType="xs:string">
             <Description>Character in symbol</Description>
             <DefaultValue />
-            <Value>&lt;&gt;</Value>
+            <Value>≠</Value>
           </Attribute>
           <ExternalInterface Name="X1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/X1" ID="e308c29e-0495-5d41-9592-63300fcb82d2">
             <Description>External function input</Description>
@@ -25758,6 +25758,11 @@
           <DefaultValue />
           <Value />
         </Attribute>
+        <Attribute Name="ControlNode" AttributeDataType="xs:string">
+          <Description>Control system node</Description>
+          <DefaultValue />
+          <Value />
+        </Attribute>
         <ExternalInterface Name="In" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In" ID="a045a5f5-1120-154b-99fb-53b5458ee15b">
           <Description>Input Reference Signal</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -26050,6 +26055,11 @@
         <Description>Signal OnPage Reference</Description>
         <Attribute Name="DocumentReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
+          <DefaultValue />
+          <Value />
+        </Attribute>
+        <Attribute Name="ControlNode" AttributeDataType="xs:string">
+          <Description>Control system node</Description>
           <DefaultValue />
           <Value />
         </Attribute>
