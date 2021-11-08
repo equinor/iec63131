@@ -22,6 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New SystemUnitClassLib with Name="ContextHidingElementLibrary", with members:
   - Context, Transition
 - Added ControlNode atrribute to SignalOffPage and SignalOnPage classes
+
+### Changed
+
 - Changed Notation attribute to '≠' for "XOR" EFB 
 
 ### Removed
