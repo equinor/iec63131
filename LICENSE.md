@@ -2,7 +2,7 @@
 
 With exceptions identified below
 
-Copyright (c) 2021 NEK NK65 AG3
+Copyright (c) 2021 Norsk Elektroteknisk Komite (NEK)
 
 License: MIT
 
