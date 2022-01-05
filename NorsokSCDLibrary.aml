@@ -2,7 +2,7 @@
   <AdditionalInformation AutomationMLVersion="2.0" />
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.9" />
+    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.10 DRAFT" />
   </AdditionalInformation>
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
@@ -1184,6 +1184,54 @@
     </SystemUnitClass>
     <SystemUnitClass Name="ContextHiding" ID="6c71de7c-daad-4a4b-9a30-aa86d48049a8">
       <Description>Context and Hiding document</Description>
+    </SystemUnitClass>
+    <SystemUnitClass Name="ShutdownHierarchy" ID="19c83e4c-a700-4683-baed-49488b5caf5d">
+      <Description>Shutdown Hierarchy</Description>
+      <Attribute Name="DrawingSize" AttributeDataType="xs:string">
+        <Description>Drawing size, restricted to A1 ref ISO 5457</Description>
+        <DefaultValue>A1</DefaultValue>
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>A1</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="Orientation" AttributeDataType="xs:string">
+        <Description>Restricted to Landscape</Description>
+        <DefaultValue>Landscape</DefaultValue>
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>Landscape</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="CoordinateSystem" AttributeDataType="xs:string">
+        <Description>https://en.wikipedia.org/wiki/Cartesian_coordinate_system</Description>
+        <DefaultValue />
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>right-handed</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="DrawingOrigin" AttributeDataType="xs:string">
+        <Description />
+        <DefaultValue />
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>Lower left corner</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="Scale" AttributeDataType="xs:string">
+        <Description />
+        <DefaultValue />
+        <Value />
+      </Attribute>
     </SystemUnitClass>
   </SystemUnitClassLib>
   <SystemUnitClassLib Name="DocumentElementClassLibrary">
