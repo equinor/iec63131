@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
+### Removed
 
-- New SystemUnitClass with Name="ShutdownHierarchy" under DocumentClassLibrary
+- Removed Context&Hiding classes from main library:
+  - Removed SystemUnitClassLib, with Name="ContextHidingStructure"
+  - Removed InterfaceClass with Name="ContextHidingFlowClass"
+  - Removed SystemUnitClass with Name="ContextHiding" under DocumentClassLibrary
+  - Removed SystemUnitClassLib with Name="ContextHidingElementLibrary"
 
 ## [0.0.9] - 2021-11-08
 
