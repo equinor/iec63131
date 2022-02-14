@@ -1250,7 +1250,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -21298,7 +21298,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -21365,7 +21365,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -21538,7 +21538,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -25608,7 +25608,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -25658,7 +25658,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -25766,7 +25766,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -25973,7 +25973,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -26194,7 +26194,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -26683,7 +26683,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
@@ -27367,7 +27367,7 @@
                 <Value />
                 <Constraint Name="aml-RegExp">
                   <UnknownType>
-                    <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+                    <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
                   </UnknownType>
                 </Constraint>
               </Attribute>
@@ -27730,7 +27730,7 @@
         <Value />
         <Constraint Name="aml-RegExp">
           <UnknownType>
-            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
           </UnknownType>
         </Constraint>
       </Attribute>
