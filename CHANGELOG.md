@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added Parameter AttributeType
+- Added Parameter AttributeType references to function blocks attributes
+
+### Changed
+
+- Changed library to CAEX 3
+
 ### Removed
 
 - Removed Context&Hiding classes from main library:
