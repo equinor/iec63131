@@ -1189,6 +1189,7 @@
       <Attribute Name="Reference" AttributeDataType="xs:string" />
       <Attribute Name="Description" AttributeDataType="xs:string" />
       <Attribute Name="KbTagReference" AttributeDataType="xs:string" />
+      <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
     </SystemUnitClass>
   </SystemUnitClassLib>
   <SystemUnitClassLib Name="FunctionBlockLibrary">
