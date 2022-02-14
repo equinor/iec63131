@@ -25572,6 +25572,51 @@
         </SystemUnitClass>
       </SystemUnitClass>
     </SystemUnitClass>
+    <SystemUnitClass Name="VendorElementaryFunctionClass" ID="9dd97385-6013-45d2-bf94-9968144d7af8">
+      <Description>Vendor specific Elementary Functions</Description>
+      <Attribute Name="Layer" AttributeDataType="xs:string">
+        <Description>Additional layers can be added by the project</Description>
+        <DefaultValue />
+        <Value />
+        <Constraint Name="Standard">
+          <NominalScaledType>
+            <RequiredValue>11</RequiredValue>
+            <RequiredValue>12</RequiredValue>
+            <RequiredValue>13</RequiredValue>
+            <RequiredValue>14</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="X" Unit="mm" AttributeDataType="xs:decimal">
+        <Description>X: The abscissa of a point is the signed measure of its projection on the primary axis</Description>
+        <DefaultValue />
+        <Value />
+      </Attribute>
+      <Attribute Name="Y" Unit="mm" AttributeDataType="xs:decimal">
+        <Description>Y: The ordinate of a point is the signed measure of its projection on the secondary axis</Description>
+        <DefaultValue />
+        <Value />
+      </Attribute>
+      <Attribute Name="ControlNode" AttributeDataType="xs:string">
+        <Description>Control system node</Description>
+        <DefaultValue />
+        <Value />
+      </Attribute>
+      <Attribute Name="NoteRef" AttributeDataType="xs:string">
+        <Description>Reference to Drawing Note object GUID</Description>
+        <DefaultValue />
+        <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
+      </Attribute>
+      <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
+      <SystemUnitClass Name="KM" ID="8cfa62c5-82ca-4f84-8288-566606141bfc" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
+      <SystemUnitClass Name="ABB" ID="5a42eff8-87a2-4b70-9c99-18b57773e0ce" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
+      <SystemUnitClass Name="Siemens" ID="572f8ef4-d57c-44be-865e-20d0672f0144" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
+    </SystemUnitClass>
     <SystemUnitClass Name="NodeSplit">
       <Description>Object used to indicate change of control Node for a signal</Description>
       <Attribute Name="Layer" AttributeDataType="xs:string">

@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added additional output Y2 to sequence step
 - Added SystemUnitClass with Name="SequenceReferenceLegend" under DocumentElementClassLibrary
 - Added FailSafePosition attribute to OA block
+- Added SystemUnitClass with Name="VendorElementaryFunctionClass" under ElementaryFunctionLibrary with vendor sections
 
 ### Changed
 
