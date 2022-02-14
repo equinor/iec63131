@@ -1307,14 +1307,6 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="FailSafePosition" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
-          <Constraint Name="LegalValues">
-            <NominalScaledType>
-              <RequiredValue>High</RequiredValue>
-              <RequiredValue>Low</RequiredValue>
-            </NominalScaledType>
-          </Constraint>
-        </Attribute>
         <Attribute Name="InputOutsideRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
@@ -10295,7 +10287,14 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ManualLimitedByOperatingRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+        <Attribute Name="FailSafePosition" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>High</RequiredValue>
+              <RequiredValue>Low</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
         <ExternalInterface Name="BA" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BA" ID="1c188df4-c148-6d44-9214-04a662d08d51">
           <Description>Status auto/man</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">

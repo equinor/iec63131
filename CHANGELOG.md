@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added RegExp constraints to NoteRef attributes
 - Added additional output Y2 to sequence step
 - Added SystemUnitClass with Name="SequenceReferenceLegend" under DocumentElementClassLibrary
+- Added FailSafePosition attribute to OA block
 
 ### Changed
 
@@ -30,6 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Removed InterfaceClass with Name="ContextHidingFlowClass"
   - Removed SystemUnitClass with Name="ContextHiding" under DocumentClassLibrary
   - Removed SystemUnitClassLib with Name="ContextHidingElementLibrary"
+- Removed ManualLimitedByOperatingRange attribute from OA block
+- Removed FailSafePosition attribute from CA block
 
 ## [0.0.9] - 2021-11-08
 
