@@ -1240,9 +1240,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <Attribute Name="Typical" AttributeDataType="xs:string" />
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
@@ -21284,9 +21289,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="KM" ID="dfc80911-0c21-4710-8860-4a5b9b9bdab9" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass" />
@@ -21346,9 +21356,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="BlackBox" RefBaseClassPath="FunctionBlockLibrary/NonStandardFunctionBlockClass">
@@ -21514,9 +21529,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="Arithmetic" RefBaseClassPath="ElementaryFunctionLibrary/NorsokElementaryFunctionClass">
@@ -25584,9 +25604,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <ExternalInterface Name="In" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In" ID="3f5e75ab-852f-774f-a0cc-2ca4144903ca">
         <Description>Input Reference Signal</Description>
@@ -25687,9 +25712,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SystemUnitClass Name="ProcessOffPage" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
         <Description>Pipe/Duct/Electrical OffPage Reference</Description>
@@ -25889,9 +25919,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SystemUnitClass Name="ProcessOnPage" RefBaseClassPath="ReferenceClassLibrary/FromSource">
         <Description>Pipe/Duct/Electrical OnPage Reference</Description>
@@ -26105,9 +26140,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SystemUnitClass Name="Ref-MCC" RefBaseClassPath="ReferenceClassLibrary/RefElectricalEquipment">
         <Description>Reference to Motor Control Centre</Description>
@@ -26589,9 +26629,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
       <SystemUnitClass Name="CabinetOrPanel" RefBaseClassPath="DeviceClassLibrary/Device">
@@ -27268,9 +27313,14 @@
                 </Constraint>
               </Attribute>
               <Attribute Name="NoteRef" AttributeDataType="xs:string">
-                <Description>Reference to Drawing Note</Description>
+                <Description>Reference to Drawing Note object GUID</Description>
                 <DefaultValue />
                 <Value />
+                <Constraint Name="aml-RegExp">
+                  <UnknownType>
+                    <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+                  </UnknownType>
+                </Constraint>
               </Attribute>
             </SystemUnitClass>
           </SystemUnitClass>
@@ -27626,9 +27676,14 @@
         </Constraint>
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^([0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12})$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
       <SystemUnitClass Name="PotentialBundle" RefBaseClassPath="DeviceClassLibrary/DeviceElement">
