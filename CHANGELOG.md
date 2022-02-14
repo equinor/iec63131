@@ -12,11 +12,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Parameter AttributeType
 - Added Parameter AttributeType references to function blocks attributes
 - Added RegExp constraints to NoteRef attributes
+- Added additional output Y2 to sequence step
 
 ### Changed
 
 - Changed library to CAEX 3
 - Changed description of NoteRef attributes
+- Changed Y to Y1 on sequence step
 
 ### Removed
 

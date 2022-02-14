@@ -27728,7 +27728,61 @@
         <Attribute Name="Description" AttributeDataType="xs:string" />
         <Attribute Name="TMin" AttributeDataType="xs:duration" />
         <Attribute Name="TMax" AttributeDataType="xs:duration" />
-        <ExternalInterface Name="Y" ID="bd6eae66-43f8-47ee-b0a5-62a39f1897c4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y">
+        <ExternalInterface Name="Y1" ID="bd6eae66-43f8-47ee-b0a5-62a39f1897c4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y">
+          <Attribute Name="Active" AttributeDataType="xs:boolean">
+            <Description>Placed on SCD</Description>
+            <DefaultValue>false</DefaultValue>
+            <Value>false</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>true</RequiredValue>
+                <RequiredValue>false</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="SignalClass" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Binary</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Binary</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+            <Description>Type of signal communcication</Description>
+            <DefaultValue />
+            <Value />
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Signal Interface</RequiredValue>
+                <RequiredValue>Bus Interface</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+            <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+            <DefaultValue>false</DefaultValue>
+            <Value>false</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>false</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="Y2" ID="76b62673-2432-46d6-a81f-ab3216120e0f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y">
           <Attribute Name="Active" AttributeDataType="xs:boolean">
             <Description>Placed on SCD</Description>
             <DefaultValue>false</DefaultValue>
