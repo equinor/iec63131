@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed library to CAEX 3
 - Changed description of NoteRef attributes
 - Changed Y to Y1 on sequence step
+- Changed "DocumentReference" to "DrawingReference" on following classes:
+  - ProcessOffPage, SignalOffPage, SequenceOffPage, ProcessOnPage, SignalOnPage, DocumentReference, Condition
 
 ### Removed
 

@@ -25723,7 +25723,7 @@
       </Attribute>
       <SystemUnitClass Name="ProcessOffPage" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
         <Description>Pipe/Duct/Electrical OffPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -25744,7 +25744,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="SignalOffPage" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
         <Description>Signal OffPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -25889,7 +25889,7 @@
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SequenceOffPage" ID="1f361a0e-f2d0-4deb-99f6-b99b730ad0e2" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string" />
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
         <ExternalInterface Name="SequenceFlowIn" ID="0007f5a2-0e56-4721-85f0-ad832dcc0bf5" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowIn" />
       </SystemUnitClass>
     </SystemUnitClass>
@@ -25930,7 +25930,7 @@
       </Attribute>
       <SystemUnitClass Name="ProcessOnPage" RefBaseClassPath="ReferenceClassLibrary/FromSource">
         <Description>Pipe/Duct/Electrical OnPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -26049,7 +26049,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="SignalOnPage" RefBaseClassPath="ReferenceClassLibrary/FromSource">
         <Description>Signal OnPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -26096,7 +26096,7 @@
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SequenceOnPage" ID="365fafdf-0539-4128-8a7d-32af3847fc03" RefBaseClassPath="ReferenceClassLibrary/FromSource">
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string" />
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
         <ExternalInterface Name="SequenceFlowOut" ID="fb322425-292c-423d-aefc-7202ffcc92bd" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowOut" />
       </SystemUnitClass>
     </SystemUnitClass>
@@ -28042,7 +28042,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="Condition" ID="03a23840-6ef4-4418-9cb9-32774be54fab" RefBaseClassPath="SequenceElementLibrary/StandardSequenceElementClass">
         <Attribute Name="ConnectionReferenceNumber" AttributeDataType="xs:string" />
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string" />
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
         <Attribute Name="Tag" AttributeDataType="xs:string" />
         <Attribute Name="Terminal" AttributeDataType="xs:string" />
         <Attribute Name="Comparator" AttributeDataType="xs:string">
