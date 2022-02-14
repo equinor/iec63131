@@ -1185,6 +1185,11 @@
       </Attribute>
     </SystemUnitClass>
     <SystemUnitClass Name="RevisionTriangle" />
+    <SystemUnitClass Name="SequenceReferenceLegend" ID="061e4c3b-ba55-4b2f-9604-e4bfdd9e634f">
+      <Attribute Name="Reference" AttributeDataType="xs:string" />
+      <Attribute Name="Description" AttributeDataType="xs:string" />
+      <Attribute Name="KbTagReference" AttributeDataType="xs:string" />
+    </SystemUnitClass>
   </SystemUnitClassLib>
   <SystemUnitClassLib Name="FunctionBlockLibrary">
     <SystemUnitClass Name="NorsokFunctionBlockClass">
