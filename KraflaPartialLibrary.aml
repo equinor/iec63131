@@ -1,0 +1,193 @@
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="KraflaPartialLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+  <AdditionalInformation DocumentVersions="Recommendations">
+    <Document DocumentIdentifier="KraflaAmlLibrary" Version="0.0.1" />
+  </AdditionalInformation>
+  <InterfaceClassLib Name="InterfaceClassLibrary">
+    <InterfaceClass Name="ContextHidingFlowClass">
+      <Attribute Name="Direction" AttributeDataType="xs:string">
+        <Value />
+        <Constraint Name="LegalValues">
+          <NominalScaledType>
+            <RequiredValue>In</RequiredValue>
+            <RequiredValue>InOut</RequiredValue>
+            <RequiredValue>Out</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <InterfaceClass Name="ContextHidingFlowIn" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass">
+        <Attribute Name="Direction" AttributeDataType="xs:string">
+          <Value>In</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </InterfaceClass>
+      <InterfaceClass Name="ContextHidingFlowOut" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass">
+        <Attribute Name="Direction" AttributeDataType="xs:string">
+          <Value>Out</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>Out</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </InterfaceClass>
+    </InterfaceClass>
+  </InterfaceClassLib>
+  <SystemUnitClassLib Name="StructureClassLibrary">
+    <SystemUnitClass Name="ContextHidingStructure" ID="f3fd310e-755d-40e0-91a3-bc09e2492b11">
+      <Description>Structure for Context and Hiding</Description>
+      <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="DocumentClassLibrary">
+    <SystemUnitClass Name="ContextHiding" ID="6c71de7c-daad-4a4b-9a30-aa86d48049a8">
+      <Description>Context and Hiding document</Description>
+    </SystemUnitClass>
+    <SystemUnitClass Name="ShutdownHierarchy" ID="19c83e4c-a700-4683-baed-49488b5caf5d">
+      <Description>Shutdown Hierarchy</Description>
+      <Attribute Name="DrawingSize" AttributeDataType="xs:string">
+        <Description>Drawing size, restricted to A1 ref ISO 5457</Description>
+        <DefaultValue>A1</DefaultValue>
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>A1</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="Orientation" AttributeDataType="xs:string">
+        <Description>Restricted to Landscape</Description>
+        <DefaultValue>Landscape</DefaultValue>
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>Landscape</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="CoordinateSystem" AttributeDataType="xs:string">
+        <Description>https://en.wikipedia.org/wiki/Cartesian_coordinate_system</Description>
+        <DefaultValue />
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>right-handed</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="DrawingOrigin" AttributeDataType="xs:string">
+        <Description />
+        <DefaultValue />
+        <Value />
+        <Constraint Name="Requirement">
+          <NominalScaledType>
+            <RequiredValue>Lower left corner</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="Scale" AttributeDataType="xs:string">
+        <Description />
+        <DefaultValue />
+        <Value />
+      </Attribute>
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="ContextHidingElementLibrary">
+    <Version>0</Version>
+    <SystemUnitClass Name="Transition" ID="1e580c24-ffc9-4399-b5c7-b226dcfe385b">
+      <ExternalInterface Name="X" ID="eed213ac-7c0f-40b3-b254-1436099246d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/X">
+        <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+          <Description>Type of signal communcication</Description>
+          <DefaultValue />
+          <Value />
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>Signal Interface</RequiredValue>
+              <RequiredValue>Bus Interface</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+        <Attribute Name="Direction" AttributeDataType="xs:string">
+          <Description />
+          <DefaultValue />
+          <Value>In</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+        <Attribute Name="SignalClass" AttributeDataType="xs:string">
+          <Description />
+          <DefaultValue />
+          <Value>Binary</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>Binary</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </ExternalInterface>
+      <ExternalInterface Name="FlowIn" ID="596fc621-5370-4e70-adc7-b0c70b41b3a5" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowIn">
+        <Attribute Name="Direction" AttributeDataType="xs:string">
+          <Value>In</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </ExternalInterface>
+      <ExternalInterface Name="FlowOut" ID="3a050005-6825-4c98-b57d-40d9893802c8" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowOut">
+        <Attribute Name="Direction" AttributeDataType="xs:string">
+          <Value>Out</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>Out</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </ExternalInterface>
+    </SystemUnitClass>
+    <SystemUnitClass Name="Context" ID="fef18617-1f55-4f40-95f3-ba2eb8b81cce">
+      <Attribute Name="Description" AttributeDataType="xs:string" />
+      <Attribute Name="NoteRef" AttributeDataType="xs:string">
+        <Description>Reference to Drawing Note object GUID</Description>
+        <DefaultValue />
+        <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="TimeDelayOff" AttributeDataType="xs:duration" />
+      <Attribute Name="AlarmsToHide" AttributeDataType="">
+        <Attribute Name="AlarmToHide1" AttributeDataType="" />
+      </Attribute>
+      <ExternalInterface Name="FlowIn" ID="a005ed67-242f-4538-aaf5-dfcd6494155e" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowIn">
+        <Attribute Name="Direction" AttributeDataType="xs:string">
+          <Value>In</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </ExternalInterface>
+      <ExternalInterface Name="FlowOut" ID="6d38bd5e-6343-4def-998d-3a14b2cbff03" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowOut">
+        <Attribute Name="Direction" AttributeDataType="xs:string">
+          <Value>Out</Value>
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>Out</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+      </ExternalInterface>
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+</CAEXFile>
