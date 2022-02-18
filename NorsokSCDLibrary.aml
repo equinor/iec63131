@@ -1,9 +1,9 @@
-<CAEXFile FileName="NorsokSCDLibrary.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <AdditionalInformation AutomationMLVersion="2.0" />
+<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="NorsokSCDLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.10 DRAFT" />
+    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.10" />
   </AdditionalInformation>
+  <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
       <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -1185,6 +1185,12 @@
       </Attribute>
     </SystemUnitClass>
     <SystemUnitClass Name="RevisionTriangle" />
+    <SystemUnitClass Name="SequenceReferenceLegend" ID="061e4c3b-ba55-4b2f-9604-e4bfdd9e634f">
+      <Attribute Name="Reference" AttributeDataType="xs:string" />
+      <Attribute Name="Description" AttributeDataType="xs:string" />
+      <Attribute Name="KbTagReference" AttributeDataType="xs:string" />
+      <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
+    </SystemUnitClass>
   </SystemUnitClassLib>
   <SystemUnitClassLib Name="FunctionBlockLibrary">
     <SystemUnitClass Name="NorsokFunctionBlockClass">
@@ -1240,18 +1246,23 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <Attribute Name="Typical" AttributeDataType="xs:string" />
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="CA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Continuous control by means analogue control action</Description>
-        <Attribute Name="DisplayRangeMin" AttributeDataType="xs:decimal" />
-        <Attribute Name="DisplayRangeMax" AttributeDataType="xs:decimal" />
-        <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" />
-        <Attribute Name="ControlDirection" AttributeDataType="xs:string">
+        <Attribute Name="DisplayRangeMin" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMax" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="ControlDirection" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Direct</RequiredValue>
@@ -1259,8 +1270,8 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="FaultAction" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="FaultAction" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Freeze</RequiredValue>
@@ -1268,28 +1279,28 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-        <Attribute Name="LimitConfirmedStateClosed" AttributeDataType="xs:decimal" />
-        <Attribute Name="LimitConfirmedStateOpened" AttributeDataType="xs:decimal" />
-        <Attribute Name="MinSetpointRange" AttributeDataType="xs:decimal" />
-        <Attribute Name="MaxSetpointRange" AttributeDataType="xs:decimal" />
-        <Attribute Name="MinRangeOutput" AttributeDataType="xs:decimal" />
-        <Attribute Name="MaxRangeOutput" AttributeDataType="xs:decimal" />
-        <Attribute Name="MinOperatingRange" AttributeDataType="xs:decimal" />
-        <Attribute Name="MaxOperatingRange" AttributeDataType="xs:decimal" />
-        <Attribute Name="LimitationByOperatingRangeInManualMode" AttributeDataType="xs:boolean" />
-        <Attribute Name="ExtP" AttributeDataType="xs:decimal" />
-        <Attribute Name="ExtI" AttributeDataType="xs:decimal" />
-        <Attribute Name="ExtD" AttributeDataType="xs:decimal" />
-        <Attribute Name="EnableExtPidParameters" AttributeDataType="xs:boolean" />
-        <Attribute Name="P" AttributeDataType="xs:decimal" />
-        <Attribute Name="I" AttributeDataType="xs:decimal" />
-        <Attribute Name="D" AttributeDataType="xs:decimal" />
-        <Attribute Name="KFF" AttributeDataType="xs:decimal" />
-        <Attribute Name="RampSetpoint" AttributeDataType="xs:decimal" />
-        <Attribute Name="RampOutput" AttributeDataType="xs:decimal" />
-        <Attribute Name="RestartOptions" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="SubstituteValue" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="LimitConfirmedStateClosed" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="LimitConfirmedStateOpened" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MinSetpointRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MaxSetpointRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MinRangeOutput" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MaxRangeOutput" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MinOperatingRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MaxOperatingRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="LimitationByOperatingRangeInManualMode" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+        <Attribute Name="ExtP" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="ExtI" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="ExtD" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="EnableExtPidParameters" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+        <Attribute Name="P" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="I" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="D" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="KFF" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="RampSetpoint" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="RampOutput" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="RestartOptions" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>ManualAndSubstituteValue</RequiredValue>
@@ -1297,15 +1308,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="FailSafePosition" AttributeDataType="xs:string">
-          <Constraint Name="LegalValues">
-            <NominalScaledType>
-              <RequiredValue>High</RequiredValue>
-              <RequiredValue>Low</RequiredValue>
-            </NominalScaledType>
-          </Constraint>
-        </Attribute>
-        <Attribute Name="InputOutsideRange" AttributeDataType="xs:string">
+        <Attribute Name="InputOutsideRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>FunctionDisabled</RequiredValue>
@@ -1313,9 +1316,9 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="TravelTimeClose" AttributeDataType="xs:duration" />
-        <Attribute Name="TravelTimeOpen" AttributeDataType="xs:duration" />
-        <Attribute Name="FeedbackConfiguration" AttributeDataType="xs:string">
+        <Attribute Name="TravelTimeClose" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="TravelTimeOpen" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="FeedbackConfiguration" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoFeedback</RequiredValue>
@@ -2556,10 +2559,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WL" ID="ccc7a8f5-a591-0b40-8a9e-accd11013bdb">
           <Description>Warning alarm L</Description>
@@ -2615,10 +2618,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WV" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WV" ID="5d9df37b-810c-7e43-91bd-31fe7e81110e">
           <Description>Deviation alarm (warning)</Description>
@@ -2674,10 +2677,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="6419e2e5-c6f3-5e4a-9d96-949928d12c24">
           <Description>Normal function input</Description>
@@ -3257,8 +3260,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YR" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YR" ID="ffdc3b78-653f-0547-8d69-c4dc02307743">
           <Description>Reference setpoint value</Description>
@@ -3373,8 +3376,8 @@
       </SystemUnitClass>
       <SystemUnitClass Name="CS" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Continuous control by means step control action</Description>
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="FaultAction" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="FaultAction" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Freeze</RequiredValue>
@@ -3382,9 +3385,9 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="LimitConfirmedStateClosed" AttributeDataType="xs:decimal" />
-        <Attribute Name="SteadyOutput" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="LimitConfirmedStateClosed" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="SteadyOutput" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>PulseTrain</RequiredValue>
@@ -3392,8 +3395,8 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="PulsesFullRange" AttributeDataType="xs:int" />
-        <Attribute Name="BclFunctionSelection" AttributeDataType="xs:string">
+        <Attribute Name="PulsesFullRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="BclFunctionSelection" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>XG</RequiredValue>
@@ -4321,10 +4324,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="XF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/XF" ID="3025f084-afb2-4643-a1f6-a10263835a5d">
           <Description>External fault</Description>
@@ -4648,8 +4651,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YG" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YG" ID="97664257-08aa-0a4e-90f0-ced9f87bb8f1">
           <Description>Output valve position</Description>
@@ -4760,8 +4763,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="LengthOnPulse" AttributeDataType="xs:duration" />
-          <Attribute Name="TotalLengthPulse" AttributeDataType="xs:duration" />
+          <Attribute Name="LengthOnPulse" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          <Attribute Name="TotalLengthPulse" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YL" ID="c0ba8f2b-7fdc-e94a-93ab-8992e2d10570">
           <Description>Normal function output low</Description>
@@ -4817,15 +4820,15 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="LengthOnPulse" AttributeDataType="xs:duration" />
-          <Attribute Name="TotalLengthPulse" AttributeDataType="xs:duration" />
+          <Attribute Name="LengthOnPulse" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          <Attribute Name="TotalLengthPulse" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="HA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Hand entering of an analogue value</Description>
-        <Attribute Name="DisplayRangeMin" AttributeDataType="xs:decimal" />
-        <Attribute Name="DisplayRangeMax" AttributeDataType="xs:decimal" />
-        <Attribute Name="RampTimeExternalValue" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMin" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMax" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="RampTimeExternalValue" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
         <ExternalInterface Name="BA" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BA" ID="a7207e9b-96f3-a34a-aa30-65703cafc83b">
           <Description>Status auto/man mode</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -5651,14 +5654,14 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Latched" AttributeDataType="xs:boolean" />
-          <Attribute Name="Pulsed" AttributeDataType="xs:boolean" />
-          <Attribute Name="PulseTime" AttributeDataType="xs:duration" />
+          <Attribute Name="Latched" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+          <Attribute Name="Pulsed" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+          <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="KB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Sequence (K) control by means of collecting binary statuses</Description>
-        <Attribute Name="OperationModeOptions" AttributeDataType="xs:string">
+        <Attribute Name="OperationModeOptions" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegealValues">
             <NominalScaledType>
               <RequiredValue>ManualAuto</RequiredValue>
@@ -6519,16 +6522,16 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="LB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Latching of Binary signal, ie PSD level block</Description>
-        <Attribute Name="FaultAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="FaultAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="FaultAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="FaultAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         <ExternalInterface Name="RX" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/R/RX" ID="a23b536b-c56e-d043-9eff-cae8eda5e9fd">
           <Description>Reset latched output</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -6784,7 +6787,7 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Latched" AttributeDataType="xs:boolean" />
+          <Attribute Name="Latched" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
         </ExternalInterface>
         <ExternalInterface Name="YX" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YX" ID="6a9f184f-5b5c-894f-9066-5cb9bb016333">
           <Description>External shutdown output</Description>
@@ -6844,10 +6847,10 @@
       </SystemUnitClass>
       <SystemUnitClass Name="MA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Monitoring of analogue process value</Description>
-        <Attribute Name="DisplayRangeMin" AttributeDataType="xs:decimal" />
-        <Attribute Name="DisplayRangeMax" AttributeDataType="xs:decimal" />
-        <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-        <Attribute Name="DeadBand" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMin" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMax" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+        <Attribute Name="DeadBand" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
         <ExternalInterface Name="AHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/A/AHH" ID="86c6d32a-8cd2-de4c-8313-ecabf99e770f">
           <Description>Action alarm HH</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -6902,10 +6905,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="ALL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/A/ALL" ID="e8cb86fd-3904-ca49-a47f-f4a1ec33d6cc">
           <Description>Action alarm LL</Description>
@@ -6961,10 +6964,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BB" ID="e744ddcc-1c1f-9447-a5e3-035296451f43">
           <Description>Status blocked</Description>
@@ -7350,9 +7353,9 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BXHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BXHH" ID="7cda4fbc-f63c-c84c-9edf-69255ca10f72">
           <Description>Status event HH</Description>
@@ -7408,9 +7411,9 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BXL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BXL" ID="1bb86249-3c6a-ea44-8f48-032482579c72">
           <Description>Status event L</Description>
@@ -7466,9 +7469,9 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BXLL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BXLL" ID="830973f8-c16e-e442-8550-c59f0401dc96">
           <Description>Status event LL</Description>
@@ -7524,9 +7527,9 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="FBHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/F/FBHH" ID="3a54d048-54b3-eb4e-ac3e-956d0a307a10">
           <Description>Force blocking alarm HH</Description>
@@ -7984,10 +7987,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WL" ID="4dc440c5-958e-7e41-8de2-5ff66af86dad">
           <Description>Warning alarm - WL</Description>
@@ -8043,10 +8046,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="f562d27b-2c1e-2c44-bd99-8b064b3c65ab">
           <Description>Normal function input</Description>
@@ -8291,14 +8294,14 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="MAS" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Monitoring of analogue process value and serial communicated alarm limits</Description>
-        <Attribute Name="DisplayRangeMin" AttributeDataType="xs:decimal" />
-        <Attribute Name="DisplayRangeMax" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMin" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMax" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
         <ExternalInterface Name="AHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/A/AHH" ID="7b54ceb8-7601-c148-8f5d-fab5e3a4a74a">
           <Description>Action alarm HH</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -8353,8 +8356,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="ALL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/A/ALL" ID="7da83e4b-c698-7744-8d46-00f70ff53bc1">
           <Description>Action alarm LL</Description>
@@ -8410,8 +8413,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BU" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BU" ID="3b4c83d4-cc36-644a-958c-8820477719cd">
           <Description>Status suppressed</Description>
@@ -8589,8 +8592,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="WL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/W/WL" ID="e37d40d8-cad5-8b43-a716-587a006b96e8">
           <Description>Warning alarm - WL</Description>
@@ -8646,8 +8649,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="c70083b1-bb25-774c-a217-7af74bb8fb4f">
           <Description>Normal function input</Description>
@@ -9495,8 +9498,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="MB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
@@ -9555,8 +9558,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BB" ID="2bc001b6-0fdd-b64b-8ca8-260e5f9ef326">
           <Description>Status blocked</Description>
@@ -9978,8 +9981,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/X" ID="fb9e25aa-adfa-7646-9604-613005be9979">
           <Description>External function input with optional Invert</Description>
@@ -10170,7 +10173,7 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Latched" AttributeDataType="xs:boolean" />
+          <Attribute Name="Latched" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
         </ExternalInterface>
         <ExternalInterface Name="YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YF" ID="df2e0e45-957a-104b-b883-6169deb90e00">
           <Description>Function failed</Description>
@@ -10226,16 +10229,16 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="OA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Output of analogue signal</Description>
-        <Attribute Name="DisplayRangeMin" AttributeDataType="xs:decimal" />
-        <Attribute Name="DisplayRangeMax" AttributeDataType="xs:decimal" />
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="FaultAction" AttributeDataType="xs:string">
+        <Attribute Name="DisplayRangeMin" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="DisplayRangeMax" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="FaultAction" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Freeze</RequiredValue>
@@ -10243,15 +10246,15 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="LimitConfirmedStateClosed" AttributeDataType="xs:decimal" />
-        <Attribute Name="LimitConfirmedStateOpened" AttributeDataType="xs:decimal" />
-        <Attribute Name="MinRangeOutput" AttributeDataType="xs:decimal" />
-        <Attribute Name="MaxRangeOutput" AttributeDataType="xs:decimal" />
-        <Attribute Name="MinOperatingRange" AttributeDataType="xs:decimal" />
-        <Attribute Name="MaxOperatingRange" AttributeDataType="xs:decimal" />
-        <Attribute Name="LimitationByOperatingRangeInManualMode" AttributeDataType="xs:boolean" />
-        <Attribute Name="RestartOptions" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="LimitConfirmedStateClosed" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="LimitConfirmedStateOpened" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MinRangeOutput" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MaxRangeOutput" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MinOperatingRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="MaxOperatingRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="LimitationByOperatingRangeInManualMode" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+        <Attribute Name="RestartOptions" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>ManualAndSubstituteValue</RequiredValue>
@@ -10260,10 +10263,10 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="RampTimeSwitchToAuto" AttributeDataType="xs:duration" />
-        <Attribute Name="RampTimeInAuto" AttributeDataType="xs:duration" />
-        <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-        <Attribute Name="FeedbackConfiguration" AttributeDataType="xs:string">
+        <Attribute Name="RampTimeSwitchToAuto" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="RampTimeInAuto" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="SubstituteValue" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="FeedbackConfiguration" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoFeedback</RequiredValue>
@@ -10277,7 +10280,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="InputOutsideRange" AttributeDataType="xs:string">
+        <Attribute Name="InputOutsideRange" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoReaction</RequiredValue>
@@ -10285,7 +10288,14 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ManualLimitedByOperatingRange" AttributeDataType="xs:boolean" />
+        <Attribute Name="FailSafePosition" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>High</RequiredValue>
+              <RequiredValue>Low</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
         <ExternalInterface Name="BA" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BA" ID="1c188df4-c148-6d44-9214-04a662d08d51">
           <Description>Status auto/man</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -11206,10 +11216,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="d781c08f-de46-7446-af20-8662ed18a2eb">
           <Description>Normal function input</Description>
@@ -11655,8 +11665,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YG" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YG" ID="47d14b05-f9b8-3349-9d3a-771bcaeab1cf">
           <Description>Output valve position</Description>
@@ -11716,12 +11726,12 @@
       </SystemUnitClass>
       <SystemUnitClass Name="QA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Totalizing (quantum) of analogue process value</Description>
-        <Attribute Name="DisplayRangeMax" AttributeDataType="xs:decimal" />
-        <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" />
-        <Attribute Name="CountNegative" AttributeDataType="xs:boolean" />
-        <Attribute Name="ScalingFactor" AttributeDataType="xs:decimal" />
-        <Attribute Name="InitialValue" AttributeDataType="xs:decimal" />
-        <Attribute Name="FaultAction" AttributeDataType="xs:string">
+        <Attribute Name="DisplayRangeMax" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="CountNegative" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+        <Attribute Name="ScalingFactor" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="InitialValue" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+        <Attribute Name="FaultAction" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Freeze</RequiredValue>
@@ -11783,10 +11793,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="BBHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BBHH" ID="61ff7d5c-edfe-9741-9a35-daf5c78b63fd">
           <Description>Status blocked alarm HH</Description>
@@ -12007,9 +12017,9 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="FBHH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/F/FBHH" ID="08c563b2-848b-4445-900d-03b4476af738">
           <Description>Force blocking alarm HH</Description>
@@ -12400,10 +12410,10 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Limit" AttributeDataType="xs:decimal" />
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="Hysteresis" AttributeDataType="xs:decimal" Unit="%" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AI/X" ID="5f73bcb3-9e71-9047-82ae-8dc648e2d4e1">
           <Description>Normal function input</Description>
@@ -12770,14 +12780,14 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control be means of binary signal for shutdown</Description>
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         <ExternalInterface Name="BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BB" ID="94b5ddee-89ac-4f42-8d82-3c3dc5d36b04">
           <Description>Status blocked</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -13198,8 +13208,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
-          <Attribute Name="Latched" AttributeDataType="xs:boolean" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          <Attribute Name="Latched" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
         </ExternalInterface>
         <ExternalInterface Name="YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YF" ID="f3979842-e4dc-ac43-a9ec-a6db7a9fc652">
           <Description>Function failed</Description>
@@ -13255,19 +13265,19 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SBB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Breaker control by means of binary control action of an electrical breaker</Description>
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="SafeguardingAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="SafeguardingAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="TravelTimeDisconnect" AttributeDataType="xs:duration" />
-        <Attribute Name="TravelTimeConnect" AttributeDataType="xs:duration" />
-        <Attribute Name="StartUpState" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="SafeguardingAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="SafeguardingAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="TravelTimeDisconnect" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="TravelTimeConnect" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="StartUpState" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Disconnected</RequiredValue>
@@ -13276,7 +13286,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="StartUpMode" AttributeDataType="xs:string">
+        <Attribute Name="StartUpMode" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Manual</RequiredValue>
@@ -13285,7 +13295,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="OutsideModeType" AttributeDataType="xs:string">
+        <Attribute Name="OutsideModeType" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Outside</RequiredValue>
@@ -13293,7 +13303,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ActionLossXE" AttributeDataType="xs:string">
+        <Attribute Name="ActionLossXE" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoAction</RequiredValue>
@@ -13301,7 +13311,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="FaultAction" AttributeDataType="xs:string">
+        <Attribute Name="FaultAction" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoAction</RequiredValue>
@@ -13309,7 +13319,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="OperationModeOptions" AttributeDataType="xs:string">
+        <Attribute Name="OperationModeOptions" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegealValues">
             <NominalScaledType>
               <RequiredValue>OutsideManualAuto</RequiredValue>
@@ -15276,8 +15286,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YH" ID="8417f059-f05f-bd43-810d-be95510ad8de">
           <Description>Pulsed normal function output high</Description>
@@ -15333,7 +15343,7 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="PulseTime" AttributeDataType="xs:duration" />
+          <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YL" ID="042366d6-7cdd-d043-b6a4-36221ad2e2af">
           <Description>Pulsed normal function output low</Description>
@@ -15389,14 +15399,14 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="PulseTime" AttributeDataType="xs:duration" />
+          <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SBC" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control by means of a binary action and coordination control of multiple electrical power devices</Description>
-        <Attribute Name="OverlapTime" AttributeDataType="xs:duration" />
-        <Attribute Name="CountManualSBE" AttributeDataType="xs:boolean" />
-        <Attribute Name="SelectControlInAuto" AttributeDataType="xs:string">
+        <Attribute Name="OverlapTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="CountManualSBE" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+        <Attribute Name="SelectControlInAuto" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>BinaryInputs</RequiredValue>
@@ -15404,8 +15414,8 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="PriorityListAnnunciation" AttributeDataType="xs:boolean" />
-        <Attribute Name="TakeIntoAccountStartStopDisable" AttributeDataType="xs:boolean" />
+        <Attribute Name="PriorityListAnnunciation" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+        <Attribute Name="TakeIntoAccountStartStopDisable" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
         <ExternalInterface Name="BA" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/B/BA" ID="c1022d0a-0538-5f43-9520-2620d79d90fb">
           <Description>Status auto/man</Description>
           <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -17228,8 +17238,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YQ" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AO/Y/YQ" ID="1fd43fd1-30e9-ce48-b67c-1f2e832b8e12">
           <Description>Number requested</Description>
@@ -17289,11 +17299,11 @@
       </SystemUnitClass>
       <SystemUnitClass Name="SBE" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control by means of a binary control action of electrical power devices</Description>
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="SafeguardingAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="SafeguardingAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="OutsideModeType" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="SafeguardingAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="SafeguardingAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="OutsideModeType" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Outside</RequiredValue>
@@ -17301,9 +17311,9 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="FeedbackTime" AttributeDataType="xs:duration" />
-        <Attribute Name="TimeDelayBeforeActionWhenLossOfFeedback" AttributeDataType="xs:duration" />
-        <Attribute Name="FaultAction" AttributeDataType="xs:string">
+        <Attribute Name="FeedbackTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="TimeDelayBeforeActionWhenLossOfFeedback" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="FaultAction" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoAction</RequiredValue>
@@ -17311,7 +17321,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="RestartOptions" AttributeDataType="xs:string">
+        <Attribute Name="RestartOptions" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>ManualAndStop</RequiredValue>
@@ -17319,7 +17329,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="OperationModeOptions" AttributeDataType="xs:string">
+        <Attribute Name="OperationModeOptions" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegealValues">
             <NominalScaledType>
               <RequiredValue>OutsideManualAuto</RequiredValue>
@@ -17330,7 +17340,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="StartUpState" AttributeDataType="xs:string">
+        <Attribute Name="StartUpState" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>ManualRun</RequiredValue>
@@ -17339,7 +17349,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ActionLossXE" AttributeDataType="xs:string">
+        <Attribute Name="ActionLossXE" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoAction</RequiredValue>
@@ -17347,7 +17357,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ActionLossXGH" AttributeDataType="xs:string">
+        <Attribute Name="ActionLossXGH" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoAction</RequiredValue>
@@ -19234,8 +19244,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YH" ID="38af9507-5e1a-954b-a52d-05da5710bc81">
           <Description>Pulsed normal function output high</Description>
@@ -19291,7 +19301,7 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="PulseTime" AttributeDataType="xs:duration" />
+          <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YL" ID="c88992b2-278e-9241-a654-503bca780f8b">
           <Description>Pulsed normal function output low</Description>
@@ -19347,16 +19357,16 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="PulseTime" AttributeDataType="xs:duration" />
+          <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SBV" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control by means of a binary control action of H/P power devices, eg valves</Description>
-        <Attribute Name="TravelTimeClose" AttributeDataType="xs:duration" />
-        <Attribute Name="TravelTimeOpen" AttributeDataType="xs:duration" />
-        <Attribute Name="ConflictAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="SafeguardingAlarmPriority" AttributeDataType="xs:int" />
-        <Attribute Name="FaultAction" AttributeDataType="xs:string">
+        <Attribute Name="TravelTimeClose" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="TravelTimeOpen" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="SafeguardingAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="FaultAction" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoAction</RequiredValue>
@@ -19365,9 +19375,9 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="ConflictAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="SafeguardingAlarmTimeDelay" AttributeDataType="xs:duration" />
-        <Attribute Name="OutsideModeType" AttributeDataType="xs:string">
+        <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="SafeguardingAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="OutsideModeType" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Outside</RequiredValue>
@@ -19375,7 +19385,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="StartUpMode" AttributeDataType="xs:string">
+        <Attribute Name="StartUpMode" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Manual</RequiredValue>
@@ -19384,7 +19394,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="FeedbackConfiguration" AttributeDataType="xs:string">
+        <Attribute Name="FeedbackConfiguration" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>NoFeedback</RequiredValue>
@@ -19394,7 +19404,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="OperationModeOptions" AttributeDataType="xs:string">
+        <Attribute Name="OperationModeOptions" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegealValues">
             <NominalScaledType>
               <RequiredValue>OutsideManualAuto</RequiredValue>
@@ -19405,7 +19415,7 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
-        <Attribute Name="StartUpState" AttributeDataType="xs:string">
+        <Attribute Name="StartUpState" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>Open</RequiredValue>
@@ -21114,8 +21124,8 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="Priority" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YH" ID="4c637206-c6f5-b442-bec0-8f4f8ac4361f">
           <Description>Pulsed normal function output high</Description>
@@ -21171,7 +21181,7 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="PulseTime" AttributeDataType="xs:duration" />
+          <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
         <ExternalInterface Name="YL" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y/YL" ID="9ada6c6f-d37f-6441-ab9f-f06b35ff55b2">
           <Description>Pulsed normal function output low</Description>
@@ -21227,7 +21237,7 @@
               </NominalScaledType>
             </Constraint>
           </Attribute>
-          <Attribute Name="PulseTime" AttributeDataType="xs:duration" />
+          <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
       </SystemUnitClass>
     </SystemUnitClass>
@@ -21284,9 +21294,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="KM" ID="dfc80911-0c21-4710-8860-4a5b9b9bdab9" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass" />
@@ -21346,9 +21361,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="BlackBox" RefBaseClassPath="FunctionBlockLibrary/NonStandardFunctionBlockClass">
@@ -21514,9 +21534,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="Arithmetic" RefBaseClassPath="ElementaryFunctionLibrary/NorsokElementaryFunctionClass">
@@ -25548,6 +25573,51 @@
         </SystemUnitClass>
       </SystemUnitClass>
     </SystemUnitClass>
+    <SystemUnitClass Name="VendorElementaryFunctionClass" ID="9dd97385-6013-45d2-bf94-9968144d7af8">
+      <Description>Vendor specific Elementary Functions</Description>
+      <Attribute Name="Layer" AttributeDataType="xs:string">
+        <Description>Additional layers can be added by the project</Description>
+        <DefaultValue />
+        <Value />
+        <Constraint Name="Standard">
+          <NominalScaledType>
+            <RequiredValue>11</RequiredValue>
+            <RequiredValue>12</RequiredValue>
+            <RequiredValue>13</RequiredValue>
+            <RequiredValue>14</RequiredValue>
+          </NominalScaledType>
+        </Constraint>
+      </Attribute>
+      <Attribute Name="X" Unit="mm" AttributeDataType="xs:decimal">
+        <Description>X: The abscissa of a point is the signed measure of its projection on the primary axis</Description>
+        <DefaultValue />
+        <Value />
+      </Attribute>
+      <Attribute Name="Y" Unit="mm" AttributeDataType="xs:decimal">
+        <Description>Y: The ordinate of a point is the signed measure of its projection on the secondary axis</Description>
+        <DefaultValue />
+        <Value />
+      </Attribute>
+      <Attribute Name="ControlNode" AttributeDataType="xs:string">
+        <Description>Control system node</Description>
+        <DefaultValue />
+        <Value />
+      </Attribute>
+      <Attribute Name="NoteRef" AttributeDataType="xs:string">
+        <Description>Reference to Drawing Note object GUID</Description>
+        <DefaultValue />
+        <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
+      </Attribute>
+      <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
+      <SystemUnitClass Name="KM" ID="8cfa62c5-82ca-4f84-8288-566606141bfc" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
+      <SystemUnitClass Name="ABB" ID="5a42eff8-87a2-4b70-9c99-18b57773e0ce" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
+      <SystemUnitClass Name="Siemens" ID="572f8ef4-d57c-44be-865e-20d0672f0144" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
+    </SystemUnitClass>
     <SystemUnitClass Name="NodeSplit">
       <Description>Object used to indicate change of control Node for a signal</Description>
       <Attribute Name="Layer" AttributeDataType="xs:string">
@@ -25584,9 +25654,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <ExternalInterface Name="In" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In" ID="3f5e75ab-852f-774f-a0cc-2ca4144903ca">
         <Description>Input Reference Signal</Description>
@@ -25687,13 +25762,18 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SystemUnitClass Name="ProcessOffPage" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
         <Description>Pipe/Duct/Electrical OffPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -25714,7 +25794,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="SignalOffPage" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
         <Description>Signal OffPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -25859,7 +25939,7 @@
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SequenceOffPage" ID="1f361a0e-f2d0-4deb-99f6-b99b730ad0e2" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string" />
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
         <ExternalInterface Name="SequenceFlowIn" ID="0007f5a2-0e56-4721-85f0-ad832dcc0bf5" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowIn" />
       </SystemUnitClass>
     </SystemUnitClass>
@@ -25889,13 +25969,18 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SystemUnitClass Name="ProcessOnPage" RefBaseClassPath="ReferenceClassLibrary/FromSource">
         <Description>Pipe/Duct/Electrical OnPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -26014,7 +26099,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="SignalOnPage" RefBaseClassPath="ReferenceClassLibrary/FromSource">
         <Description>Signal OnPage Reference</Description>
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string">
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
           <Description>Reference to Document Number</Description>
           <DefaultValue />
           <Value />
@@ -26061,7 +26146,7 @@
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SequenceOnPage" ID="365fafdf-0539-4128-8a7d-32af3847fc03" RefBaseClassPath="ReferenceClassLibrary/FromSource">
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string" />
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
         <ExternalInterface Name="SequenceFlowOut" ID="fb322425-292c-423d-aefc-7202ffcc92bd" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowOut" />
       </SystemUnitClass>
     </SystemUnitClass>
@@ -26105,9 +26190,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SystemUnitClass Name="Ref-MCC" RefBaseClassPath="ReferenceClassLibrary/RefElectricalEquipment">
         <Description>Reference to Motor Control Centre</Description>
@@ -26589,9 +26679,14 @@
         <Value />
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
       <SystemUnitClass Name="CabinetOrPanel" RefBaseClassPath="DeviceClassLibrary/Device">
@@ -27268,9 +27363,14 @@
                 </Constraint>
               </Attribute>
               <Attribute Name="NoteRef" AttributeDataType="xs:string">
-                <Description>Reference to Drawing Note</Description>
+                <Description>Reference to Drawing Note object GUID</Description>
                 <DefaultValue />
                 <Value />
+                <Constraint Name="aml-RegExp">
+                  <UnknownType>
+                    <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+                  </UnknownType>
+                </Constraint>
               </Attribute>
             </SystemUnitClass>
           </SystemUnitClass>
@@ -27626,9 +27726,14 @@
         </Constraint>
       </Attribute>
       <Attribute Name="NoteRef" AttributeDataType="xs:string">
-        <Description>Reference to Drawing Note</Description>
+        <Description>Reference to Drawing Note object GUID</Description>
         <DefaultValue />
         <Value />
+        <Constraint Name="aml-RegExp">
+          <UnknownType>
+            <Requirements>^[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){4}[0-9A-Fa-f]{8}$</Requirements>
+          </UnknownType>
+        </Constraint>
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
       <SystemUnitClass Name="PotentialBundle" RefBaseClassPath="DeviceClassLibrary/DeviceElement">
@@ -27673,7 +27778,61 @@
         <Attribute Name="Description" AttributeDataType="xs:string" />
         <Attribute Name="TMin" AttributeDataType="xs:duration" />
         <Attribute Name="TMax" AttributeDataType="xs:duration" />
-        <ExternalInterface Name="Y" ID="bd6eae66-43f8-47ee-b0a5-62a39f1897c4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y">
+        <ExternalInterface Name="Y1" ID="bd6eae66-43f8-47ee-b0a5-62a39f1897c4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y">
+          <Attribute Name="Active" AttributeDataType="xs:boolean">
+            <Description>Placed on SCD</Description>
+            <DefaultValue>false</DefaultValue>
+            <Value>false</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>true</RequiredValue>
+                <RequiredValue>false</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="SignalClass" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Binary</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Binary</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+            <Description>Type of signal communcication</Description>
+            <DefaultValue />
+            <Value />
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Signal Interface</RequiredValue>
+                <RequiredValue>Bus Interface</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+            <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+            <DefaultValue>false</DefaultValue>
+            <Value>false</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>false</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="Y2" ID="76b62673-2432-46d6-a81f-ab3216120e0f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/DO/Y">
           <Attribute Name="Active" AttributeDataType="xs:boolean">
             <Description>Placed on SCD</Description>
             <DefaultValue>false</DefaultValue>
@@ -27933,7 +28092,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="Condition" ID="03a23840-6ef4-4418-9cb9-32774be54fab" RefBaseClassPath="SequenceElementLibrary/StandardSequenceElementClass">
         <Attribute Name="ConnectionReferenceNumber" AttributeDataType="xs:string" />
-        <Attribute Name="DocumentReference" AttributeDataType="xs:string" />
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
         <Attribute Name="Tag" AttributeDataType="xs:string" />
         <Attribute Name="Terminal" AttributeDataType="xs:string" />
         <Attribute Name="Comparator" AttributeDataType="xs:string">
@@ -28135,4 +28294,8 @@
       </SystemUnitClass>
     </SystemUnitClass>
   </SystemUnitClassLib>
+  <AttributeTypeLib Name="AttributeTypeLib">
+    <Version>0</Version>
+    <AttributeType Name="Parameter" AttributeDataType="" />
+  </AttributeTypeLib>
 </CAEXFile>

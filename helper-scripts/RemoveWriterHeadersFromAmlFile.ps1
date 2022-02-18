@@ -1,10 +1,10 @@
 <#  
 .SYNOPSIS
-Strips WriterHeader and parent AdditionalInformation nodes from .aml file for cleaner version history
+Strips SourceDocumentInformation nodes from .aml file for cleaner version history
 .DESCRIPTION
 Purpose: Eliminate non-relevant content from IEC 63131 library version control
 .NOTES
-Made based on AML version 2.0
+Made based on AML version 2.10 (CAEX 3)
 #>
 #Requires -Version 5.1
 
@@ -27,16 +27,16 @@ Set-StrictMode -Version Latest
 $amlFileName = "..\NorsokSCDLibrary.aml"
 $amlFilePath = Resolve-Path $amlFileName
 
-[xml]$amlContent = Get-Content $amlFilePath.Path
+[xml]$amlContent = Get-Content $amlFilePath.Path -Encoding utf8
 
-$writerHeaders = Select-Xml -Xml $amlContent -XPath "/CAEXFile/AdditionalInformation/WriterHeader"
+$sourceDocumentInformationElements = Select-Xml -Xml $amlContent -XPath "/ns:CAEXFile/ns:SourceDocumentInformation" -Namespace @{ns="http://www.dke.de/CAEX"}
 
-$removedCount = 0
-foreach ($writerHeader in $writerHeaders) {
-    $amlContent.CAEXFile.RemoveChild($writerHeader.Node.ParentNode)
-    $removedCount++
+$removedSourceDocumentInformationElementsCount = 0
+foreach ($sourceDocumentInformationElement in $sourceDocumentInformationElements) {
+    $amlContent.CAEXFile.RemoveChild($sourceDocumentInformationElement.Node)
+    $removedSourceDocumentInformationElementsCount++
 }
 
 $amlContent.Save($amlFilePath.Path)
-Write-Host "Removed $removedCount WriterHeader elements, including their parent AdditionalInformation node."
+Write-Host "Removed $removedSourceDocumentInformationElementsCount SourceDocumentInformation elements."
 Start-Sleep -Seconds 2
