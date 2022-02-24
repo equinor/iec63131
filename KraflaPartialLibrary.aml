@@ -9,7 +9,6 @@
         <Constraint Name="LegalValues">
           <NominalScaledType>
             <RequiredValue>In</RequiredValue>
-            <RequiredValue>InOut</RequiredValue>
             <RequiredValue>Out</RequiredValue>
           </NominalScaledType>
         </Constraint>
