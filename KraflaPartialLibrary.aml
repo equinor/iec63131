@@ -177,7 +177,7 @@
           </Constraint>
         </Attribute>
       </ExternalInterface>
-      <ExternalInterface Name="FlowOut" ID="6d38bd5e-6343-4def-998d-3a14b2cbff03" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowOut">
+      <ExternalInterface Name="FlowOut1" ID="6d38bd5e-6343-4def-998d-3a14b2cbff03" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowOut">
         <Attribute Name="Direction" AttributeDataType="xs:string">
           <Value>Out</Value>
           <Constraint Name="LegalValues">
