@@ -1204,6 +1204,7 @@
         <Constraint Name="Requirement">
           <NominalScaledType>
             <RequiredValue>Landscape</RequiredValue>
+            <RequiredValue>Portrait</RequiredValue>
           </NominalScaledType>
         </Constraint>
       </Attribute>
