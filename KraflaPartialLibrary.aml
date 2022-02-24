@@ -167,7 +167,7 @@
       <Attribute Name="AlarmsToHide" AttributeDataType="">
         <Attribute Name="AlarmToHide1" AttributeDataType="" />
       </Attribute>
-      <ExternalInterface Name="FlowIn" ID="a005ed67-242f-4538-aaf5-dfcd6494155e" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowIn">
+      <ExternalInterface Name="FlowIn1" ID="a005ed67-242f-4538-aaf5-dfcd6494155e" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowIn">
         <Attribute Name="Direction" AttributeDataType="xs:string">
           <Value>In</Value>
           <Constraint Name="LegalValues">
