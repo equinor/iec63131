@@ -97,7 +97,6 @@
     </SystemUnitClass>
   </SystemUnitClassLib>
   <SystemUnitClassLib Name="ContextHidingElementLibrary">
-    <Version>0</Version>
     <SystemUnitClass Name="Transition" ID="1e580c24-ffc9-4399-b5c7-b226dcfe385b">
       <ExternalInterface Name="X" ID="eed213ac-7c0f-40b3-b254-1436099246d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/X">
         <Attribute Name="CommunicationType" AttributeDataType="xs:string">
