@@ -65,7 +65,7 @@ Write-Host "Added node $($importedLibraryVersionNode.OuterXml)"
 $libraryIecVersionNode.ParentNode.RemoveChild($libraryIecVersionNode)
 Write-Host "Removed node $($libraryIecVersionNode.OuterXml)"
 
-Add-Missing-Nodes $partialKraflaContent.CAEXfile $resultContent.CAEXfile $resultContent $ns
+Add-MissingNode -SourceNode $partialKraflaContent.CAEXfile -DestinationNode $resultContent.CAEXfile -DocumentToUpdate $resultContent -Namespace $ns
 
 $resultContent.Save($resultFilePath)
 
