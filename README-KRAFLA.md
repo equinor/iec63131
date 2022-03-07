@@ -54,6 +54,7 @@ Hierarchical compositions **shall** follow these rules (which cannot be encoded 
       <InternalElement ... RefBaseSystemUnitPath="DocumentClassLibrary/ShutdownHierarchy">
         <!-- same structure as SCDs basically -->
 ```
+- Context&Hiding Transition driving logic should be encoded using elementary logic (elements from ElementaryFunctionLibrary). Output from driving logic should be connected to X input of Transition. High level on X input initiates transition.
 
 ## Tools
 
