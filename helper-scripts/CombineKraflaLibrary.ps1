@@ -26,18 +26,18 @@ function Add-MissingNode {
         $Namespace
     )
 
-    foreach($node in $kraflaNode.ChildNodes) {
+    foreach($node in $SourceNode.ChildNodes) {
 
         if(($node.NodeType -eq [System.Xml.XmlNodeType]::Element) -and ($node.get_name() -ne "AdditionalInformation")) {         
             $path = "//ns:$($node.get_name())[@Name='$($node.Name)']"
             #Write-Host $path
-            $existingNode = $resultNode.SelectSingleNode($path, $namespace)
+            $existingNode = $DestinationNode.SelectSingleNode($path, $Namespace)
 
             if ($existingNode) {
-                Add-Missing-Nodes $node $existingNode $resultContent $namespace
+                Add-MissingNode -SourceNode $node -DestinationNode $existingNode $DocumentToUpdate $Namespace
             } else {
-                $importedNode = $resultContent.ImportNode($node, $true)
-                $resultNode.AppendChild($importedNode)
+                $importedNode = $DocumentToUpdate.ImportNode($node, $true)
+                $DestinationNode.AppendChild($importedNode)
                 Write-Host "Added node <$($importedNode.get_name()) Name='$($importedNode.Name)'>"
             }
         }       
