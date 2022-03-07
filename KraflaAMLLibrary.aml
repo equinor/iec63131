@@ -953,7 +953,6 @@
         <Constraint Name="LegalValues">
           <NominalScaledType>
             <RequiredValue>In</RequiredValue>
-            <RequiredValue>InOut</RequiredValue>
             <RequiredValue>Out</RequiredValue>
           </NominalScaledType>
         </Constraint>
@@ -28387,7 +28386,6 @@
     <AttributeType Name="Parameter" AttributeDataType="" />
   </AttributeTypeLib>
   <SystemUnitClassLib Name="ContextHidingElementLibrary">
-    <Version>0</Version>
     <SystemUnitClass Name="Transition" ID="1e580c24-ffc9-4399-b5c7-b226dcfe385b">
       <ExternalInterface Name="X" ID="eed213ac-7c0f-40b3-b254-1436099246d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/X">
         <Attribute Name="CommunicationType" AttributeDataType="xs:string">
@@ -28459,7 +28457,7 @@
       <Attribute Name="AlarmsToHide" AttributeDataType="">
         <Attribute Name="AlarmToHide1" AttributeDataType="" />
       </Attribute>
-      <ExternalInterface Name="FlowIn" ID="a005ed67-242f-4538-aaf5-dfcd6494155e" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowIn">
+      <ExternalInterface Name="FlowIn1" ID="a005ed67-242f-4538-aaf5-dfcd6494155e" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowIn">
         <Attribute Name="Direction" AttributeDataType="xs:string">
           <Value>In</Value>
           <Constraint Name="LegalValues">
@@ -28469,7 +28467,7 @@
           </Constraint>
         </Attribute>
       </ExternalInterface>
-      <ExternalInterface Name="FlowOut" ID="6d38bd5e-6343-4def-998d-3a14b2cbff03" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowOut">
+      <ExternalInterface Name="FlowOut1" ID="6d38bd5e-6343-4def-998d-3a14b2cbff03" RefBaseClassPath="InterfaceClassLibrary/ContextHidingFlowClass/ContextHidingFlowOut">
         <Attribute Name="Direction" AttributeDataType="xs:string">
           <Value>Out</Value>
           <Constraint Name="LegalValues">
