@@ -18,12 +18,12 @@ $iecFileName = "..\NorsokSCDLibrary.aml"
 $partialKraflaFileName = "..\KraflaPartialLibrary.aml"
 $resultFileName = "..\KraflaAMLLibrary.aml"
 
-function Add-Missing-Nodes {
+function Add-MissingNode {
     param (
-        [System.Xml.XmlNode]$kraflaNode,
-        [System.Xml.XmlNode]$resultNode,
-        [xml]$resultContent,
-        $namespace
+        [System.Xml.XmlNode]$SourceNode,
+        [System.Xml.XmlNode]$DestinationNode,
+        [xml]$DocumentToUpdate,
+        $Namespace
     )
 
     foreach($node in $kraflaNode.ChildNodes) {
