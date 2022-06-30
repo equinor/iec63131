@@ -68,7 +68,7 @@ The individual SCD.AML file is shared with to the Control System Vendor, and the
 
 The control system vendor must have some kind of configuration to convert the SCD.AML file to proper control system format. The SCD does not include all information needed to set up the complete control system, so all relevant engineering documentation should be used in the configuration to add additional information that shall be part of the control system file.
 
-![Shape1](RackMultipart20220630-1-894kmn_html_62ce87945a8b45d4.gif) Figure 1 Example of workflow
+![Shape1](https://github.com/johancj/iec63131/blob/Add-readme-for-AML-including-illustrations/illustrations/image001.png) Figure 1 Example of workflow
 
 ## 2.1Versioning of SCD and corresponding AML-file
 
@@ -129,7 +129,8 @@ Introduction to editor: [https://www.youtube.com/watch?v=YBCVM3puKZU](https://ww
 
 ## 3.1AML Editor
 
-![](RackMultipart20220630-1-894kmn_html_f4cd3cf3d452a641.png)
+![with](https://github.com/johancj/iec63131/blob/Add-readme-for-AML-including-illustrations/illustrations/image002.png)
+![](https://github.com/johancj/iec63131/blob/Add-readme-for-AML-including-illustrations/illustrations/image002.png)
 
 ## 3.2AML file
 
