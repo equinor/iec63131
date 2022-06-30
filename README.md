@@ -68,7 +68,7 @@ The individual SCD.AML file is shared with to the Control System Vendor, and the
 
 The control system vendor must have some kind of configuration to convert the SCD.AML file to proper control system format. The SCD does not include all information needed to set up the complete control system, so all relevant engineering documentation should be used in the configuration to add additional information that shall be part of the control system file.
 
-![Shape1](https://github.com/johancj/iec63131/blob/Add-readme-for-AML-including-illustrations/illustrations/image001.png) Figure 1 Example of workflow
+![Shape1](illustrations/image001.png) Figure 1 Example of workflow
 
 ## 2.1Versioning of SCD and corresponding AML-file
 
@@ -129,8 +129,7 @@ Introduction to editor: [https://www.youtube.com/watch?v=YBCVM3puKZU](https://ww
 
 ## 3.1AML Editor
 
-![with](https://github.com/johancj/iec63131/blob/Add-readme-for-AML-including-illustrations/illustrations/image002.png)
-![](https://github.com/johancj/iec63131/blob/Add-readme-for-AML-including-illustrations/illustrations/image002.png)
+![AMLEditor](illustrations/image002.png)
 
 ## 3.2AML file
 
@@ -145,8 +144,9 @@ Reference Part-1 chapter 5.5
 
 | **AML Classes** | **AML Object Instances** | **CAEX Interfaces** |
 | --- | --- | --- |
-| RoleClass InterfaceClasseSystemUnitClasse | CAEX InternalElementsCAEX ExternalInterface |
- |
+| RoleClass <br>InterfaceClasse <br>SystemUnitClasse | CAEX InternalElements <br>CAEX ExternalInterface | |
+
+
 
 ### 3.3.1Rule for Classes:
 
@@ -168,16 +168,10 @@ The UUID shall never change over the life time of the corresponding object withi
 
 Referencing instances shall use the &quot;ID&quot; and not the &quot;Name&quot;, as this can change over time.
 
-| Example of Child-Parent relation: AML Class with reference to the owner class full path. | ![](RackMultipart20220630-1-894kmn_html_30762ed88f197dfa.png) |
-| --- | --- |
-| Example of a InstanceClassLibrary object implemented as an individual in a SystemUnitClass.
-
-This individual has a requirement for use of &quot;ID&quot; and a global unique identifier GUID has been added | ![](RackMultipart20220630-1-894kmn_html_8351a5da2c93c726.png) |
-| Example of an Individual in the Instance Hierarchy.
-
- This object is an individual of a SystemUnitClass and has a requirement for &quot;ID&quot; and a &quot;Name&quot;
-
- Name = Tag number ID = unique ID in the source system. | ![](RackMultipart20220630-1-894kmn_html_7c81f0871cb7a1be.png) |
+| Example of Child-Parent relation: AML Class with reference to the owner class full path. | ![](illustrations/image004.png) |
+| :--- | :--- |
+| Example of a InstanceClassLibrary object implemented as an individual in a SystemUnitClass.<br><br>This individual has a requirement for use of &quot;ID&quot; and a global unique identifier GUID has been added | ![](illustrations/image006.png) |
+| Example of an Individual in the Instance Hierarchy.<br><br>This object is an individual of a SystemUnitClass and has a requirement for &quot;ID&quot; and a &quot;Name&quot; <br><br>Name = Tag number ID = unique ID in the source system. | ![](illustrations/image008.png) |
 
 ### 3.3.3AML Object Relations:
 
@@ -185,15 +179,15 @@ ref Part-1 chapter 5.6
 
 Parent-Child relations between AML object instances use AML &quot;_InternalElement_&quot; to represent hierarchical object structure.
 
-![](RackMultipart20220630-1-894kmn_html_e171793880f6b3c2.png)
+![](illustrations/image010.png)
 
 Parent-Child relations between AML classes use a parent-child relations:
 
-![](RackMultipart20220630-1-894kmn_html_7d992e19066f6545.png)
+![](illustrations/image012.png)
 
 Class Inheritance relation to InterfaceClass
 
-![](RackMultipart20220630-1-894kmn_html_1ae0721bd6c535fb.png)
+![](illustrations/image014.png)
 
 ### 3.3.4Class – Instance Relation:
 
@@ -213,13 +207,10 @@ CAEX InternalLinks object hold relations between two instances. It shall be stor
 
 **In the Norsok SCD &quot;InstanceHierarchy&quot; model this will be below the SCD-Document.**
 
-| Name syntax: &quot;Link-&quot; + Number References is added to &quot;RefPartnerSideA&quot; and &quot;RefPartnerSideB&quot; Reference syntax: &quot;ID&quot; of the interface Owner + &quot;:&quot; + InterfaceName
- |
+| Name syntax: &quot;Link-&quot; + Number <br>References is added to &quot;RefPartnerSideA&quot; and &quot;RefPartnerSideB&quot; <br>Reference syntax: &quot;ID&quot; of the interface Owner + &quot;:&quot; + InterfaceName | ![](illustrations/image016.png) <br>XML: <br>\&lt;InternalLink Name=&quot;Link35&quot; RefPartnerSideA=&quot;744651ea-66d9-4133-5339-323932573949:Out&quot; RefPartnerSideB=&quot;744651ea-66d9-4133-5341-303454413448:X&quot; /\&gt; <br>Navigator: <br>![](illustrations/image017.png) |
+| :--- | :--- |
 
- ![](RackMultipart20220630-1-894kmn_html_1cb83ec50173d4b6.png)XML:\&lt;InternalLink Name=&quot;Link35&quot; RefPartnerSideA=&quot;744651ea-66d9-4133-5339-323932573949:Out&quot; RefPartnerSideB=&quot;744651ea-66d9-4133-5341-303454413448:X&quot; /\&gt; Navigator: ![](RackMultipart20220630-1-894kmn_html_889fa1b7ee6aa589.png) |
-| --- | --- |
-
-![](RackMultipart20220630-1-894kmn_html_804676765410a2dd.png)
+![](illustrations/image018.png)
 
 # 4Norsok SCD AML library
 
@@ -242,11 +233,11 @@ Grouping of SystemUnitClass information.
 Level 5: Individuals of the different SystemUnitClasses
  Note: Individuals must have unique names in same folder.
 
-![](RackMultipart20220630-1-894kmn_html_2c18dec123705bbc.png)
+![](illustrations/image020.png)
 
 The AML-Writer shall add individuals of different SystemUnitClassLib to the structure objects below the DocumentIndividual.
 
-![](RackMultipart20220630-1-894kmn_html_f75b1a6e5bd9af1f.png)
+![](illustrations/image022.png)
 
 ## 4.1Individual
 
@@ -255,13 +246,13 @@ Individuals are defined with a header and properties.
 | Field - description |
  |
 | --- | --- |
-| **ID** : Unique id for the individual from the source application | ![](RackMultipart20220630-1-894kmn_html_6151aac0942ed10c.png) |
+| **ID** : Unique id for the individual from the source application | ![](illustrations/image028.png) |
 | **Name:**&quot;Tag number&quot; in the source application |
 | **Description:** Used where applicable e.g at On/OffPage references |
 | **RefBaseSystemUnitPath:** Reference to the _SystemUnitClass_ |
 | **Attributes** are defined at the AML class and populated with values at the instance level.
 
- The AML-Writer Some attributes has got constraint and limitations of what can be set. See library for details. | ![](RackMultipart20220630-1-894kmn_html_8956ac23fb8b3d0b.png) ![](RackMultipart20220630-1-894kmn_html_5af8588a6aeb148d.png) |
+ The AML-Writer Some attributes has got constraint and limitations of what can be set. See library for details. | ![](illustrations/image028.png) ![](illustrations/image028.png) |
 
 ## 4.2Position and Layer information
 
@@ -286,7 +277,7 @@ _Note_: SignalInterface (Terminal names) has not got these attributes in this ve
 
 If required by the project it is possible to add Layers defined by the standard or additional layers defined by the project.
 
-![](RackMultipart20220630-1-894kmn_html_e0762e43b96bc40a.png)
+![](illustrations/image028.png)
 
 To be able to hold this information all symbols placed on a drawing has got the following attribute
 
@@ -301,7 +292,7 @@ To be able to hold this information all symbols placed on a drawing has got the 
 
 The SCD is an individual in the instance hierarchy with some attributes defined at the SCD – class.
 
-![](RackMultipart20220630-1-894kmn_html_53415c2975137156.png) ![](RackMultipart20220630-1-894kmn_html_fbc888fb2be78f8f.png)
+![](illustrations/image028.png)
 
 Document properties:
 
@@ -329,7 +320,7 @@ Document properties:
 
 ## 4.4DocumentElementClassLibrary
 
-C ![](RackMultipart20220630-1-894kmn_html_a1de7940be8b2c5b.png) lass library of objects related to the document and general objects like Note and Revision Trinagle.
+C ![](illustrations/image028.png) lass library of objects related to the document and general objects like Note and Revision Trinagle.
 
 ### 4.4.1RevisionRecord Class
 
@@ -337,7 +328,7 @@ The document revision matrix is treated as individual record set in the AML file
 
 In the example below this will be represented by 5 individuals in the AML document
 
-![](RackMultipart20220630-1-894kmn_html_9938e9e272f2cc3a.png) ![](RackMultipart20220630-1-894kmn_html_eef499a1d77f6fdc.png)
+![](illustrations/image028.png) ![](illustrations/image028.png)
 
 Properties of RevisionRecord class
 
@@ -391,11 +382,11 @@ This can be used to find the actual note.
 
 Function Block properties
 
-![](RackMultipart20220630-1-894kmn_html_bd19fd3b45d45add.png) ![](RackMultipart20220630-1-894kmn_html_d3c1f5ed47187f21.png)
+![](illustrations/image028.png) ![](illustrations/image028.png)
 
 Control Function Integration:
 
-![](RackMultipart20220630-1-894kmn_html_cf801bfbdbb66fc3.png) ![](RackMultipart20220630-1-894kmn_html_4eebf59cb4efac2d.png)
+![](illustrations/image028.png) ![](illustrations/image028.png)
 
 | **Header** | **Value** | _ **Example at individual** _ |
 | --- | --- | --- |
@@ -436,20 +427,20 @@ The class library is defined based on the definition in the standard and one lev
 
 | Class Library | Attributes |
 | --- | --- |
-| ![](RackMultipart20220630-1-894kmn_html_2c049c295bc71a74.png) | ![](RackMultipart20220630-1-894kmn_html_7bb8883c0fe7e10e.png)
+| ![](illustrations/image028.png) | ![](illustrations/image028.png)
  |
 
 FunctionBlock Terminal Names defined in the standard are realized in AML with use of ExternalInterface
 
 Attributes belonging to these objects are defined in InterfaceClassLibrary ref. chapter 4.2.
 
-![](RackMultipart20220630-1-894kmn_html_e06ce08594ba80f4.png)
+![](illustrations/image028.png)
 
 Ref 5.1Issue: SignalInterface – Names are omitted at many symbols
 
 If no project agreement is made then these unnamed terminals at Function Block should be represented by the generic Interface Class &quot;_In_&quot; and &quot;_Out_&quot;. Ref 4.5.5NorsokSignalClass.
 
-![](RackMultipart20220630-1-894kmn_html_e49d1b6f18d882be.png)
+![](illustrations/image028.png)
 
 ## 4.6ElementaryFunctionLibrary
 
@@ -457,9 +448,9 @@ NorsokElementaryFunctionClass and InputParameterClass
 
 | Class Library | Attributes |
 | --- | --- |
-| ![](RackMultipart20220630-1-894kmn_html_b0ca820c770ed17.png) | ![](RackMultipart20220630-1-894kmn_html_3cc4f9db5efbb100.png)Additional attributes for Pulse and Timer:
+| ![](illustrations/image028.png) | ![](illustrations/image030.png)Additional attributes for Pulse and Timer:
 
- ![](RackMultipart20220630-1-894kmn_html_da6eee9b93323a1c.png) ![](RackMultipart20220630-1-894kmn_html_a0bde1f709982b1.png) |
+ ![](illustrations/image030.png) ![](illustrations/image030.png) |
 
 Some of the NorsokElementary functions can have n-number of input or output terminals.
  The AML-writer shall add additional terminals and use the same RefBaseClassPath as the existing terminals.
@@ -474,11 +465,11 @@ This class is defined as part of the ElementaryFunctionLibrary
 
 | Class Library | Attributes |
 | --- | --- |
-| ![](RackMultipart20220630-1-894kmn_html_32cc8c08ac47de98.png) | ![](RackMultipart20220630-1-894kmn_html_6e97bae18c884398.png) |
+| ![](illustrations/image030.png) | ![](illustrations/image030.png) |
 
 ## 4.7ReferenceClassLibrary
 
-![](RackMultipart20220630-1-894kmn_html_fe719a9c81c4f586.png)
+![](illustrations/image030.png)
 
 **Page reference** symbols exist as a set of symbols pointing to each other.
 
@@ -486,7 +477,7 @@ The Page reference for Signal has a Unique identifier that can be used as Name.
 
 The AML reader application should find the same Page reference Name in the DocumentReference - AML file and then the signal path can be followed at the opposite drawing.
 
-![](RackMultipart20220630-1-894kmn_html_2c04081b592461d.png) ![](RackMultipart20220630-1-894kmn_html_73c457509b6cb93c.png)
+![](illustrations/image030.png) ![](illustrations/image030.png)
 
 | **Header** | **Value** | **Example SignalOffPage** | **Example SignalOnPage** |
 | --- | --- | --- | --- |
@@ -509,11 +500,11 @@ The AML reader application should find the same Page reference Name in the Docum
 | SIS-Notation | _Control system Character_ | E |
 | Reference | _Reference to SIS-Level_ | 1.2 |
 
-![](RackMultipart20220630-1-894kmn_html_a5f56e3fdcf81363.png)
+![](illustrations/image030.png)
 
 **Sequence References** :
 
-![](RackMultipart20220630-1-894kmn_html_83d145619a66ea0b.png)
+![](illustrations/image030.png)
 
 | **Header** | **Value** | **Example** |
 | --- | --- | --- |
@@ -523,11 +514,11 @@ The AML reader application should find the same Page reference Name in the Docum
  |
 | Reference | _Reference to sequence step numbers_ | 1 |
 
-![](RackMultipart20220630-1-894kmn_html_757bf034d8a1f7f5.png)
+![](illustrations/image030.png)
 
 **Reference to Electrical Equipment Control**
 
-| ![](RackMultipart20220630-1-894kmn_html_6f27e542393dc910.png) | ![](RackMultipart20220630-1-894kmn_html_1646f21eedb08434.png) |
+| ![](illustrations/image030.png) | ![](illustrations/image030.png) |
 | --- | --- |
 | Header | Value | Example |
  |
@@ -559,25 +550,25 @@ If devices shall be represented in the InstanceHierarchy or not is not decided y
 | Name | _Name_ | A-43VD002 |
 | ID | _UUID_ | ……. |
 
-| ![](RackMultipart20220630-1-894kmn_html_852e4be6b0151be2.png) | **Default properties for all Devices**![](RackMultipart20220630-1-894kmn_html_f246309d5b7cec13.png) |
+| ![](illustrations/image030.png) | **Default properties for all Devices**![](illustrations/image030.png) |
 | --- | --- |
 
 Some devices with additional properties
 
 | **Device with additional attributes** | **Device with additional attributes** |
 | --- | --- |
-| **Damper**![](RackMultipart20220630-1-894kmn_html_d50276cc6903db5c.png) | Actuated Damper ![](RackMultipart20220630-1-894kmn_html_1b3ba68433c9c308.png) |
-| **Valve**![](RackMultipart20220630-1-894kmn_html_143b91da811197b8.png) | **Actuated Valve**![](RackMultipart20220630-1-894kmn_html_5de31010a4e36d64.png) |
+| **Damper**![](illustrations/image030.png) | Actuated Damper ![](illustrations/image030.png) |
+| **Valve**![](illustrations/image030.png) | **Actuated Valve**![](illustrations/image030.png) |
 
-![](RackMultipart20220630-1-894kmn_html_d5c97396e4f66ea8.png)
+![](illustrations/image030.png)
 
-![](RackMultipart20220630-1-894kmn_html_a81202a1b9ee7c53.png) ![](RackMultipart20220630-1-894kmn_html_575f41c72f53e64d.png)
+![](illustrations/image030.png) ![](illustrations/image030.png)
 
 ## 4.9InterfaceClassLibrary - Connections and Terminal Names
 
-![](RackMultipart20220630-1-894kmn_html_2fe75f6af6b1c615.png)At the SCD, Termination points are given by name and signal directions are given by arrow.
+![](illustrations/image030.png)At the SCD, Termination points are given by name and signal directions are given by arrow.
 
-![](RackMultipart20220630-1-894kmn_html_aabf084fc8a77f81.png) ![](RackMultipart20220630-1-894kmn_html_266c0c6ac126087a.png)
+![](illustrations/image030.png) ![](illustrations/image030.png)
 
 In AML the termination point is defined as a &quot;Signal Interface Class&quot;
 
@@ -601,9 +592,9 @@ When creating an instance of e.g. a Function Block then all interface classes fr
 
 ### 4.9.3Attribute &quot;CommunicationType&quot;
 
-This is type of information is additional information about the connection between the terminals. ![](RackMultipart20220630-1-894kmn_html_d6b7acc5a94fb893.png)
+This is type of information is additional information about the connection between the terminals. ![](illustrations/image030.png)
 
-The InternalLinks cannot have additional attributes. That is why this is added at each of the connectors. ![](RackMultipart20220630-1-894kmn_html_c6db89a7d6e6f487.png)
+The InternalLinks cannot have additional attributes. That is why this is added at each of the connectors. ![](illustrations/image030.png)
 
 ### 4.9.4Attribute &quot;InvertSignal&quot;
 
@@ -613,7 +604,7 @@ _The positive logic shall always be applied for function terminals i.e. there sh
 
 _An exception is made for input X on MB where_ _an inverter is added to make it possible to adapt to normally energised or non-energised input signal._ The Attribute InvertSignal is used for this purpose and a variant of the &quot;X&quot; is created in the library.
 
-![](RackMultipart20220630-1-894kmn_html_62a40e0edb701f5.png)
+![](illustrations/image030.png)
 
 This special class is then added to the MB function Block
 
@@ -621,7 +612,7 @@ This special class is then added to the MB function Block
 
 Invert is also used at device and reference object and is indicated with double arrows at the SCD.
 
-![](RackMultipart20220630-1-894kmn_html_e2cb7603caef11ee.png) ![](RackMultipart20220630-1-894kmn_html_c336e72f78e103cc.png) ![](RackMultipart20220630-1-894kmn_html_306a2aee4756d70d.png)
+![](illustrations/image030.png) ![](illustrations/image030.png)
 
 ### 4.9.5NorsokSignalClass
 
@@ -629,7 +620,7 @@ The library is developed with hierarchical structure with inheritance of attribu
 
 Attribute restriction are added at the different levels.
 
-![](RackMultipart20220630-1-894kmn_html_bb450a29664bf6cd.png)
+![](illustrations/image030.png)
 
 ### 4.9.6VendorSignalClass
 
@@ -653,9 +644,9 @@ This interface Class is intended to be used by SystemUnitClass: ReferenceClassLi
 
 These objects are passing signals and has limited attributes.
 
-![](RackMultipart20220630-1-894kmn_html_2bf917b226c75837.png)
+![](illustrations/image030.png)
 
-![](RackMultipart20220630-1-894kmn_html_77f04c2ea1c36bd8.png)
+![](illustrations/image030.png)
 
 ### 4.9.8DeviceConnection
 
@@ -665,11 +656,11 @@ Ref Part1 6.3: This class is intended for _&quot;Connector for interlinking prod
 
 Modelling of Process Flow (Pipes) is not done in this AML library yet.
 
-![](RackMultipart20220630-1-894kmn_html_42d2265b144b637a.png)
+![](illustrations/image030.png)
 
 Some example classes is linked to these interface classes, must be developed more it this shall be used.
 
-![](RackMultipart20220630-1-894kmn_html_961ebe988528b0f2.png)
+![](illustrations/image030.png)
 
 # 5Sequential Function Chart
 
@@ -678,5 +669,3 @@ Some example classes is linked to these interface classes, must be developed mor
 Sequential Function Chart – SFC, is defined in the Norsok standard.
 
 Section under work
-
-![Shape2](RackMultipart20220630-1-894kmn_html_8364f73a6574c228.gif)
