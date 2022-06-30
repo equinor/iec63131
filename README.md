@@ -54,7 +54,7 @@ Git LFS locking is not configured (not expecting multiple people to edit same Ex
 | SW | Software |
 | UUID | Universal Unique Identifier |
 
-# 2Workflow
+# 2 Workflow
 
 Automation ML is the selected tool and format for exchange of control system information.
 
@@ -70,7 +70,7 @@ The control system vendor must have some kind of configuration to convert the SC
 
 ![Shape1](illustrations/image001.png) Figure 1 Example of workflow
 
-## 2.1Versioning of SCD and corresponding AML-file
+## 2.1 Versioning of SCD and corresponding AML-file
 
 Following a standardized document workflow, each SCD has its own official version.
 
@@ -78,7 +78,7 @@ We recommend to deliver an AML version of the same SCD together in the document 
 
 There will exist 2 files that should hold the same information regarding logic. If there are any discrepancies between the two files, then the signed version should be used.
 
-## 2.2SCD - AML discrepancies
+## 2.2 SCD - AML discrepancies
 
 AML file that is generated from a SCD contains the SCD and individuals and signal relations.
  It also contains the corresponding class-library, and the receiving application can use this to check the design.
@@ -93,7 +93,7 @@ It is recommended to include this as a Data Quality Management - DQM check as pa
 
 **Proposal** to implement use of [checksum](https://en.wikipedia.org/wiki/Checksum) of the produced AML to check if the AML file was changed after it was produced.
 
-## 2.3SCD – AML Generator
+## 2.3 SCD – AML Generator
 
 The target for converting SCD to AML is to be able to import Function Block (FB) and Logic with signal connections into a neutral format that can be used by any control system vendor.
 
@@ -103,19 +103,19 @@ The SCD is in some cases simplified for drawing purposes. These simplifications 
 
 _ **NOTE** _: It is not a topic for the SCD-AML generator to add template information to the AML-file.
 
-## 2.4SCD.AML – Control System Generator
+## 2.4 SCD.AML – Control System Generator
 
 The control system vendor receives SCD.AML file&#39;s and must convert these into their own programming language. Each of the AML files contains the library and this must be mapped to the control system vendor&#39;s internal classes.
 
 Additional missing information in the SCD.AML file can be collected added from relevant project engineering documents.
 
-## 2.5Control System – AML Generator
+## 2.5 Control System – AML Generator
 
 To be able to check existing control system design against incoming AML file, an extraction of existing design and converting this to the standard AML design will give an option for comparing the two AML files for discrepancies.
 
 It is recommended that the vendor develop such solutions.
 
-# 3Content of a Automation ML file - AML
+# 3 Content of a Automation ML file - AML
 
 Editor and information about the tool can be found her:
 
@@ -127,18 +127,18 @@ Editor and information about the tool can be found her:
 
 Introduction to editor: [https://www.youtube.com/watch?v=YBCVM3puKZU](https://www.youtube.com/watch?v=YBCVM3puKZU)
 
-## 3.1AML Editor
+## 3.1 AML Editor
 
 ![AMLEditor](illustrations/image002.png)
 
-## 3.2AML file
+## 3.2 AML file
 
 Required Structure of AML file is defined in Part-1:
 
 - chapter 5.3 &quot;AML Document versions&quot;
 - The AML writer application should fill in the metadata ref chapter 5.4 &quot;Meta information about the AML source tool&quot;
 
-## 3.3Object Identification
+## 3.3 Object Identification
 
 Reference Part-1 chapter 5.5
 
@@ -148,7 +148,7 @@ Reference Part-1 chapter 5.5
 
 
 
-### 3.3.1Rule for Classes:
+### 3.3.1 Rule for Classes:
 
 Identification of AML Classes shall be identified by their CAEX &quot;_Name_&quot;
 
@@ -173,7 +173,7 @@ Referencing instances shall use the &quot;ID&quot; and not the &quot;Name&quot;,
 | Example of a InstanceClassLibrary object implemented as an individual in a SystemUnitClass.<br><br>This individual has a requirement for use of &quot;ID&quot; and a global unique identifier GUID has been added | ![](illustrations/image006.png) |
 | Example of an Individual in the Instance Hierarchy.<br><br>This object is an individual of a SystemUnitClass and has a requirement for &quot;ID&quot; and a &quot;Name&quot; <br><br>Name = Tag number ID = unique ID in the source system. | ![](illustrations/image008.png) |
 
-### 3.3.3AML Object Relations:
+### 3.3.3 AML Object Relations:
 
 ref Part-1 chapter 5.6
 
@@ -189,7 +189,7 @@ Class Inheritance relation to InterfaceClass
 
 ![](illustrations/image014.png)
 
-### 3.3.4Class – Instance Relation:
+### 3.3.4 Class – Instance Relation:
 
 Singleton: AML Individual created without relation to a SystemUnitClass.
 
@@ -199,7 +199,7 @@ _ **Note** _: according to ref 5.6.5 it is allowed to reduce and expand data cop
 
 _ **Recommendation for use of the NorsokLibrary** _: keep all function block interfaces as defined in the template library for easy check of changes and consistency.
 
-### 3.3.5Instance – Instance Relation:
+### 3.3.5 Instance – Instance Relation:
 
 ref Part-1 Ref 5.6.6
 
@@ -212,7 +212,7 @@ CAEX InternalLinks object hold relations between two instances. It shall be stor
 
 ![](illustrations/image018.png)
 
-# 4Norsok SCD AML library
+# 4 Norsok SCD AML library
 
 StructrueClassLibrary The SCD converted drawing(s) will be represented as an instance hierarchy in AML.
 
@@ -239,22 +239,16 @@ The AML-Writer shall add individuals of different SystemUnitClassLib to the stru
 
 ![](illustrations/image022.png)
 
-## 4.1Individual
+## 4.1 Individual
 
 Individuals are defined with a header and properties.
 
-| Field - description |
- |
+| Field - description | |
 | --- | --- |
-| **ID** : Unique id for the individual from the source application | ![](illustrations/image028.png) |
-| **Name:**&quot;Tag number&quot; in the source application |
-| **Description:** Used where applicable e.g at On/OffPage references |
-| **RefBaseSystemUnitPath:** Reference to the _SystemUnitClass_ |
-| **Attributes** are defined at the AML class and populated with values at the instance level.
+| **ID**: Unique id for the individual from the source application <br><br>**Name: **&quot;Tag number&quot; in the source application <br><br>**Description:** Used where applicable e.g at On/OffPage references <br><br> **RefBaseSystemUnitPath:** Reference to the _SystemUnitClass_ | ![](illustrations/image024.png) |
+| **Attributes** are defined at the AML class and populated with values at the instance level. <br><br> The AML-Writer Some attributes has got constraint and limitations of what can be set. See library for details. | ![](illustrations/image026.png) ![](illustrations/image028.png) |
 
- The AML-Writer Some attributes has got constraint and limitations of what can be set. See library for details. | ![](illustrations/image028.png) ![](illustrations/image028.png) |
-
-## 4.2Position and Layer information
+## 4.2 Position and Layer information
 
 If it is required to deliver symbol position:
 
@@ -270,65 +264,55 @@ _Note_: SignalInterface (Terminal names) has not got these attributes in this ve
 
 | **Attributes** | **Value** | **Unit** |
 | --- | --- | --- |
-| X |
- | mm |
-| Y |
- | mm |
+| X | | mm |
+| Y | | mm |
 
 If required by the project it is possible to add Layers defined by the standard or additional layers defined by the project.
 
-![](illustrations/image028.png)
+![](illustrations/image030.png)
 
 To be able to hold this information all symbols placed on a drawing has got the following attribute
 
-| **Attributes** | **Value** |
- |
+| **Attributes** | **Value** | |
 | --- | --- | --- |
-| Layer |
- |
- |
+| Layer | |
 
-## 4.3DocumentClassLibrary
+
+## 4.3 DocumentClassLibrary
 
 The SCD is an individual in the instance hierarchy with some attributes defined at the SCD – class.
 
-![](illustrations/image028.png)
+![](illustrations/image031.png) ![](illustrations/image033.png)
 
 Document properties:
 
-| **Header** | **Value** | **Example** |
+| Header | Value | Example |
 | --- | --- | --- |
 | Name | _Document Number_ | _C151-AS-J-XZ-43002-01_ |
 | Description | _Document Title_ | _LP flare KO drum_ |
 | Version | _Current Revision_ | _05_ |
 | ID | _UUID_ | _744651ea-66d9-4133-4b44-4e51445a3838_ |
-| Attributes | Value | **Restrictions** |
-| DrawingSize |
- | A1 |
-| Orientation |
- | Landscape |
-| CoordinateSystem |
- | Cartesian coordinate system orientation: right-handed_ **Note** _: required if reference to symbol position is used. |
-| Scale |
- | NA |
-| Area |
- |
- |
-| System |
- |
- |
 
-## 4.4DocumentElementClassLibrary
+| Attributes | Value | Restrictions |
+| --- | --- | --- |
+| DrawingSize | | A1 |
+| Orientation | | Landscape |
+| CoordinateSystem | | Cartesian coordinate system orientation: right-handed_ **Note** _: required if reference to symbol position is used. |
+| Scale | | NA |
+| Area | | |
+| System | | |
 
-C ![](illustrations/image028.png) lass library of objects related to the document and general objects like Note and Revision Trinagle.
+## 4.4 DocumentElementClassLibrary
 
-### 4.4.1RevisionRecord Class
+Class library of objects related to the document and general objects like Note and Revision Trinagle. ![](illustrations/image035.png)
+
+### 4.4.1 RevisionRecord Class
 
 The document revision matrix is treated as individual record set in the AML file. The columns in the matrix are properties at the record set.
 
 In the example below this will be represented by 5 individuals in the AML document
 
-![](illustrations/image028.png) ![](illustrations/image028.png)
+![](illustrations/image037.png) ![](illustrations/image039.png)
 
 Properties of RevisionRecord class
 
@@ -338,18 +322,13 @@ Properties of RevisionRecord class
 | Description | &quot;_Reason for issue&quot;_ | _INTER DISCIPLINE CHECK_ |
 | Version | _Revision code_ | _01_ |
 | ID | _UUID_ | _ffefb00b-987c-47a8-a47c-500c64fed20d_ |
-| Attributes | Value |
- |
-| RevisionDate |
- | _10.06.2015_ |
-| CreatedBy |
- | _PB_ |
-| CheckedBy |
- | _Abi_ |
-| ApprovedBy |
- | _REK_ |
+| Attributes | Value | |
+| RevisionDate | | _10.06.2015_ |
+| CreatedBy | | _PB_ |
+| CheckedBy | | _Abi_ |
+| ApprovedBy | | _REK_ |
 
-### 4.4.2Note properties
+### 4.4.2 Note properties
 
 Note is a text placed somewhere at the drawing.
 
@@ -357,92 +336,64 @@ The individual symbols can have a reference to the note, and has a separate attr
 
 This can be used to find the actual note.
 
-| **Header** | **Value** |
- |
+| **Header** | **Value** | |
 | --- | --- | --- |
-| Name | &quot;_Note-&quot; + Number_ |
- |
-| Description | _Note Description_ |
- |
-| Version |
- |
- |
-| ID | _UUID_ |
- |
-| Attributes | Value | Unit |
- |
-| X |
- | mm |
- |
-| Y |
- | mm |
- |
+| Name | &quot;_Note-&quot; + Number_ | |
+| Description | _Note Description_ | |
+| Version | | |
+| ID | _UUID_ | |
 
-## 4.5FunctionBlockLibrary
+| Attributes | Value | Unit |
+| --- | --- | --- |
+| X | mm | |
+| Y | mm | |
+
+## 4.5 FunctionBlockLibrary
 
 Function Block properties
 
-![](illustrations/image028.png) ![](illustrations/image028.png)
+![](illustrations/image041.png) ![](illustrations/image043.png)
 
 Control Function Integration:
 
-![](illustrations/image028.png) ![](illustrations/image028.png)
+![](illustrations/image045.png) ![](illustrations/image047.png)
 
 | **Header** | **Value** | _ **Example at individual** _ |
 | --- | --- | --- |
 | Name | _Tag number_ | _A-43LIC0135_ |
 | ID | _UUID_ | _744651ea-66d9-4133-4c37-563433325255_ |
-| RefBaseSystemUnitPath |
- | _FunctionBlockLibrary/NorsokFunctionBlockClass/CA_ |
+| RefBaseSystemUnitPath | | _FunctionBlockLibrary/NorsokFunctionBlockClass/CA_ |
+
 | Attributes | Value | Unit | _Example_ |
-| Layer |
- |
- |
- |
-| X |
- | mm |
- |
-| Y |
- | mm |
- |
-| ControlMode |
- |
- | _DIR_ |
-| ControlNode |
- |
- | _A-U01_ |
-| ControlFunctionIntegration |
- |
- | _I_ |
-| AdditionalText |
- |
- |
- |
-| NoteRef |
- |
- |
- |
+| --- | --- | --- | --- |
+| Layer | | | |
+| X | | mm | |
+| Y | | mm | |
+| ControlMode | | | _DIR_ |
+| ControlNode | | | _A-U01_ |
+| ControlFunctionIntegration | | | _I_ |
+| AdditionalText | | | |
+| NoteRef | | | |
 
 The class library is defined based on the definition in the standard and one level where vendor specific Function Blocks can be created. If the AML-writer doesn&#39;t find the correct class in none of these two then the &quot;NonStandardFunctionBlockClass&quot; can be used. It will then be possible to find and handle these individuals.
 
 | Class Library | Attributes |
 | --- | --- |
-| ![](illustrations/image028.png) | ![](illustrations/image028.png)
- |
+| ![](illustrations/image048.png) | ![](illustrations/image050.png) |
 
 FunctionBlock Terminal Names defined in the standard are realized in AML with use of ExternalInterface
 
 Attributes belonging to these objects are defined in InterfaceClassLibrary ref. chapter 4.2.
 
-![](illustrations/image028.png)
+![](illustrations/image052.png)
 
-Ref 5.1Issue: SignalInterface – Names are omitted at many symbols
+Ref 5.1 Issue: SignalInterface – Names are omitted at many symbols
 
 If no project agreement is made then these unnamed terminals at Function Block should be represented by the generic Interface Class &quot;_In_&quot; and &quot;_Out_&quot;. Ref 4.5.5NorsokSignalClass.
 
-![](illustrations/image028.png)
+![](illustrations/image054.png)
 
-## 4.6ElementaryFunctionLibrary
+## 4.6 ElementaryFunctionLibrary
 
 NorsokElementaryFunctionClass and InputParameterClass
 
@@ -459,7 +410,7 @@ Some of the NorsokElementary functions can have n-number of input or output term
 - Split and Opt: can have one input _ **X** _ and several output _ **Y1, Y2 , &quot;Yn&quot;** _.
 - Or, XOR, AND, Add and Mul: can have several input _ **X1, X2 , &quot;Xn&quot;** _ and one output _ **Y** _.
 
-### 4.6.1NodeSplit class
+### 4.6.1 NodeSplit class
 
 This class is defined as part of the ElementaryFunctionLibrary
 
@@ -467,7 +418,7 @@ This class is defined as part of the ElementaryFunctionLibrary
 | --- | --- |
 | ![](illustrations/image030.png) | ![](illustrations/image030.png) |
 
-## 4.7ReferenceClassLibrary
+## 4.7 ReferenceClassLibrary
 
 ![](illustrations/image030.png)
 
@@ -539,7 +490,7 @@ The AML reader application should find the same Page reference Name in the Docum
  |
  |
 
-## 4.8DeviceClassLibrary
+## 4.8 DeviceClassLibrary
 
 The current version of the AML library has defined some common devices used by the SCD.
 
@@ -564,7 +515,7 @@ Some devices with additional properties
 
 ![](illustrations/image030.png) ![](illustrations/image030.png)
 
-## 4.9InterfaceClassLibrary - Connections and Terminal Names
+## 4.9 InterfaceClassLibrary - Connections and Terminal Names
 
 ![](illustrations/image030.png)At the SCD, Termination points are given by name and signal directions are given by arrow.
 
@@ -574,7 +525,7 @@ In AML the termination point is defined as a &quot;Signal Interface Class&quot;
 
 The individual Function Block and Logic classes are populated with legal combination of Signal Interface Classes.
 
-### 4.9.1Consistency check
+### 4.9.1 Consistency check
 
 The restrictions in the attributes can be used for quality check of the connections between two Interface Classes.
 
@@ -582,7 +533,7 @@ It is recommended that the AML-Writer do such quality check when creating Intern
 
 The AML-Reader should also perform such check to ensure legal connection.
 
-### 4.9.2Attribute &quot;Active&quot;
+### 4.9.2 Attribute &quot;Active&quot;
 
 This is a Boolean datatype and is used to indicate that the terminal is in use at the SCD.
 
@@ -590,13 +541,13 @@ When creating an instance of e.g. a Function Block then all interface classes fr
 
 &quot;Active = true&quot; give an easy way to find terminals that the AML-Reader should evaluate.
 
-### 4.9.3Attribute &quot;CommunicationType&quot;
+### 4.9.3 Attribute &quot;CommunicationType&quot;
 
 This is type of information is additional information about the connection between the terminals. ![](illustrations/image030.png)
 
 The InternalLinks cannot have additional attributes. That is why this is added at each of the connectors. ![](illustrations/image030.png)
 
-### 4.9.4Attribute &quot;InvertSignal&quot;
+### 4.9.4 Attribute &quot;InvertSignal&quot;
 
 Ref to Norsok I-005 &quot;Positive logic&quot;:
 
@@ -614,7 +565,7 @@ Invert is also used at device and reference object and is indicated with double 
 
 ![](illustrations/image030.png) ![](illustrations/image030.png)
 
-### 4.9.5NorsokSignalClass
+### 4.9.5 NorsokSignalClass
 
 The library is developed with hierarchical structure with inheritance of attributes.
 
@@ -622,7 +573,7 @@ Attribute restriction are added at the different levels.
 
 ![](illustrations/image030.png)
 
-### 4.9.6VendorSignalClass
+### 4.9.6 VendorSignalClass
 
 This class is created to be able to populate VendorFucntionBlockClass with vendor specific signalInterfaceClasses.
 
@@ -630,7 +581,7 @@ This library should use the same structure and restrictions as in the NorsokSign
 
 This is done to be able to run standard consistency checks at attribute level.
 
-#### 4.9.6.1How to assign a InterfaceClass to a SystemUnitClass
+#### 4.9.6.1 How to assign a InterfaceClass to a SystemUnitClass
 
 1. Define the SystemUnitClass if it does not exist. E.g. a vendor specific function block
 2. Define InterfaceClass object if it don&#39;t exist
@@ -638,7 +589,7 @@ This is done to be able to run standard consistency checks at attribute level.
 4. Change name and description of the new object c)
 5. check that attribute definition for then new object is correct.
 
-### 4.9.7SignalReferenceClass
+### 4.9.7 SignalReferenceClass
 
 This interface Class is intended to be used by SystemUnitClass: ReferenceClassLibrary
 
@@ -648,7 +599,7 @@ These objects are passing signals and has limited attributes.
 
 ![](illustrations/image030.png)
 
-### 4.9.8DeviceConnection
+### 4.9.8 DeviceConnection
 
 This connection class is of AutomationMLInterfaceClassLib PPRConnector.
 
@@ -662,9 +613,9 @@ Some example classes is linked to these interface classes, must be developed mor
 
 ![](illustrations/image030.png)
 
-# 5Sequential Function Chart
+# 5 Sequential Function Chart
 
-## 5.1SFC
+## 5.1 SFC
 
 Sequential Function Chart – SFC, is defined in the Norsok standard.
 
