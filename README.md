@@ -91,7 +91,7 @@ It can be used as part of the feedback to the responsible part.
 
 It is recommended to include this as a Data Quality Management - DQM check as part of the SCD check process before the drawing becomes official.
 
-**Proposal** to implement use of [checksum](https://en.wikipedia.org/wiki/Checksum) of the produced AML to check if the AML file was changed after it was produced.
+**Proposal** to implement use of checksum of the produced AML to check if the AML file was changed after it was produced.
 
 ## 2.3 SCD – AML Generator
 
@@ -101,7 +101,7 @@ The content of what we get in the AML-file should be limited to what is displaye
 
 The SCD is in some cases simplified for drawing purposes. These simplifications should normally be documented in a SCD legend or in the SCD-development guideline for the actual project.
 
-_ **NOTE** _: It is not a topic for the SCD-AML generator to add template information to the AML-file.
+**_NOTE_**: It is not a topic for the SCD-AML generator to add template information to the AML-file.
 
 ## 2.4 SCD.AML – Control System Generator
 
@@ -122,8 +122,8 @@ Editor and information about the tool can be found her:
 [https://www.automationml.org/o.red.c/erste-schritte.html](https://www.automationml.org/o.red.c/erste-schritte.html)
 
 - Whitepaper AutomationML Part 1 - Architecture and general requirements
-- Whitepaper [Part 2 - Role class libraries](https://www.automationml.org/o.red/uploads/dateien/1485868210-AML_Whitepaper_RoleClassLibraries_V2.0.0.zip)
-- Whitepaper [Part 4 - Logic Description](https://www.automationml.org/o.red/uploads/dateien/1490340053-AML_Whitepaper_Logic_V1.5.0.zip)
+- Whitepaper Part 2 - Role class libraries
+- Whitepaper Part 4 - Logic Description
 
 Introduction to editor: [https://www.youtube.com/watch?v=YBCVM3puKZU](https://www.youtube.com/watch?v=YBCVM3puKZU)
 
@@ -273,9 +273,9 @@ If required by the project it is possible to add Layers defined by the standard 
 
 To be able to hold this information all symbols placed on a drawing has got the following attribute
 
-| **Attributes** | **Value** | |
-| --- | --- | --- |
-| Layer | |
+| **Attributes** | **Value** |
+| --- | --- | 
+| Layer |
 
 
 ## 4.3 DocumentClassLibrary
@@ -316,7 +316,7 @@ In the example below this will be represented by 5 individuals in the AML docume
 
 Properties of RevisionRecord class
 
-| **Header** | **Value** | _ **Example** _ |
+| **Header** | **Value** | **Example** |
 | --- | --- | --- |
 | Name | &quot;_Rev-&quot; + Version_ | _Rev-01_ |
 | Description | &quot;_Reason for issue&quot;_ | _INTER DISCIPLINE CHECK_ |
@@ -336,12 +336,12 @@ The individual symbols can have a reference to the note, and has a separate attr
 
 This can be used to find the actual note.
 
-| **Header** | **Value** | |
-| --- | --- | --- |
-| Name | &quot;_Note-&quot; + Number_ | |
-| Description | _Note Description_ | |
-| Version | | |
-| ID | _UUID_ | |
+| **Header** | **Value** | 
+| --- | --- |
+| Name | &quot;_Note-&quot; + Number_ |
+| Description | _Note Description_ |
+| Version | |
+| ID | _UUID_ |
 
 | Attributes | Value | Unit |
 | --- | --- | --- |
@@ -358,7 +358,7 @@ Control Function Integration:
 
 ![](illustrations/image045.png) ![](illustrations/image047.png)
 
-| **Header** | **Value** | _ **Example at individual** _ |
+| **Header** | **Value** | **Example at individual** |
 | --- | --- | --- |
 | Name | _Tag number_ | _A-43LIC0135_ |
 | ID | _UUID_ | _744651ea-66d9-4133-4c37-563433325255_ |
@@ -399,16 +399,14 @@ NorsokElementaryFunctionClass and InputParameterClass
 
 | Class Library | Attributes |
 | --- | --- |
-| ![](illustrations/image028.png) | ![](illustrations/image030.png)Additional attributes for Pulse and Timer:
-
- ![](illustrations/image030.png) ![](illustrations/image030.png) |
+| ![](illustrations/image055.png) | ![](illustrations/image056.png) <br><br>Additional attributes for Pulse and Timer: <br> ![](illustrations/image058.png) <br>![](illustrations/image060.png) |
 
 Some of the NorsokElementary functions can have n-number of input or output terminals.
  The AML-writer shall add additional terminals and use the same RefBaseClassPath as the existing terminals.
  Example:
 
-- Split and Opt: can have one input _ **X** _ and several output _ **Y1, Y2 , &quot;Yn&quot;** _.
-- Or, XOR, AND, Add and Mul: can have several input _ **X1, X2 , &quot;Xn&quot;** _ and one output _ **Y** _.
+- Split and Opt: can have one input **X** and several output **Y1**, **Y2**, &quot;**Yn**&quot;.
+- Or, XOR, AND, Add and Mul: can have several input **X1**, **X2**, &quot;**Xn**&quot; and one output **Y**.
 
 ### 4.6.1 NodeSplit class
 
@@ -416,11 +414,11 @@ This class is defined as part of the ElementaryFunctionLibrary
 
 | Class Library | Attributes |
 | --- | --- |
-| ![](illustrations/image030.png) | ![](illustrations/image030.png) |
+| ![](illustrations/image062.png) | ![](illustrations/image064.png) |
 
 ## 4.7 ReferenceClassLibrary
 
-![](illustrations/image030.png)
+![](illustrations/image065.png)
 
 **Page reference** symbols exist as a set of symbols pointing to each other.
 
@@ -428,17 +426,18 @@ The Page reference for Signal has a Unique identifier that can be used as Name.
 
 The AML reader application should find the same Page reference Name in the DocumentReference - AML file and then the signal path can be followed at the opposite drawing.
 
-![](illustrations/image030.png) ![](illustrations/image030.png)
+![](illustrations/image066.png) ![](illustrations/image068.png)
 
 | **Header** | **Value** | **Example SignalOffPage** | **Example SignalOnPage** |
 | --- | --- | --- | --- |
 | Name | _Name_ | A4309 | A4309 |
 | Description | _Description_ | A-44XSV0544.XL | Not A-43ESV0046.BCL |
 | ID | _UUID_ | ……A.. | …..B.. |
-| Attributes | Value |
- |
- |
+
+| **Attributes** | **Value** | **Example SignalOffPage** | **Example SignalOnPage** |
+| --- | --- | --- | --- |
 | DocumentReference | _DrawingNumber_ | C151-AS-J-XZ-44002-01 | C151-AS-J-XZ-43001-01 |
+
 
 **Shut-Down / SIS - References**
 
@@ -446,49 +445,43 @@ The AML reader application should find the same Page reference Name in the Docum
 | --- | --- | --- |
 | Name | _Name_ | SIS-1 |
 | ID | _UUID_ | ……. |
-| Attributes | Value |
- |
+
+| **Attributes** | **Value** | **Example** |
+| --- | --- | --- |
 | SIS-Notation | _Control system Character_ | E |
 | Reference | _Reference to SIS-Level_ | 1.2 |
 
-![](illustrations/image030.png)
+![](illustrations/image070.png)
 
 **Sequence References** :
 
-![](illustrations/image030.png)
+![](illustrations/image072.png)
 
 | **Header** | **Value** | **Example** |
 | --- | --- | --- |
 | Name | _Name_ | SEQ.03 |
 | ID | _UUID_ | ……. |
-| Attributes | Value |
- |
+
+| **Attributes** | **Value** | **Example** |
+| --- | --- | --- |
 | Reference | _Reference to sequence step numbers_ | 1 |
 
-![](illustrations/image030.png)
+![](illustrations/image073.png)
 
 **Reference to Electrical Equipment Control**
 
-| ![](illustrations/image030.png) | ![](illustrations/image030.png) |
-| --- | --- |
-| Header | Value | Example |
- |
-| Name | _Name_ | MCC-Ref-TagNumber |
- |
-| ID | _UUID_ | ……. |
- |
-| Attributes | Value |
- |
- |
-| ReferenceTagNo | Power reference Tag number |
- |
- |
-| ReferenceSystem | _Power or Succeeding function_ | MCC |
- |
-| Typical |
- |
- |
- |
+![](illustrations/image074.png) ![](illustrations/image076.png)
+
+| Header | Value | Example | 
+| --- | --- | --- |
+| Name | _Name_ | MCC-Ref-TagNumber | 
+| ID | _UUID_ | ……. | 
+
+| Attributes | Value | Example | 
+| --- | --- | --- |
+| ReferenceTagNo | Power reference Tag number | | 
+| ReferenceSystem | _Power or Succeeding function_ | MCC | 
+| Typical | | | 
 
 ## 4.8 DeviceClassLibrary
 
@@ -501,25 +494,26 @@ If devices shall be represented in the InstanceHierarchy or not is not decided y
 | Name | _Name_ | A-43VD002 |
 | ID | _UUID_ | ……. |
 
-| ![](illustrations/image030.png) | **Default properties for all Devices**![](illustrations/image030.png) |
-| --- | --- |
+| ![](illustrations/image077.png) | **Default properties for all Devices** <br> ![](illustrations/image079.png) |
+| :--- | :--- |
 
 Some devices with additional properties
 
 | **Device with additional attributes** | **Device with additional attributes** |
-| --- | --- |
-| **Damper**![](illustrations/image030.png) | Actuated Damper ![](illustrations/image030.png) |
-| **Valve**![](illustrations/image030.png) | **Actuated Valve**![](illustrations/image030.png) |
+| :--- | :--- |
+| **Damper** <br> ![](illustrations/image081.png) | Actuated Damper <br> ![](illustrations/image082.png) |
+| **Valve** <br> ![](illustrations/image083.png) | **Actuated Valve** <br> ![](illustrations/image084.png) |
 
-![](illustrations/image030.png)
+![](illustrations/image085.png)
 
-![](illustrations/image030.png) ![](illustrations/image030.png)
+![](illustrations/image087.png) ![](illustrations/image089.png)
+
 
 ## 4.9 InterfaceClassLibrary - Connections and Terminal Names
 
-![](illustrations/image030.png)At the SCD, Termination points are given by name and signal directions are given by arrow.
+![](illustrations/image092.png) <br> At the SCD, Termination points are given by name and signal directions are given by arrow.
 
-![](illustrations/image030.png) ![](illustrations/image030.png)
+![](illustrations/image093.png) ![](illustrations/image095.png)
 
 In AML the termination point is defined as a &quot;Signal Interface Class&quot;
 
@@ -543,9 +537,13 @@ When creating an instance of e.g. a Function Block then all interface classes fr
 
 ### 4.9.3 Attribute &quot;CommunicationType&quot;
 
-This is type of information is additional information about the connection between the terminals. ![](illustrations/image030.png)
+This is type of information is additional information about the connection between the terminals. 
 
-The InternalLinks cannot have additional attributes. That is why this is added at each of the connectors. ![](illustrations/image030.png)
+![](illustrations/image097.png)
+
+The InternalLinks cannot have additional attributes. That is why this is added at each of the connectors. 
+
+![](illustrations/image099.png)
 
 ### 4.9.4 Attribute &quot;InvertSignal&quot;
 
@@ -555,15 +553,15 @@ _The positive logic shall always be applied for function terminals i.e. there sh
 
 _An exception is made for input X on MB where_ _an inverter is added to make it possible to adapt to normally energised or non-energised input signal._ The Attribute InvertSignal is used for this purpose and a variant of the &quot;X&quot; is created in the library.
 
-![](illustrations/image030.png)
+![](illustrations/image101.png)
 
 This special class is then added to the MB function Block
 
-![](RackMultipart20220630-1-894kmn_html_a7d6cc98440c8cb2.png)
+![](illustrations/image103.png)
 
 Invert is also used at device and reference object and is indicated with double arrows at the SCD.
 
-![](illustrations/image030.png) ![](illustrations/image030.png)
+![](illustrations/image105.png) ![](illustrations/image107.png) ![](illustrations/image109.png)
 
 ### 4.9.5 NorsokSignalClass
 
@@ -571,7 +569,7 @@ The library is developed with hierarchical structure with inheritance of attribu
 
 Attribute restriction are added at the different levels.
 
-![](illustrations/image030.png)
+![](illustrations/image111.png)
 
 ### 4.9.6 VendorSignalClass
 
@@ -595,9 +593,9 @@ This interface Class is intended to be used by SystemUnitClass: ReferenceClassLi
 
 These objects are passing signals and has limited attributes.
 
-![](illustrations/image030.png)
+![](illustrations/image112.png)
 
-![](illustrations/image030.png)
+![](illustrations/image113.png)
 
 ### 4.9.8 DeviceConnection
 
@@ -607,11 +605,11 @@ Ref Part1 6.3: This class is intended for _&quot;Connector for interlinking prod
 
 Modelling of Process Flow (Pipes) is not done in this AML library yet.
 
-![](illustrations/image030.png)
+![](illustrations/image114.png)
 
 Some example classes is linked to these interface classes, must be developed more it this shall be used.
 
-![](illustrations/image030.png)
+![](illustrations/image116.png)
 
 # 5 Sequential Function Chart
 
