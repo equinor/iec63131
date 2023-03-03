@@ -613,7 +613,7 @@ Some example classes is linked to these interface classes, must be developed mor
 
 # 5 Sequence Flow Chart (SFC)
 
-## SFC intoduction
+## SFC introduction
 
 SFC is defined in the Norsok standard.
 
