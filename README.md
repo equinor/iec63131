@@ -611,10 +611,50 @@ Some example classes is linked to these interface classes, must be developed mor
 
 ![](illustrations/image116.png)
 
-# 5 Sequential Function Chart
+# 5 Sequence Flow Chart (SFC)
 
-## 5.1 SFC
+## SFC introduction
 
-Sequential Function Chart – SFC, is defined in the Norsok standard.
+SFC is defined in the Norsok standard.
 
 Section under work
+
+## SFC symbols
+
+
+### Sequence start and reference symbol
+![](illustrations/SFC/image001.png)
+
+### Step symbol
+![](illustrations/SFC/image003.png)
+
+### Action symbol
+![](illustrations/SFC/image005.png)
+
+### Transition symbol
+![](illustrations/SFC/image007.png)
+
+### Condition symbol
+![](illustrations/SFC/image009.png)
+
+### The END symbol
+![](illustrations/SFC/image011.png)
+
+### Parallel Synchronization Start Line
+![](illustrations/SFC/image013.png)
+
+### Parallel Synchronization End Line Connections
+![](illustrations/SFC/image015.png)
+
+### Alternative Branch Start Line Connections
+![](illustrations/SFC/image017.png)
+
+### Alternative Branch End Line Connections
+![](illustrations/SFC/image019.png)
+
+### Off Page Symbol Connections
+![](illustrations/SFC/image021.png)
+
+### On Page Symbol Connections
+![](illustrations/SFC/image023.png)
+
