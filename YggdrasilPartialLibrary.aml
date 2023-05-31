@@ -1,6 +1,6 @@
-﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="KraflaPartialLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilPartialLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="KraflaAmlLibrary" Version="0.0.1" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.1" />
   </AdditionalInformation>
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="ContextHidingFlowClass">
