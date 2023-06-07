@@ -25940,6 +25940,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="SequenceOffPage" ID="1f361a0e-f2d0-4deb-99f6-b99b730ad0e2" RefBaseClassPath="ReferenceClassLibrary/ToDestination">
         <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
+        <Attribute Name="ElementReference" AttributeDataType="xs:string" />
         <ExternalInterface Name="SequenceFlowIn" ID="0007f5a2-0e56-4721-85f0-ad832dcc0bf5" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowIn" />
       </SystemUnitClass>
     </SystemUnitClass>
@@ -26147,6 +26148,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="SequenceOnPage" ID="365fafdf-0539-4128-8a7d-32af3847fc03" RefBaseClassPath="ReferenceClassLibrary/FromSource">
         <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
+        <Attribute Name="ElementReference" AttributeDataType="xs:string" />
         <ExternalInterface Name="SequenceFlowOut" ID="fb322425-292c-423d-aefc-7202ffcc92bd" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowOut" />
       </SystemUnitClass>
     </SystemUnitClass>
