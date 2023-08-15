@@ -1,9 +1,10 @@
-<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="NorsokSCDLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
     <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.1" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2023-08-15T14:13:52.3421615+02:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
       <Attribute Name="Active" AttributeDataType="xs:boolean">
@@ -836,6 +837,9 @@
             <InterfaceClass Name="FBB" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/In/DI">
               <Description>Force Blocked (safeguarding action are blocked)</Description>
             </InterfaceClass>
+            <InterfaceClass Name="IN" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/In/DI">
+              <Description>START INPUT</Description>
+            </InterfaceClass>
           </InterfaceClass>
           <InterfaceClass Name="AI" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/In">
             <Description>Analogue Input Signal</Description>
@@ -928,6 +932,9 @@
               </Attribute>
               <Attribute Name="String0" AttributeDataType="xs:string" />
               <Attribute Name="String1" AttributeDataType="xs:string" />
+            </InterfaceClass>
+            <InterfaceClass Name="Q" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/Out/DO">
+              <Description>OUTPUT</Description>
             </InterfaceClass>
           </InterfaceClass>
           <InterfaceClass Name="AO" ID="" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/Out">
@@ -34050,7 +34057,270 @@
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="KM" ID="8cfa62c5-82ca-4f84-8288-566606141bfc" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
       <SystemUnitClass Name="ABB" ID="5a42eff8-87a2-4b70-9c99-18b57773e0ce" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
-      <SystemUnitClass Name="Siemens" ID="572f8ef4-d57c-44be-865e-20d0672f0144" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass" />
+      <SystemUnitClass Name="Siemens" ID="572f8ef4-d57c-44be-865e-20d0672f0144" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass">
+        <SystemUnitClass Name="SignalOperation" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens" ID="93772263-fb8f-44a0-9233-7c98c85da070">
+          <Description>Group of Signal Operation classes</Description>
+          <Attribute Name="Notation" AttributeDataType="xs:string">
+            <Description>Character in symbol</Description>
+            <DefaultValue />
+            <Value />
+          </Attribute>
+          <SystemUnitClass Name="F_TOF" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/SignalOperation" ID="37b53b25-9754-4d7d-a748-28d6db8c524c">
+            <Description>F_:Timer Switch Off Delay</Description>
+            <Attribute Name="Notation" AttributeDataType="xs:string">
+              <Description>Character in symbol</Description>
+              <DefaultValue />
+              <Value>T</Value>
+            </Attribute>
+            <Attribute Name="TimeDelay" Unit="s" AttributeDataType="xs:decimal">
+              <Description>Time delay</Description>
+              <DefaultValue />
+              <Value />
+            </Attribute>
+            <ExternalInterface Name="IN" ID="fc965315-b925-4033-a447-4fc5796fefbe" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/In/DI/IN">
+              <Description>START INPUT</Description>
+              <Attribute Name="Active" AttributeDataType="xs:boolean">
+                <Description>Placed on SCD</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>true</RequiredValue>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Signal Interface</RequiredValue>
+                    <RequiredValue>Bus Interface</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+                <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="Q" ID="929508a2-b5ac-43e6-ab4e-b6775fb6e525" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/Out/DO/Q">
+              <Description>OUTPUT</Description>
+              <Attribute Name="Active" AttributeDataType="xs:boolean">
+                <Description>Placed on SCD</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>true</RequiredValue>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Signal Interface</RequiredValue>
+                    <RequiredValue>Bus Interface</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+                <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>true</RequiredValue>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+          </SystemUnitClass>
+          <SystemUnitClass Name="F_TON" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/SignalOperation" ID="d9901aca-a58b-4115-9bf2-5552fd42e909">
+            <Description>F_:Timer Switch On Delay</Description>
+            <Attribute Name="Notation" AttributeDataType="xs:string">
+              <Description>Character in symbol</Description>
+              <DefaultValue />
+              <Value>T</Value>
+            </Attribute>
+            <Attribute Name="TimeDelay" Unit="s" AttributeDataType="xs:decimal">
+              <Description>Time delay</Description>
+              <DefaultValue />
+              <Value />
+            </Attribute>
+            <ExternalInterface Name="IN" ID="728b1f69-766c-4e5a-9e54-88195c70db4d" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/In/DI/IN">
+              <Description>START INPUT</Description>
+              <Attribute Name="Active" AttributeDataType="xs:boolean">
+                <Description>Placed on SCD</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>true</RequiredValue>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Signal Interface</RequiredValue>
+                    <RequiredValue>Bus Interface</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+                <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="Q" ID="628286f1-ff16-40d9-8903-18745b4c1b9b" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/Out/DO/Q">
+              <Description>OUTPUT</Description>
+              <Attribute Name="Active" AttributeDataType="xs:boolean">
+                <Description>Placed on SCD</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>true</RequiredValue>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Signal Interface</RequiredValue>
+                    <RequiredValue>Bus Interface</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="InvertSignal" AttributeDataType="xs:boolean">
+                <Description>At FB, Inverter is used as exception to adapt to 'normally engergised or non-energised' input signal</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>true</RequiredValue>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+          </SystemUnitClass>
+        </SystemUnitClass>
+      </SystemUnitClass>
     </SystemUnitClass>
     <SystemUnitClass Name="NodeSplit">
       <Description>Object used to indicate change of control Node for a signal</Description>
