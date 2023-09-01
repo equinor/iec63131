@@ -114,7 +114,7 @@
           </Attribute>
         </InterfaceClass>
         <InterfaceClass Name="CustomIn" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In">
-          <Description>Input Signal</Description>
+          <Description>Custom Input Signal</Description>
         </InterfaceClass>
       </InterfaceClass>
       <InterfaceClass Name="Out" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass">
@@ -182,7 +182,7 @@
           <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </InterfaceClass>
         <InterfaceClass Name="CustomOut" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out">
-          <Description>Analogue Output Signal</Description>
+          <Description>Custom Output Signal</Description>
         </InterfaceClass>
       </InterfaceClass>
     </InterfaceClass>
