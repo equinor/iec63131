@@ -17256,7 +17256,7 @@
             <DefaultValue />
             <Value>P</Value>
           </Attribute>
-          <Attribute Name="PulseLength" Unit="s" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PulseLength" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>Pulse length</Description>
             <DefaultValue />
             <Value />
@@ -17349,7 +17349,7 @@
             <DefaultValue />
             <Value>P</Value>
           </Attribute>
-          <Attribute Name="PulseLength" Unit="s" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PulseLength" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>Pulse length</Description>
             <DefaultValue />
             <Value />
@@ -17578,7 +17578,7 @@
             <DefaultValue />
             <Value>T</Value>
           </Attribute>
-          <Attribute Name="TimeDelay" Unit="s" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>Time delay</Description>
             <DefaultValue />
             <Value />
@@ -17671,7 +17671,7 @@
             <DefaultValue />
             <Value>T</Value>
           </Attribute>
-          <Attribute Name="TimeDelay" Unit="s" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="TimeDelay" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>Time delay</Description>
             <DefaultValue />
             <Value />
