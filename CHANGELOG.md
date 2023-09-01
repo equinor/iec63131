@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed MB.Y class from 'BinaryOut' to 'BinaryOutAnnunciated'
 - Changed Legal Values for attribute 'SBC.SelectControlInAuto'
 - Changed Legal Values for attribute 'CommunicationType' to 'GeneralSignal'/'DataCommunicationLink'
+- Changed 'FallbackValue' attribute name to 'SubstituteValue'
 
 ### Removed
 
