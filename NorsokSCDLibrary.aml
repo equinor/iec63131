@@ -34,8 +34,8 @@
         <Value />
         <Constraint Name="LegalValues">
           <NominalScaledType>
-            <RequiredValue>Signal Interface</RequiredValue>
-            <RequiredValue>Bus Interface</RequiredValue>
+            <RequiredValue>GeneralSignal</RequiredValue>
+            <RequiredValue>DataCommunicationLink</RequiredValue>
           </NominalScaledType>
         </Constraint>
       </Attribute>
@@ -215,8 +215,8 @@
         <Value />
         <Constraint Name="LegalValues">
           <NominalScaledType>
-            <RequiredValue>Signal Interface</RequiredValue>
-            <RequiredValue>Bus Interface</RequiredValue>
+            <RequiredValue>GeneralSignal</RequiredValue>
+            <RequiredValue>DataCommunicationLink</RequiredValue>
           </NominalScaledType>
         </Constraint>
       </Attribute>
@@ -786,8 +786,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -820,8 +820,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -854,8 +854,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -888,8 +888,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -922,8 +922,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -956,8 +956,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -990,8 +990,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1024,8 +1024,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1070,8 +1070,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1116,8 +1116,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1162,8 +1162,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1208,8 +1208,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1254,8 +1254,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1300,8 +1300,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1346,8 +1346,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1392,8 +1392,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1438,8 +1438,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1484,8 +1484,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1530,8 +1530,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1575,8 +1575,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1624,8 +1624,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1673,8 +1673,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1723,8 +1723,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1769,8 +1769,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1815,8 +1815,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1861,8 +1861,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1907,8 +1907,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1953,8 +1953,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -1999,8 +1999,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2033,8 +2033,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2078,8 +2078,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2114,8 +2114,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2148,8 +2148,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2213,8 +2213,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2247,8 +2247,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2281,8 +2281,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2315,8 +2315,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2349,8 +2349,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2383,8 +2383,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2429,8 +2429,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2475,8 +2475,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2521,8 +2521,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2567,8 +2567,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2613,8 +2613,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2659,8 +2659,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2705,8 +2705,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2751,8 +2751,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2796,8 +2796,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2846,8 +2846,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2892,8 +2892,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2938,8 +2938,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -2984,8 +2984,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3029,8 +3029,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3065,8 +3065,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3099,8 +3099,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3135,8 +3135,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3177,8 +3177,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3223,8 +3223,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3269,8 +3269,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3315,8 +3315,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3349,8 +3349,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3386,8 +3386,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3432,8 +3432,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3478,8 +3478,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3524,8 +3524,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3570,8 +3570,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3616,8 +3616,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3662,8 +3662,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3696,8 +3696,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3744,8 +3744,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3778,8 +3778,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3812,8 +3812,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3846,8 +3846,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3880,8 +3880,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3914,8 +3914,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3960,8 +3960,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4006,8 +4006,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4052,8 +4052,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4098,8 +4098,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4144,8 +4144,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4190,8 +4190,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4236,8 +4236,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4281,8 +4281,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4336,8 +4336,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4382,8 +4382,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4428,8 +4428,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4462,8 +4462,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4497,8 +4497,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4549,8 +4549,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4598,8 +4598,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4636,8 +4636,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4670,8 +4670,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4704,8 +4704,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4738,8 +4738,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4772,8 +4772,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4806,8 +4806,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4840,8 +4840,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4877,8 +4877,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4914,8 +4914,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -4951,8 +4951,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5000,8 +5000,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5046,8 +5046,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5092,8 +5092,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5138,8 +5138,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5184,8 +5184,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5230,8 +5230,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5275,8 +5275,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5324,8 +5324,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5374,8 +5374,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5420,8 +5420,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5454,8 +5454,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5499,8 +5499,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5551,8 +5551,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5598,8 +5598,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5634,8 +5634,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5680,8 +5680,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5725,8 +5725,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5772,8 +5772,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5820,8 +5820,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5866,8 +5866,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5912,8 +5912,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5958,8 +5958,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6004,8 +6004,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6050,8 +6050,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6096,8 +6096,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6142,8 +6142,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6188,8 +6188,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6234,8 +6234,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6280,8 +6280,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6314,8 +6314,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6359,8 +6359,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6398,8 +6398,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6432,8 +6432,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6466,8 +6466,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6512,8 +6512,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6558,8 +6558,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6604,8 +6604,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6650,8 +6650,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6707,8 +6707,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6752,8 +6752,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6809,8 +6809,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6909,8 +6909,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6943,8 +6943,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -6977,8 +6977,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7011,8 +7011,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7045,8 +7045,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7079,8 +7079,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7125,8 +7125,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7171,8 +7171,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7217,8 +7217,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7263,8 +7263,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7309,8 +7309,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7355,8 +7355,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7401,8 +7401,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7447,8 +7447,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7492,8 +7492,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7542,8 +7542,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7588,8 +7588,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7634,8 +7634,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7680,8 +7680,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7726,8 +7726,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7760,8 +7760,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7805,8 +7805,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7841,8 +7841,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7902,8 +7902,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7940,8 +7940,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -7974,8 +7974,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8008,8 +8008,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8042,8 +8042,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8091,8 +8091,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8137,8 +8137,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8183,8 +8183,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8229,8 +8229,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8275,8 +8275,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8320,8 +8320,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8370,8 +8370,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8416,8 +8416,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8462,8 +8462,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8496,8 +8496,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8530,8 +8530,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8575,8 +8575,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8616,8 +8616,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8650,8 +8650,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8684,8 +8684,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8730,8 +8730,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8776,8 +8776,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8822,8 +8822,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8856,8 +8856,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -8903,8 +8903,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9001,8 +9001,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9035,8 +9035,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9069,8 +9069,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9103,8 +9103,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9137,8 +9137,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9171,8 +9171,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9205,8 +9205,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9239,8 +9239,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9285,8 +9285,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9331,8 +9331,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9377,8 +9377,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9423,8 +9423,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9469,8 +9469,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9515,8 +9515,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9561,8 +9561,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9607,8 +9607,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9653,8 +9653,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9699,8 +9699,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9745,8 +9745,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9791,8 +9791,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9837,8 +9837,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9883,8 +9883,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9929,8 +9929,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -9975,8 +9975,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10021,8 +10021,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10067,8 +10067,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10113,8 +10113,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10159,8 +10159,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10205,8 +10205,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10239,8 +10239,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10284,8 +10284,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10320,8 +10320,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10355,8 +10355,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10405,8 +10405,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10439,8 +10439,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10473,8 +10473,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10507,8 +10507,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10553,8 +10553,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10599,8 +10599,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10645,8 +10645,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10691,8 +10691,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10737,8 +10737,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10783,8 +10783,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10829,8 +10829,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10875,8 +10875,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10921,8 +10921,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -10967,8 +10967,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11013,8 +11013,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11059,8 +11059,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11105,8 +11105,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11151,8 +11151,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11197,8 +11197,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11243,8 +11243,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11289,8 +11289,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11335,8 +11335,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11370,8 +11370,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11405,8 +11405,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11440,8 +11440,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11475,8 +11475,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11510,8 +11510,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11545,8 +11545,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11590,8 +11590,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11626,8 +11626,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11729,8 +11729,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11763,8 +11763,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11797,8 +11797,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11831,8 +11831,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11865,8 +11865,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11899,8 +11899,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11933,8 +11933,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -11967,8 +11967,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12001,8 +12001,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12047,8 +12047,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12093,8 +12093,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12139,8 +12139,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12185,8 +12185,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12231,8 +12231,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12277,8 +12277,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12323,8 +12323,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12369,8 +12369,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12415,8 +12415,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12461,8 +12461,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12507,8 +12507,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12554,8 +12554,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12600,8 +12600,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12646,8 +12646,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12692,8 +12692,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12738,8 +12738,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12784,8 +12784,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12830,8 +12830,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12876,8 +12876,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12910,8 +12910,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12955,8 +12955,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -12991,8 +12991,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13026,8 +13026,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13126,8 +13126,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13160,8 +13160,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13194,8 +13194,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13228,8 +13228,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13262,8 +13262,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13296,8 +13296,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13330,8 +13330,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13376,8 +13376,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13422,8 +13422,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13468,8 +13468,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13514,8 +13514,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13560,8 +13560,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13606,8 +13606,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13652,8 +13652,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13698,8 +13698,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13744,8 +13744,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13790,8 +13790,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13836,8 +13836,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13882,8 +13882,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13928,8 +13928,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13974,8 +13974,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14020,8 +14020,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14066,8 +14066,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14112,8 +14112,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14158,8 +14158,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14192,8 +14192,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14237,8 +14237,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14273,8 +14273,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14308,8 +14308,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14490,8 +14490,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14525,8 +14525,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -14641,8 +14641,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14687,8 +14687,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14721,8 +14721,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14775,8 +14775,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14821,8 +14821,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14855,8 +14855,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14909,8 +14909,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14955,8 +14955,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -14989,8 +14989,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15044,8 +15044,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15091,8 +15091,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15126,8 +15126,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15180,8 +15180,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15226,8 +15226,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15260,8 +15260,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15303,8 +15303,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -15375,8 +15375,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15421,8 +15421,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15455,8 +15455,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15509,8 +15509,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15555,8 +15555,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15589,8 +15589,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15643,8 +15643,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15689,8 +15689,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15723,8 +15723,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15796,8 +15796,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15842,8 +15842,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15876,8 +15876,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15930,8 +15930,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -15976,8 +15976,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16010,8 +16010,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16064,8 +16064,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16110,8 +16110,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16144,8 +16144,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16198,8 +16198,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16244,8 +16244,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16278,8 +16278,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16332,8 +16332,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16378,8 +16378,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16424,8 +16424,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16458,8 +16458,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16512,8 +16512,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16558,8 +16558,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16592,8 +16592,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16646,8 +16646,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16692,8 +16692,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16726,8 +16726,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16788,8 +16788,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16822,8 +16822,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16881,8 +16881,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16915,8 +16915,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -16974,8 +16974,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17008,8 +17008,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17074,8 +17074,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17109,8 +17109,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17144,8 +17144,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17203,8 +17203,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17237,8 +17237,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17296,8 +17296,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17330,8 +17330,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -17844,8 +17844,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -17879,8 +17879,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -17942,8 +17942,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -17977,8 +17977,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -18053,8 +18053,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -18088,8 +18088,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -18222,8 +18222,8 @@
                   <Value />
                   <Constraint Name="LegalValues">
                     <NominalScaledType>
-                      <RequiredValue>Signal Interface</RequiredValue>
-                      <RequiredValue>Bus Interface</RequiredValue>
+                      <RequiredValue>GeneralSignal</RequiredValue>
+                      <RequiredValue>DataCommunicationLink</RequiredValue>
                     </NominalScaledType>
                   </Constraint>
                 </Attribute>
@@ -18323,8 +18323,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -18436,8 +18436,8 @@
                 <Value />
                 <Constraint Name="LegalValues">
                   <NominalScaledType>
-                    <RequiredValue>Signal Interface</RequiredValue>
-                    <RequiredValue>Bus Interface</RequiredValue>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
@@ -18476,8 +18476,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -18572,8 +18572,8 @@
                 <Value />
                 <Constraint Name="LegalValues">
                   <NominalScaledType>
-                    <RequiredValue>Signal Interface</RequiredValue>
-                    <RequiredValue>Bus Interface</RequiredValue>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
@@ -18634,8 +18634,8 @@
                 <Value />
                 <Constraint Name="LegalValues">
                   <NominalScaledType>
-                    <RequiredValue>Signal Interface</RequiredValue>
-                    <RequiredValue>Bus Interface</RequiredValue>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
@@ -18756,8 +18756,8 @@
                 <Value />
                 <Constraint Name="LegalValues">
                   <NominalScaledType>
-                    <RequiredValue>Signal Interface</RequiredValue>
-                    <RequiredValue>Bus Interface</RequiredValue>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
@@ -18795,8 +18795,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -18860,8 +18860,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -18922,8 +18922,8 @@
               <Value />
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Signal Interface</RequiredValue>
-                  <RequiredValue>Bus Interface</RequiredValue>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -19075,8 +19075,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -19108,8 +19108,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -19195,8 +19195,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -19269,8 +19269,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -19322,8 +19322,8 @@
             <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
+                <RequiredValue>GeneralSignal</RequiredValue>
+                <RequiredValue>DataCommunicationLink</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
