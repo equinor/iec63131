@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added generic interface classes inherited from NorsokSignalClass/In and NorsokSignalClass/Out (e.g. 'BinaryOut')
+- 'Tag' and 'Terminal' attributes added to 'SignalToShutDownSystem' and 'SignalFromShutDownSystem' classes
 
 ### Removed
 

@@ -17652,6 +17652,12 @@
             </NominalScaledType>
           </Constraint>
         </Attribute>
+        <Attribute Name="Tag" AttributeDataType="xs:string">
+          <Description>Destination FB Tag</Description>
+        </Attribute>
+        <Attribute Name="Terminal" AttributeDataType="xs:string">
+          <Description>Destination Terminal</Description>
+        </Attribute>
         <ExternalInterface Name="In" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In" ID="532ba94d-ea74-cd42-a1d0-1b019376f08f">
           <Description>Input Reference Signal</Description>
           <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -17766,6 +17772,12 @@
               <RequiredValue>H</RequiredValue>
             </NominalScaledType>
           </Constraint>
+        </Attribute>
+        <Attribute Name="Tag" AttributeDataType="xs:string">
+          <Description>Source FB Tag</Description>
+        </Attribute>
+        <Attribute Name="Terminal" AttributeDataType="xs:string">
+          <Description>Destination Terminal</Description>
         </Attribute>
         <ExternalInterface Name="Out" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out" ID="32680a6c-d016-fa4b-9db8-da2cdfcfabec">
           <Description>Output Reference Signal</Description>
