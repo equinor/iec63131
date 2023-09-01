@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added 'Direction' attribute to interfaces of 'SequenceOffPage'/'SequenceOnPage' classes
 - Added 'SequenceIn'/'SequenceOut' interfaces to function blocks
 - Added 'FunctionDefinition' attribute to 'Opt' elementary function and black box 
+- Added Shutdown alarm parameters to LB block
 
 ### Changed
 

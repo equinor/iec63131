@@ -4424,8 +4424,10 @@
         <Description>Latching of Binary signal, ie PSD level block</Description>
         <Attribute Name="FaultAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
         <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+        <Attribute Name="ShutdownAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
         <Attribute Name="FaultAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         <Attribute Name="ConflictAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        <Attribute Name="ShutdownAlarmTimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         <ExternalInterface Name="RX" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="a23b536b-c56e-d043-9eff-cae8eda5e9fd">
           <Description>Reset latched output</Description>
           <Attribute Name="Direction" AttributeDataType="xs:string">
