@@ -19001,12 +19001,32 @@
         <Attribute Name="Description" AttributeDataType="xs:string" />
         <Attribute Name="KbTagReference" AttributeDataType="xs:string" />
         <Attribute Name="DrawingReference" AttributeDataType="xs:string" />
+        <Attribute Name="TMax" AttributeDataType="xs:duration" />
         <ExternalInterface Name="SequenceFlowOut" ID="2a6adc1e-163d-48e5-96b9-bf66b02200e9" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowOut">
           <Attribute Name="Direction" AttributeDataType="xs:string">
             <Value>Out</Value>
             <Constraint Name="LegalValues">
               <NominalScaledType>
                 <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceFlowTimeout" ID="99770507-89d1-46ff-95cb-fc31ab9a6f3e" RefBaseClassPath="InterfaceClassLibrary/NorsokSequenceFlowClass/SequenceFlowTimeout">
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="Annunciation" AttributeDataType="xs:string">
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Event</RequiredValue>
+                <RequiredValue>Warning</RequiredValue>
+                <RequiredValue>Alarm</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
