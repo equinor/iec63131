@@ -10371,7 +10371,7 @@
           <Constraint Name="LegalValues">
             <NominalScaledType>
               <RequiredValue>BinaryInputs</RequiredValue>
-              <RequiredValue>XREQ</RequiredValue>
+              <RequiredValue>XQ</RequiredValue>
             </NominalScaledType>
           </Constraint>
         </Attribute>
