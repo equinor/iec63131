@@ -2154,6 +2154,32 @@
             </Constraint>
           </Attribute>
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="e83cee66-13a6-4fae-858a-42d51a9fbf4e" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="1667baca-100f-4a8e-9342-3cb45753ade5" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="CS" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Continuous control by means step control action</Description>
@@ -3143,6 +3169,32 @@
           <Attribute Name="LengthOnPulse" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
           <Attribute Name="TotalLengthPulse" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="7948e18c-5e26-4641-8b04-1c392a8e2188" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="316c8dbd-5b26-42b3-89b3-cfd0750a4b54" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="HA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Hand entering of an analogue value</Description>
@@ -3351,6 +3403,32 @@
               <NominalScaledType>
                 <RequiredValue>GeneralSignal</RequiredValue>
                 <RequiredValue>DataCommunicationLink</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="6de72ef6-205e-4914-8426-834658be30a9" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="373e47a6-6443-45db-80a0-fa287ad17847" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -3704,6 +3782,32 @@
           <Attribute Name="Latched" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
           <Attribute Name="Pulsed" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
           <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="4a726b6f-f605-4a35-8a05-277c265c535c" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="681bca9b-5c12-46d8-a0d6-ff91b8859ba7" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="KB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
@@ -4289,6 +4393,32 @@
           <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="4f913fb2-c130-424f-b49a-93323ce3f6e8" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="3097aa4c-567c-4672-8d25-d66d92e163d1" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="LB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Latching of Binary signal, ie PSD level block</Description>
@@ -4499,6 +4629,32 @@
               <NominalScaledType>
                 <RequiredValue>GeneralSignal</RequiredValue>
                 <RequiredValue>DataCommunicationLink</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="9a5d54ae-213a-4573-9397-62da0f94ce4f" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="a6d75bd8-3fd4-434b-991e-dbe27c610a02" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -5507,6 +5663,32 @@
           <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="4c25df97-8fc4-4872-bdd6-8de4d7d82b53" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="c8135a8e-cdaa-403b-a4ae-0502a6e7016f" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="MAS" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Monitoring of analogue process value and serial communicated alarm limits</Description>
@@ -6367,6 +6549,32 @@
           <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="5498fe37-09c2-4bce-8247-34ab9c2c9d77" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="c8f85e37-01bf-40b5-a153-e61a907b3423" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="MB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Monitoring of binary process value</Description>
@@ -6816,6 +7024,32 @@
           </Attribute>
           <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="2ae9e893-c179-4b8f-bda3-6a85001b9e19" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="5c14b2e3-ac22-4c11-96d0-70028c85e3f0" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="OA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
@@ -7847,6 +8081,32 @@
             </Constraint>
           </Attribute>
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="b56e1451-0260-46a5-9ce3-01aed10aa803" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="80575af3-f427-4f4d-81f9-d3f62a2627d7" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="QA" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Totalizing (quantum) of analogue process value</Description>
@@ -8583,6 +8843,32 @@
           <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="8c181432-ba48-40f9-acff-cc9ab0e71a2f" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="2b8d5b19-d647-4586-909c-563adb39b739" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control be means of binary signal for shutdown</Description>
@@ -8910,6 +9196,32 @@
           </Attribute>
           <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="84145284-792b-430f-85c9-2a980000714b" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="5c9f477e-cde9-467a-8232-c66bce6b8cd1" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SBB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
@@ -10362,6 +10674,32 @@
           </Attribute>
           <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="a75f9eb8-ba7d-4e94-bdf9-6e16fedb73c6" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="5188ddf1-cb50-4aa5-aeed-6c2bae4d991d" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SBC" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control by means of a binary action and coordination control of multiple electrical power devices</Description>
@@ -11628,6 +11966,32 @@
               <NominalScaledType>
                 <RequiredValue>GeneralSignal</RequiredValue>
                 <RequiredValue>DataCommunicationLink</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="b7bfa880-92da-4669-9061-5685ac6ad307" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="e9dc03b9-55ea-4cb8-b72d-764297c27f3f" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
@@ -13033,6 +13397,32 @@
           </Attribute>
           <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
         </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="cd465316-8e0f-400d-b360-5c5f4eb648e5" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="6be69851-eb94-4a67-b12e-0b5ea8f7768c" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="SBV" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Switching control by means of a binary control action of H/P power devices, eg valves</Description>
@@ -14314,6 +14704,32 @@
             </Constraint>
           </Attribute>
           <Attribute Name="PulseTime" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceIn" ID="3a417a0a-0629-4ef2-ae4e-37f5237e51f0" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+          <Description>Representation of connection from Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="SequenceOut" ID="65d243af-dbca-4ff7-9f1b-541414b640e0" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+          <Description>Representation of connection to Sequence flag</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
         </ExternalInterface>
       </SystemUnitClass>
     </SystemUnitClass>
