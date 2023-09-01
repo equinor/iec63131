@@ -14865,6 +14865,7 @@
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="BlackBox" RefBaseClassPath="FunctionBlockLibrary/NonStandardFunctionBlockClass">
         <Description>Logic functions of some complexity</Description>
+        <Attribute Name="FunctionDefinition" AttributeDataType="xs:string" />
         <ExternalInterface Name="In" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In" ID="a4a6405e-ca32-544a-9600-36bae2da597d">
           <Description>Input Signal</Description>
           <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -15419,6 +15420,7 @@
             <DefaultValue />
             <Value>#</Value>
           </Attribute>
+          <Attribute Name="FunctionDefinition" AttributeDataType="xs:string" />
           <ExternalInterface Name="X1" ID="4d013027-7735-fe4e-8930-cba890a7c17c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In">
             <Description>Normal function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
