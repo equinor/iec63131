@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added 'Annunciation' atrribute to MB.Y terminal
 - Added RefAttribyteType='AttributeTypeLib/Parameter' to 'TimerR/F'->'TimeDelay' and 'PulseR/F'->'PulseLength'
 - Added 'TMax' attribute and 'SequenceFlowTimeout' interface to sequence 'Start' class
+- Added 'Direction' attribute to interfaces of 'SequenceOffPage'/'SequenceOnPage' classes
 
 ### Changed
 
