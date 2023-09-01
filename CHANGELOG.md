@@ -10,11 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added generic interface classes inherited from NorsokSignalClass/In and NorsokSignalClass/Out (e.g. 'BinaryOut')
-- 'Tag' and 'Terminal' attributes added to 'SignalToShutDownSystem' and 'SignalFromShutDownSystem' classes
+- Added 'Tag' and 'Terminal' attributes to 'SignalToShutDownSystem' and 'SignalFromShutDownSystem' classes
+- Added 'Annunciation' atrribute to MB.Y terminal
+
+### Changed
+
+- Changed MB.Y class from 'BinaryOut' to 'BinaryOutAnnunciated'
 
 ### Removed
 
 - Removed all specific interface classes inherited from NorsokSignalClass/In and NorsokSignalClass/Out (e.g. 'LSL')
+- Removed 'A' and 'W' terminals from MB
 
 ## [0.0.10] - 2022-02-14
 

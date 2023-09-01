@@ -6370,53 +6370,6 @@
       </SystemUnitClass>
       <SystemUnitClass Name="MB" RefBaseClassPath="FunctionBlockLibrary/NorsokFunctionBlockClass">
         <Description>Monitoring of binary process value</Description>
-        <ExternalInterface Name="A" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated" ID="df3c4ad7-f6a3-7f44-acd1-6f017f6af148">
-          <Description>Action alarm</Description>
-          <Attribute Name="Active" AttributeDataType="xs:boolean">
-            <Description>Placed on SCD</Description>
-            <DefaultValue>false</DefaultValue>
-            <Value>false</Value>
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>true</RequiredValue>
-                <RequiredValue>false</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="Direction" AttributeDataType="xs:string">
-            <Description />
-            <DefaultValue />
-            <Value>Out</Value>
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>Out</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="SignalClass" AttributeDataType="xs:string">
-            <Description />
-            <DefaultValue />
-            <Value>Binary</Value>
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>Binary</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-            <Description>Type of signal communcication</Description>
-            <DefaultValue />
-            <Value />
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
-        </ExternalInterface>
         <ExternalInterface Name="BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="2bc001b6-0fdd-b64b-8ca8-260e5f9ef326">
           <Description>Status blocked</Description>
           <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -6657,53 +6610,6 @@
             </Constraint>
           </Attribute>
         </ExternalInterface>
-        <ExternalInterface Name="W" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated" ID="b76b7328-dab0-f942-ad42-99067089d00a">
-          <Description>Warning alarm</Description>
-          <Attribute Name="Active" AttributeDataType="xs:boolean">
-            <Description>Placed on SCD</Description>
-            <DefaultValue>false</DefaultValue>
-            <Value>false</Value>
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>true</RequiredValue>
-                <RequiredValue>false</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="Direction" AttributeDataType="xs:string">
-            <Description />
-            <DefaultValue />
-            <Value>Out</Value>
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>Out</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="SignalClass" AttributeDataType="xs:string">
-            <Description />
-            <DefaultValue />
-            <Value>Binary</Value>
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>Binary</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-            <Description>Type of signal communcication</Description>
-            <DefaultValue />
-            <Value />
-            <Constraint Name="LegalValues">
-              <NominalScaledType>
-                <RequiredValue>Signal Interface</RequiredValue>
-                <RequiredValue>Bus Interface</RequiredValue>
-              </NominalScaledType>
-            </Constraint>
-          </Attribute>
-          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
-          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
-        </ExternalInterface>
         <ExternalInterface Name="X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryInInvertable" ID="fb9e25aa-adfa-7646-9604-613005be9979">
           <Description>External function input with optional Invert</Description>
           <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -6807,8 +6713,19 @@
             </Constraint>
           </Attribute>
         </ExternalInterface>
-        <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="8179d9cc-4674-614e-bfa2-189e576a1ae1">
+        <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated" ID="8179d9cc-4674-614e-bfa2-189e576a1ae1">
           <Description>Normal function output</Description>
+          <Attribute Name="Active" AttributeDataType="xs:boolean">
+            <Description>Placed on SCD</Description>
+            <DefaultValue>false</DefaultValue>
+            <Value>false</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>true</RequiredValue>
+                <RequiredValue>false</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
           <Attribute Name="Direction" AttributeDataType="xs:string">
             <Description />
             <DefaultValue />
@@ -6841,6 +6758,17 @@
             </Constraint>
           </Attribute>
           <Attribute Name="Latched" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:boolean" />
+          <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          <Attribute Name="Annunciation" AttributeDataType="xs:string">
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Event</RequiredValue>
+                <RequiredValue>Warning</RequiredValue>
+                <RequiredValue>Alarm</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
         </ExternalInterface>
         <ExternalInterface Name="YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated" ID="df2e0e45-957a-104b-b883-6169deb90e00">
           <Description>Function failed</Description>
