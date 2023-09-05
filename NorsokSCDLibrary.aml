@@ -1,7 +1,7 @@
 ﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="NorsokSCDLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.11 DEV" />
+    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.11" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -90,7 +90,7 @@
           </Attribute>
         </InterfaceClass>
         <InterfaceClass Name="BinaryInInvertable" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In">
-          <Description>Binary Input Signal with Invertion possibility</Description>
+          <Description>Binary Input Signal with Invert possibility</Description>
           <Attribute Name="SignalClass" AttributeDataType="xs:string">
             <Description />
             <DefaultValue />
@@ -18134,7 +18134,7 @@
           <Description>Source FB Tag</Description>
         </Attribute>
         <Attribute Name="Terminal" AttributeDataType="xs:string">
-          <Description>Destination Terminal</Description>
+          <Description>Source Terminal</Description>
         </Attribute>
         <ExternalInterface Name="Out" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out" ID="32680a6c-d016-fa4b-9db8-da2cdfcfabec">
           <Description>Output Reference Signal</Description>
