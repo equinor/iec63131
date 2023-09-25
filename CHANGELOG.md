@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.12]
 
-### Added
+### Fixed
 
-- Added interface class references to 'Split' class interfaces
+- Fix 'Split' interfaces classes
 
 ## [0.0.11]
 
