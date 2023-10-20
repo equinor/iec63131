@@ -1,7 +1,7 @@
 ﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="NorsokSCDLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.11" />
+    <Document DocumentIdentifier="IEC63131AmlLibrary" Version="0.0.12" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -17453,7 +17453,7 @@
             <DefaultValue />
             <Value>S</Value>
           </Attribute>
-          <ExternalInterface Name="X" ID="c8a36330-9f04-6147-8da3-69bd7aa43c7d">
+          <ExternalInterface Name="X" ID="c8a36330-9f04-6147-8da3-69bd7aa43c7d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -17500,7 +17500,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y1" ID="b8c1f222-4b1a-f943-a521-2725648f336e">
+          <ExternalInterface Name="Y1" ID="b8c1f222-4b1a-f943-a521-2725648f336e" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -17535,7 +17535,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y2" ID="7bef434c-997e-9541-ba4a-ca2e7cc18a26">
+          <ExternalInterface Name="Y2" ID="7bef434c-997e-9541-ba4a-ca2e7cc18a26" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
