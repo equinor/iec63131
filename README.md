@@ -426,7 +426,7 @@ The Page reference for Signal has a Unique identifier that can be used as Name.
 
 The AML reader application should find the same Page reference Name in the DrawingReference - AML file and then the signal path can be followed at the opposite drawing.
 
-![](illustrations/image066.png) ![](illustrations/image068.png)
+![](illustrations/image066.png) ![](illustrations/image068_New.png)
 
 | **Header** | **Value** | **Example SignalOffPage** | **Example SignalOnPage** |
 | --- | --- | --- | --- |
