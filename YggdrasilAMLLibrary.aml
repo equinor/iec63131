@@ -1,9 +1,10 @@
-﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="NorsokSCDLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
     <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.3" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2024-01-25T09:26:28.2630898+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
       <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -27580,7 +27581,7 @@
               <DefaultValue />
               <Value>&amp;</Value>
             </Attribute>
-            <ExternalInterface Name="AND_IN1" ID="8e51b520-9680-4a82-9aea-cea0b7767b85" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X1" ID="8e51b520-9680-4a82-9aea-cea0b7767b85" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27626,7 +27627,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN2" ID="9f5307a9-dc81-4a67-a6b4-a0b1c687f808" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X2" ID="9f5307a9-dc81-4a67-a6b4-a0b1c687f808" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27672,7 +27673,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN3" ID="495a01bb-3f5e-4fe9-8b9e-8e5f0c878978" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X3" ID="495a01bb-3f5e-4fe9-8b9e-8e5f0c878978" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27718,7 +27719,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN4" ID="ac26ee0d-809b-45e3-814f-0b0232ec4ea2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X4" ID="ac26ee0d-809b-45e3-814f-0b0232ec4ea2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27764,7 +27765,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN5" ID="0535c8ad-610c-4a12-a638-6d3264fcd413" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X5" ID="0535c8ad-610c-4a12-a638-6d3264fcd413" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27810,7 +27811,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN6" ID="27786bbc-1c5f-424e-b643-3d0125010a7e" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X6" ID="27786bbc-1c5f-424e-b643-3d0125010a7e" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27856,7 +27857,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN7" ID="9ccf3fad-78c0-4c31-a608-a26e49e21995" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X7" ID="9ccf3fad-78c0-4c31-a608-a26e49e21995" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27902,7 +27903,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN8" ID="cae68cf1-15a2-4c62-ad1b-39b46d4acdb8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X8" ID="cae68cf1-15a2-4c62-ad1b-39b46d4acdb8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27948,7 +27949,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN9" ID="2aa968ba-2a21-4171-9643-14365cda820f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X9" ID="2aa968ba-2a21-4171-9643-14365cda820f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -27994,7 +27995,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN10" ID="158ccdbb-6ec4-43be-8b14-61ef858bec3c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X10" ID="158ccdbb-6ec4-43be-8b14-61ef858bec3c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28040,7 +28041,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN11" ID="4ce3ee07-61d0-406e-a8d6-81c2924220d1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X11" ID="4ce3ee07-61d0-406e-a8d6-81c2924220d1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28086,7 +28087,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN12" ID="753266d5-b79a-4d91-970a-316f9ec2d6d8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X12" ID="753266d5-b79a-4d91-970a-316f9ec2d6d8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28132,7 +28133,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN13" ID="5422e3bb-ce6d-43dc-99ac-8618e5bb5171" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X13" ID="5422e3bb-ce6d-43dc-99ac-8618e5bb5171" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28178,7 +28179,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN14" ID="c309f04b-b305-4711-b26c-48c0da6c4bf8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X14" ID="c309f04b-b305-4711-b26c-48c0da6c4bf8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28224,7 +28225,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN15" ID="78ba2e96-d010-410e-a5a0-c734dcaf13ac" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X15" ID="78ba2e96-d010-410e-a5a0-c734dcaf13ac" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28270,7 +28271,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_IN16" ID="dfa01faa-6fb7-4a0e-baa7-4fc3b1e25fb9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X16" ID="dfa01faa-6fb7-4a0e-baa7-4fc3b1e25fb9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28316,7 +28317,40 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="AND_OUT" ID="ce843861-9191-4e43-addb-d2fed1f8c8f7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+            <ExternalInterface Name="Y" ID="ce843861-9191-4e43-addb-d2fed1f8c8f7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="YN" ID="e1c5e24c-fd58-4131-b543-804644438122" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -28357,7 +28391,7 @@
               <DefaultValue />
               <Value>O</Value>
             </Attribute>
-            <ExternalInterface Name="OR_IN1" ID="72c26310-6a0b-4f0f-9ccd-66b8fc80c970" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X1" ID="72c26310-6a0b-4f0f-9ccd-66b8fc80c970" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28403,7 +28437,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN2" ID="d9fe6b58-b885-41ca-8d6e-91d127a1afb9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X2" ID="d9fe6b58-b885-41ca-8d6e-91d127a1afb9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28449,7 +28483,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN3" ID="4794a259-b73f-4922-bf3a-eb3cfc50944c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X3" ID="4794a259-b73f-4922-bf3a-eb3cfc50944c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28495,7 +28529,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN4" ID="d275dd1a-74a7-4c47-b26d-2de00e270060" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X4" ID="d275dd1a-74a7-4c47-b26d-2de00e270060" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28541,7 +28575,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN5" ID="8d0d15b8-bc2d-4ef6-9a05-3711023e0d22" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X5" ID="8d0d15b8-bc2d-4ef6-9a05-3711023e0d22" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28587,7 +28621,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN6" ID="4cf0ce67-c15b-4e3e-bd70-d5ada536b227" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X6" ID="4cf0ce67-c15b-4e3e-bd70-d5ada536b227" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28633,7 +28667,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN7" ID="b6aed6a3-e659-4509-a3c1-525e867a3b75" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X7" ID="b6aed6a3-e659-4509-a3c1-525e867a3b75" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28679,7 +28713,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN8" ID="66ac5c19-1ac0-4784-8bb5-9e39251e1057" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X8" ID="66ac5c19-1ac0-4784-8bb5-9e39251e1057" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28725,7 +28759,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN9" ID="4813a7f1-5bf9-4e5e-ac62-41f97f2ba079" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X9" ID="4813a7f1-5bf9-4e5e-ac62-41f97f2ba079" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28771,7 +28805,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN10" ID="445eb77f-024e-455d-860c-8004e629b57d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X10" ID="445eb77f-024e-455d-860c-8004e629b57d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28817,7 +28851,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN11" ID="16f47c25-0d80-4c39-8fe9-b1734e4edddb" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X11" ID="16f47c25-0d80-4c39-8fe9-b1734e4edddb" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28863,7 +28897,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN12" ID="4c58dc80-4ec8-4219-83c2-b572439a36f4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X12" ID="4c58dc80-4ec8-4219-83c2-b572439a36f4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28909,7 +28943,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN13" ID="ebeacaf0-4ae1-4a74-823d-d0f26c74a20a" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X13" ID="ebeacaf0-4ae1-4a74-823d-d0f26c74a20a" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -28955,7 +28989,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN14" ID="fd0726cb-4425-413a-b3a8-ae9a1010df90" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X14" ID="fd0726cb-4425-413a-b3a8-ae9a1010df90" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -29001,7 +29035,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN15" ID="28d1f881-3c50-431e-af1b-bcd590285cac" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X15" ID="28d1f881-3c50-431e-af1b-bcd590285cac" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -29047,7 +29081,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_IN16" ID="bd280b5b-39d5-49a8-b997-92fb2ee419e4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="X16" ID="bd280b5b-39d5-49a8-b997-92fb2ee419e4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>External function input</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -29093,7 +29127,41 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="OR_OUT" ID="96e7682c-2ef2-4094-b480-a05c71e44459" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+            <ExternalInterface Name="Y" ID="96e7682c-2ef2-4094-b480-a05c71e44459" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+              <Description>Normal function output</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="YN" ID="12a24c5f-15d1-473a-89b7-78baa6601e20" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
               <Description>Normal function output</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
