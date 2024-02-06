@@ -424,7 +424,7 @@ This class is defined as part of the ElementaryFunctionLibrary
 
 The Page reference for Signal has a Unique identifier that can be used as Name.
 
-The AML reader application should find the same Page reference Name in the DocumentReference - AML file and then the signal path can be followed at the opposite drawing.
+The AML reader application should find the same Page reference Name in the DrawingReference - AML file and then the signal path can be followed at the opposite drawing.
 
 ![](illustrations/image066.png) ![](illustrations/image068.png)
 
@@ -436,7 +436,7 @@ The AML reader application should find the same Page reference Name in the Docum
 
 | **Attributes** | **Value** | **Example SignalOffPage** | **Example SignalOnPage** |
 | --- | --- | --- | --- |
-| DocumentReference | _DrawingNumber_ | C151-AS-J-XZ-44002-01 | C151-AS-J-XZ-43001-01 |
+| DrawingReference | _DrawingNumber_ | C151-AS-J-XZ-44002-01 | C151-AS-J-XZ-43001-01 |
 
 
 **Shut-Down / SIS - References**
