@@ -1,6 +1,6 @@
-﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="KraflaPartialLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="SnohvitPartialLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="KraflaAmlLibrary" Version="0.0.1" />
+    <Document DocumentIdentifier="SnohvitAmlLibrary" Version="0.0.1" />
   </AdditionalInformation>
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="ContextHidingFlowClass">
@@ -97,15 +97,15 @@
   </SystemUnitClassLib>
   <SystemUnitClassLib Name="ContextHidingElementLibrary">
     <SystemUnitClass Name="Transition" ID="1e580c24-ffc9-4399-b5c7-b226dcfe385b">
-      <ExternalInterface Name="X" ID="eed213ac-7c0f-40b3-b254-1436099246d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/DI/X/X">
+      <ExternalInterface Name="X" ID="eed213ac-7c0f-40b3-b254-1436099246d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
         <Attribute Name="CommunicationType" AttributeDataType="xs:string">
           <Description>Type of signal communcication</Description>
           <DefaultValue />
           <Value />
           <Constraint Name="LegalValues">
             <NominalScaledType>
-              <RequiredValue>Signal Interface</RequiredValue>
-              <RequiredValue>Bus Interface</RequiredValue>
+              <RequiredValue>GeneralSignal</RequiredValue>
+              <RequiredValue>DataCommunicationLink</RequiredValue>
             </NominalScaledType>
           </Constraint>
         </Attribute>
