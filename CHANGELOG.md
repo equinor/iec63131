@@ -5,6 +5,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.12]
+
+### Fixed
+
+- Fix 'Split' interfaces classes
+
+## [0.0.11]
+
+### Added
+
+- Added generic interface classes inherited from NorsokSignalClass/In and NorsokSignalClass/Out (e.g. 'BinaryOut')
+- Added 'Tag' and 'Terminal' attributes to 'SignalToShutDownSystem' and 'SignalFromShutDownSystem' classes
+- Added 'Annunciation' atrribute to MB.Y terminal
+- Added RefAttribyteType='AttributeTypeLib/Parameter' to 'TimerR/F'->'TimeDelay' and 'PulseR/F'->'PulseLength'
+- Added 'TMax' attribute and 'SequenceFlowTimeout' interface to sequence 'Start' class
+- Added 'Direction' attribute to interfaces of 'SequenceOffPage'/'SequenceOnPage' classes
+- Added 'SequenceIn'/'SequenceOut' interfaces to function blocks
+- Added 'FunctionDefinition' attribute to 'Opt' elementary function and black box 
+- Added Shutdown alarm parameters to LB block
+
+### Changed
+
+- Changed MB.Y class from 'BinaryOut' to 'BinaryOutAnnunciated'
+- Changed Legal Values for attribute 'SBC.SelectControlInAuto'
+- Changed Legal Values for attribute 'CommunicationType' to 'GeneralSignal'/'DataCommunicationLink'
+- Changed 'FallbackValue' attribute name to 'SubstituteValue'
+- Changed Valve device tree structure
+- Changed DataType to 'xs:duration' for 'TimerR/F'->'TimeDelay' and 'PulseR/F'->'PulseLength'
+
+### Removed
+
+- Removed all specific interface classes inherited from NorsokSignalClass/In and NorsokSignalClass/Out (e.g. 'LSL')
+- Removed 'A' and 'W' terminals from MB
+
 ## [0.0.10] - 2022-02-14
 
 ### Added
