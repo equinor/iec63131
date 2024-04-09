@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added Siemens subsea blocks
+- Added Siemens subsea blocks , #SEL_R16 and #SEL14
 
 ## 0.0.6
 
