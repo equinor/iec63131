@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.7" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.8" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -47633,6 +47633,34 @@
           </Attribute>
         </ExternalInterface>
       </SystemUnitClass>
+      <SystemUnitClass Name="SubseaOffPage" RefBaseClassPath="ReferenceClassLibrary/ToDestination" ID="f610ee34-d245-4472-a825-60811bf92d71">
+        <Description>Signal OffPage Reference</Description>
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
+          <Description>Reference to Document Number</Description>
+          <DefaultValue />
+          <Value />
+        </Attribute>
+        <Attribute Name="ControlNode" AttributeDataType="xs:string">
+          <Description>Control system node</Description>
+          <DefaultValue />
+          <Value />
+        </Attribute>
+        <Attribute Name="Tag" AttributeDataType="xs:string" />
+        <Attribute Name="Terminal" AttributeDataType="xs:string" />
+        <ExternalInterface Name="In" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In" ID="0959f1ab-827c-4f7f-a0f1-0182f5a9f1f6">
+          <Description>Input Reference Signal</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>In</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>In</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+      </SystemUnitClass>
     </SystemUnitClass>
     <SystemUnitClass Name="FromSource">
       <Description>Connector with Output signal to Symbol</Description>
@@ -47789,6 +47817,34 @@
           </Attribute>
         </ExternalInterface>
       </SystemUnitClass>
+      <SystemUnitClass Name="SubseaOnPage" RefBaseClassPath="ReferenceClassLibrary/FromSource" ID="10d9aec2-e5ff-42d2-a264-51dfea2665cc">
+        <Description>Signal OnPage Reference</Description>
+        <Attribute Name="DrawingReference" AttributeDataType="xs:string">
+          <Description>Reference to Document Number</Description>
+          <DefaultValue />
+          <Value />
+        </Attribute>
+        <Attribute Name="ControlNode" AttributeDataType="xs:string">
+          <Description>Control system node</Description>
+          <DefaultValue />
+          <Value />
+        </Attribute>
+        <Attribute Name="Tag" AttributeDataType="xs:string" />
+        <Attribute Name="Terminal" AttributeDataType="xs:string" />
+        <ExternalInterface Name="Out" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out" ID="192673c6-0371-4534-8daf-bc6022e35303">
+          <Description>Output Reference Signal</Description>
+          <Attribute Name="Direction" AttributeDataType="xs:string">
+            <Description />
+            <DefaultValue />
+            <Value>Out</Value>
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Out</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+        </ExternalInterface>
+      </SystemUnitClass>      
     </SystemUnitClass>
     <SystemUnitClass Name="RefElectricalEquipment">
       <Attribute Name="Layer" AttributeDataType="xs:string">
