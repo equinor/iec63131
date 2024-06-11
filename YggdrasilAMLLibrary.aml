@@ -50302,7 +50302,7 @@
             <Attribute Name="PNumV" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Number of Values to read (1..8)</Description>
             </Attribute>
-            <ExternalInterface Name="Conect" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="d48f659b-4de8-4a64-a0bc-cdc02f6e4578">
+            <ExternalInterface Name="Connect" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="d48f659b-4de8-4a64-a0bc-cdc02f6e4578">
               <Description>Optional Connection to "RdSmBuff"</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50326,40 +50326,6 @@
                 </Constraint>
               </Attribute>
               <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="Disabled" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="621b98bc-5e6b-4472-9f7f-e70be1de27f6">
-              <Description>Not Activated</Description>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Out</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Out</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
               <Attribute Name="SignalClass" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -50859,7 +50825,7 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
-          <SystemUnitClass Name="#SaplR" ID="f2d0c46a-3045-4dfa-8314-d89abae6f77a" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#SmplR" ID="f2d0c46a-3045-4dfa-8314-d89abae6f77a" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
             <Description>Samples and stores up to 3600 Real-Values</Description>
             <Attribute Name="P_Samp" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>SeMax No.of Samples to be used (1..3600)</Description>
@@ -51284,7 +51250,7 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
-          <SystemUnitClass Name="#RValSap" ID="0d1d6e84-fb8d-4553-bc30-010bafe40d13" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#RValSmp" ID="0d1d6e84-fb8d-4553-bc30-010bafe40d13" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
             <Description>Value Sample&amp;Cmp</Description>
             <Attribute Name="P_Res" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Reset Parameter 0-&gt; Y_Samp=0.0 , 1-&gt; Y_Samp=X</Description>
