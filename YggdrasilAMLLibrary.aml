@@ -1,7 +1,7 @@
-<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.11" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.12" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -388,9 +388,22 @@
               <RequiredValue>Event</RequiredValue>
               <RequiredValue>Warning</RequiredValue>
               <RequiredValue>Alarm</RequiredValue>
+              <RequiredValue>None</RequiredValue>
             </NominalScaledType>
           </Constraint>
         </Attribute>
+        <Attribute Name="Action" AttributeDataType="xs:string">
+          <Constraint Name="LegalValues">
+            <NominalScaledType>
+              <RequiredValue>Continue</RequiredValue>
+              <RequiredValue>End</RequiredValue>
+              <RequiredValue>Hold</RequiredValue>
+              <RequiredValue>Jump</RequiredValue>
+              <RequiredValue>None</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+        <Attribute Name="JumpTarget" AttributeDataType="xs:string" />
       </InterfaceClass>
     </InterfaceClass>
     <InterfaceClass Name="ContextHidingFlowClass">
@@ -53441,9 +53454,22 @@
                 <RequiredValue>Event</RequiredValue>
                 <RequiredValue>Warning</RequiredValue>
                 <RequiredValue>Alarm</RequiredValue>
+                <RequiredValue>None</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
+          <Attribute Name="Action" AttributeDataType="xs:string">
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Continue</RequiredValue>
+                <RequiredValue>End</RequiredValue>
+                <RequiredValue>Hold</RequiredValue>
+                <RequiredValue>Jump</RequiredValue>
+                <RequiredValue>None</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="JumpTarget" AttributeDataType="xs:string" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="End" ID="228a61ec-364a-4056-b14a-b41d15fe4514" RefBaseClassPath="SequenceElementLibrary/StandardSequenceElementClass">
@@ -53563,9 +53589,22 @@
                 <RequiredValue>Event</RequiredValue>
                 <RequiredValue>Warning</RequiredValue>
                 <RequiredValue>Alarm</RequiredValue>
+                <RequiredValue>None</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
+          <Attribute Name="Action" AttributeDataType="xs:string">
+            <Constraint Name="LegalValues">
+              <NominalScaledType>
+                <RequiredValue>Continue</RequiredValue>
+                <RequiredValue>End</RequiredValue>
+                <RequiredValue>Hold</RequiredValue>
+                <RequiredValue>Jump</RequiredValue>
+                <RequiredValue>None</RequiredValue>
+              </NominalScaledType>
+            </Constraint>
+          </Attribute>
+          <Attribute Name="JumpTarget" AttributeDataType="xs:string" />
         </ExternalInterface>
       </SystemUnitClass>
       <SystemUnitClass Name="Transition" ID="741a52d4-027b-4534-afe5-94877f67b554" RefBaseClassPath="SequenceElementLibrary/StandardSequenceElementClass">
