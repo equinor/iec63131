@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.13" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.14" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -18267,7 +18267,7 @@
         </SystemUnitClass>
         <SystemUnitClass Name="#MB14" ID="18601eb9-eeff-4f2f-b905-c87b30da63b1" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Send 14 Binary Statuses/Alarms to OS</Description>
-          <ExternalInterface Name="X00" ID="4d5da721-7699-4099-8d24-2101f24f140c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X1" ID="4d5da721-7699-4099-8d24-2101f24f140c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18319,7 +18319,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X01" ID="41b7cdfe-b8d8-43e5-bdfa-7facb9d48dfa" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X2" ID="41b7cdfe-b8d8-43e5-bdfa-7facb9d48dfa" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18371,7 +18371,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X02" ID="4b55d7fa-7f92-4719-8ce6-73c5828962a4" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X3" ID="4b55d7fa-7f92-4719-8ce6-73c5828962a4" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18423,7 +18423,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X03" ID="68930fb3-0217-4908-b963-10b433fbe465" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X4" ID="68930fb3-0217-4908-b963-10b433fbe465" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18475,7 +18475,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X04" ID="593bb222-f314-4ee7-a2c7-07f9eb087e29" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X5" ID="593bb222-f314-4ee7-a2c7-07f9eb087e29" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18527,7 +18527,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X05" ID="ddd43242-6d2d-46ac-b1cc-8756bd13ca7a" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X6" ID="ddd43242-6d2d-46ac-b1cc-8756bd13ca7a" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18579,7 +18579,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X06" ID="420f9350-9e3f-45a9-957b-1ba6d2912e74" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X7" ID="420f9350-9e3f-45a9-957b-1ba6d2912e74" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18631,7 +18631,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X07" ID="36637266-699d-4dec-8e57-22382ca47220" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X8" ID="36637266-699d-4dec-8e57-22382ca47220" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18683,7 +18683,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X08" ID="72149f26-f32e-46dd-b886-2a20ea15fa3c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X9" ID="72149f26-f32e-46dd-b886-2a20ea15fa3c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18735,7 +18735,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X09" ID="329714cf-1e87-4c94-bf21-9572b173dc68" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X10" ID="329714cf-1e87-4c94-bf21-9572b173dc68" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18787,7 +18787,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X10" ID="3a606d4f-ef57-4e2d-9cb9-1de06ada1060" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X11" ID="3a606d4f-ef57-4e2d-9cb9-1de06ada1060" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18839,7 +18839,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X11" ID="9b54cc95-2ce9-44f5-a71f-e058b0115007" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X12" ID="9b54cc95-2ce9-44f5-a71f-e058b0115007" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18891,7 +18891,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X12" ID="7b7f6dce-ede0-47ac-99be-6029276a2ea8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X13" ID="7b7f6dce-ede0-47ac-99be-6029276a2ea8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -18943,7 +18943,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X13" ID="f63c724c-7765-4497-8de5-d8c72e4b268e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="X14" ID="f63c724c-7765-4497-8de5-d8c72e4b268e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Status/Alarm to OS</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -19764,7 +19764,7 @@
         </SystemUnitClass>
         <SystemUnitClass Name="#RB16" ID="6c70a9b7-7be8-4aec-88ef-063c25b5a084" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Handle entering of a Binary value (HB)</Description>
-          <ExternalInterface Name="EN0" ID="dbcbcc18-f62d-4666-9996-97f14fde88df" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y1" ID="dbcbcc18-f62d-4666-9996-97f14fde88df" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -19816,7 +19816,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN1" ID="e1db8077-7bed-4945-b1bb-2f0843387401" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y2" ID="e1db8077-7bed-4945-b1bb-2f0843387401" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -19868,7 +19868,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN2" ID="10d4bd88-56c2-4478-bc27-deec3fa579c8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y3" ID="10d4bd88-56c2-4478-bc27-deec3fa579c8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -19920,7 +19920,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN3" ID="3cf31ec3-f882-4765-8494-4f6abe1e7783" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y4" ID="3cf31ec3-f882-4765-8494-4f6abe1e7783" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -19972,7 +19972,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN4" ID="191fe27c-10cc-48f3-a7e1-fc1fd2902a75" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y5" ID="191fe27c-10cc-48f3-a7e1-fc1fd2902a75" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20024,7 +20024,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN5" ID="036b4c47-f48d-454f-83eb-012987cd798c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y6" ID="036b4c47-f48d-454f-83eb-012987cd798c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20076,7 +20076,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN6" ID="969ce80b-0163-4807-82d2-cd1bb0b830f6" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y7" ID="969ce80b-0163-4807-82d2-cd1bb0b830f6" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20128,7 +20128,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN7" ID="924c2cde-86a4-4f7a-8a61-507a489b04a1" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y8" ID="924c2cde-86a4-4f7a-8a61-507a489b04a1" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20180,7 +20180,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN8" ID="9669f106-f991-4af3-aa12-0f7626995a4b" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y9" ID="9669f106-f991-4af3-aa12-0f7626995a4b" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20232,7 +20232,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN9" ID="a19cba85-1361-47af-82db-6e4ed0e9eb05" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y10" ID="a19cba85-1361-47af-82db-6e4ed0e9eb05" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20284,7 +20284,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN10" ID="3efa61c3-1820-451d-ae14-3b117c70308c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y11" ID="3efa61c3-1820-451d-ae14-3b117c70308c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20336,7 +20336,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN11" ID="45dc2712-6e17-40cc-a0ba-a38faabc361f" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y12" ID="45dc2712-6e17-40cc-a0ba-a38faabc361f" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20388,7 +20388,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN12" ID="461eb0b4-0e08-43ca-9a53-43957d4d417c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y13" ID="461eb0b4-0e08-43ca-9a53-43957d4d417c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20440,7 +20440,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN13" ID="5d0b1d9b-b079-4b06-b264-e8663cec4a65" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y14" ID="5d0b1d9b-b079-4b06-b264-e8663cec4a65" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20492,7 +20492,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN14" ID="2cd1af89-9ce9-4b70-9cd1-aa24c28128a8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y15" ID="2cd1af89-9ce9-4b70-9cd1-aa24c28128a8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20544,7 +20544,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="EN15" ID="96bc5e33-4a5c-4c9c-a12f-81e4cf13ee9e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_Y16" ID="96bc5e33-4a5c-4c9c-a12f-81e4cf13ee9e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable for operator from faceplate</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20596,7 +20596,7 @@
               <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y0" ID="c86ff472-6670-4ba9-8ac2-f9bb84ae10e6" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y1" ID="c86ff472-6670-4ba9-8ac2-f9bb84ae10e6" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20632,7 +20632,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y1" ID="43102380-80dc-4ed3-95be-71aaf588069e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y2" ID="43102380-80dc-4ed3-95be-71aaf588069e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20668,7 +20668,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y2" ID="9adf5dcb-2e9d-40aa-af3c-0702466606eb" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y3" ID="9adf5dcb-2e9d-40aa-af3c-0702466606eb" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20704,7 +20704,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y3" ID="d5113163-7365-4349-9774-5982c20abcdd" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y4" ID="d5113163-7365-4349-9774-5982c20abcdd" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20740,7 +20740,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y4" ID="fb1afa32-05d7-4a54-ba4a-b9338acef360" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y5" ID="fb1afa32-05d7-4a54-ba4a-b9338acef360" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20776,7 +20776,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y5" ID="fd29910a-5338-4ae1-933b-3c7beff68ef9" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y6" ID="fd29910a-5338-4ae1-933b-3c7beff68ef9" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20812,7 +20812,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y6" ID="89518a00-5f88-43b5-9b96-b15cf995b87f" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y7" ID="89518a00-5f88-43b5-9b96-b15cf995b87f" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20848,7 +20848,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y7" ID="23dc8052-ea2d-402d-8c39-6254cd613442" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y8" ID="23dc8052-ea2d-402d-8c39-6254cd613442" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20884,7 +20884,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y8" ID="9d355b9d-38d9-4cd1-8ff5-02dfb209be60" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y9" ID="9d355b9d-38d9-4cd1-8ff5-02dfb209be60" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20920,7 +20920,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y9" ID="6e31250e-fd96-4fe6-b3f0-450849caec4e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y10" ID="6e31250e-fd96-4fe6-b3f0-450849caec4e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20956,7 +20956,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y10" ID="42303242-3264-4d4e-ba36-f84799a84956" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y11" ID="42303242-3264-4d4e-ba36-f84799a84956" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -20992,7 +20992,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y11" ID="06f9ee3e-fc78-4c04-b23b-b7742633315a" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y12" ID="06f9ee3e-fc78-4c04-b23b-b7742633315a" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21028,7 +21028,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y12" ID="0aa1769e-8cdd-4a63-abbb-dc6c6a247691" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y13" ID="0aa1769e-8cdd-4a63-abbb-dc6c6a247691" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21100,7 +21100,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y14" ID="bbc1aea7-a72f-45fe-9148-2ca3055e87a8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y15" ID="bbc1aea7-a72f-45fe-9148-2ca3055e87a8" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21136,7 +21136,7 @@
             <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
             <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string" />
           </ExternalInterface>
-          <ExternalInterface Name="Y15" ID="c097564a-424a-47be-82e3-06ba93168070" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
+          <ExternalInterface Name="Y16" ID="c097564a-424a-47be-82e3-06ba93168070" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryOutWithText">
             <Description>Normal function output</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21263,7 +21263,7 @@
         </SystemUnitClass>
         <SystemUnitClass Name="#SA8" ID="7d8c7d6d-34a0-4ee5-97d5-1d1aa1f3470d" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Send 8 analogue value to OS</Description>
-          <ExternalInterface Name="X0" ID="804fc6af-1c07-472c-8c0e-c77ee9d23b3f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X1" ID="804fc6af-1c07-472c-8c0e-c77ee9d23b3f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21309,7 +21309,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X1" ID="5026dadd-4b5e-406a-8589-372ed23fa1a2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X2" ID="5026dadd-4b5e-406a-8589-372ed23fa1a2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21355,7 +21355,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X2" ID="2ad8dbae-5cf9-43f4-9bc7-b06b81d1e94f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X3" ID="2ad8dbae-5cf9-43f4-9bc7-b06b81d1e94f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21401,7 +21401,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X3" ID="9348fa5d-892e-4c56-9114-d6df0ed0d9ce" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X4" ID="9348fa5d-892e-4c56-9114-d6df0ed0d9ce" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21447,7 +21447,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X4" ID="ce8e7d22-ae69-47f1-a841-1cdba3662ef7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X5" ID="ce8e7d22-ae69-47f1-a841-1cdba3662ef7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21493,7 +21493,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X5" ID="afbbaddc-0ed6-481e-9be7-4c8a0c0b8910" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X6" ID="afbbaddc-0ed6-481e-9be7-4c8a0c0b8910" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21539,7 +21539,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X6" ID="0ed4ca8c-33f5-4aca-9572-c3477a49f6af" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X7" ID="0ed4ca8c-33f5-4aca-9572-c3477a49f6af" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -21585,7 +21585,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X7" ID="2ae2c068-c687-41fe-ab8c-2df67f21ca65" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X8" ID="2ae2c068-c687-41fe-ab8c-2df67f21ca65" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -47701,9 +47701,552 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
+          <SystemUnitClass Name="#ABS" ID="176dcbb4-2c24-49be-b9d3-52cffd63ced0" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Arithmetic">
+            <Description>Absolute</Description>
+            <ExternalInterface Name="X" ID="758f8bb6-6183-4d3c-87c9-26a585e02e3b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Analog Input Value</Description>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="Y" ID="8e5db06b-5997-4bcb-8814-6f3e435711db" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+              <Description>Analog Output Value</Description>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+          </SystemUnitClass>
+          <SystemUnitClass Name="#ValRmp" ID="46183f5e-0db9-4941-86d3-eeba811bace8" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Arithmetic">
+            <Description>Ramp Value to setpoint</Description>
+            <Attribute Name="PACT" AttributeDataType="xs:integer">
+              <Description>Behavior of XAct, 0=OneShot on rising edge, 1=Start when XR change and XAct='1'</Description>
+            </Attribute>
+            <Attribute Name="PHR" AttributeDataType="xs:decimal">
+              <Description>High-Range Measurred Value</Description>
+            </Attribute>
+            <Attribute Name="PLR" AttributeDataType="xs:decimal">
+              <Description>Low-Range Measurred Value</Description>
+            </Attribute>
+            <Attribute Name="PSet1URT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Up-Rate ParameterSet#1 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet1DRT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Down-Rate ParameterSet#1 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet1End" AttributeDataType="xs:decimal">
+              <Description>End-point ParameterSet#1 [%]</Description>
+            </Attribute>
+            <Attribute Name="PSet2URT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Up-Rate ParameterSet#2 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet2DRT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Down-Rate ParameterSet#2 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet2End" AttributeDataType="xs:decimal">
+              <Description>End-point ParameterSet#2 [%]</Description>
+            </Attribute>
+            <Attribute Name="PSet3URT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Up-Rate ParameterSet#3 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet3DRT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Down-Rate ParameterSet#3 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet3End" AttributeDataType="xs:decimal">
+              <Description>Ramp-Up-Rate ParameterSet#3 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet4URT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Up-Rate ParameterSet#4 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet4DRT" AttributeDataType="xs:decimal">
+              <Description>Ramp-Down-Rate ParameterSet#4 [%/min]</Description>
+            </Attribute>
+            <Attribute Name="PSet4End" AttributeDataType="xs:decimal">
+              <Description>End-point ParameterSet#4 [%]</Description>
+            </Attribute>
+            <ExternalInterface Name="X" ID="f5b7dedf-2ab1-4d06-a511-dd974b3df5e3" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Measurement</Description>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="XR" ID="cc40ff24-f6ef-46ec-8f79-f90f0f93f23f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Setpoint</Description>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="XAct" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="268698f4-23fd-4236-81f6-220602392eb5">
+              <Description>Start Ramping, based on PACT</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="FZ" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="c62e9b2a-98bd-4e74-b31b-3f53fed5388c">
+              <Description>Freeze Output</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="FXR" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="18830870-246e-49e8-8351-379825da8115">
+              <Description>Skip Ramp (Force Y=XR)</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="RX" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="8aec2945-594f-4683-909e-e206d04e97aa">
+              <Description>Reset Rampfunction</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="Y" ID="51f6ff63-1c2f-4841-8509-30694f3a8cc8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+              <Description>Current RampValue</Description>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="YF" ID="72718fa1-7609-4823-9e98-d041f06f1587" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+              <Description>Function Failed</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="BZ" ID="ed8035ba-f0e2-4c57-97ea-aec654ad00f7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+              <Description>Ramp Frozen</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="BF" ID="c187a50f-b46f-4a6f-81c6-4653449b924d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+              <Description>Forcing Y=XR</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+          </SystemUnitClass>
         </SystemUnitClass>
         <SystemUnitClass Name="Signal Sampling" ID="5676b56b-7a0b-411b-8a3a-28761664346a" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
-          <SystemUnitClass Name="#RDBuf" ID="b7a6ffb2-5e2e-48cd-848b-bb4bf1419b75" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#RDBuf" ID="b7a6ffb2-5e2e-48cd-848b-bb4bf1419b75" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Signal Sampling">
             <Description>Read selected timeslot from Sampl_R</Description>
             <Attribute Name="PStrtV" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>First Value to read, 0=Value#1</Description>
@@ -48234,7 +48777,7 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
-          <SystemUnitClass Name="#SmplR" ID="f2d0c46a-3045-4dfa-8314-d89abae6f77a" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#SmplR" ID="f2d0c46a-3045-4dfa-8314-d89abae6f77a" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Signal Sampling">
             <Description>Samples and stores up to 3600 Real-Values</Description>
             <Attribute Name="P_Samp" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>SeMax No.of Samples to be used (1..3600)</Description>
@@ -48659,7 +49202,7 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
-          <SystemUnitClass Name="#RValSmp" ID="0d1d6e84-fb8d-4553-bc30-010bafe40d13" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#RValSmp" ID="0d1d6e84-fb8d-4553-bc30-010bafe40d13" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Signal Sampling">
             <Description>Value Sample&amp;Cmp</Description>
             <Attribute Name="P_Res" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Reset Parameter 0-&gt; Y_Samp=0.0 , 1-&gt; Y_Samp=X</Description>
@@ -48942,55 +49485,15 @@
         </SystemUnitClass>
         <SystemUnitClass Name="Selector" ID="c7e3bc99-59cc-4dd1-8fba-14793ca438a0" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Group of Selector Classes</Description>
-          <SystemUnitClass Name="#SEL_R16" ID="a98b966f-36fd-4277-bee5-22614669e568" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#SEL_R16" ID="a98b966f-36fd-4277-bee5-22614669e568" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Selector">
             <Description>Selection between 16 Real-Values</Description>
-            <ExternalInterface Name="S0" ID="54071575-ec0c-40df-9422-4bfb950d2e37" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
-              <Description>Select X0</Description>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>In</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>In</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Last Valid</RequiredValue>
-                    <RequiredValue>Min Range</RequiredValue>
-                    <RequiredValue>Max Range</RequiredValue>
-                    <RequiredValue>Substitute Value</RequiredValue>
-                    <RequiredValue>Current Value</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="S1" ID="eccc350f-6218-40ec-a158-ec4c84671157" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <Attribute Name="PSubst" AttributeDataType="xs:boolean">
+              <Description>Select Substitute or Last Selected</Description>
+            </Attribute>
+            <Attribute Name="PSubstV" AttributeDataType="xs:decimal">
+              <Description>Output value if none selected and PSubst=1</Description>
+            </Attribute>
+            <ExternalInterface Name="S1" ID="54071575-ec0c-40df-9422-4bfb950d2e37" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X1</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49035,8 +49538,14 @@
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
+              <Attribute Name="PSubstV" AttributeDataType="xs:decimal">
+                <Description>Output value if none selected and PSubst=1</Description>
+              </Attribute>
+              <Attribute Name="PSubst" AttributeDataType="xs:boolean">
+                <Description>Select Substitute or Last Selected</Description>
+              </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S2" ID="92db11b6-2d1e-4ede-8073-1c2e3bb478ee" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S2" ID="eccc350f-6218-40ec-a158-ec4c84671157" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X2</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49082,7 +49591,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S3" ID="3a0b043e-d92e-4ad6-a3fe-f426d0e7cfd8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S3" ID="92db11b6-2d1e-4ede-8073-1c2e3bb478ee" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X3</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49128,7 +49637,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S4" ID="d1227981-4155-4c17-9a69-726d3116dbc9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S4" ID="3a0b043e-d92e-4ad6-a3fe-f426d0e7cfd8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X4</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49174,7 +49683,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S5" ID="b7448511-a894-49c8-a002-ed782c653a3d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S5" ID="d1227981-4155-4c17-9a69-726d3116dbc9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X5</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49220,7 +49729,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S6" ID="eb88b5ca-179f-4bb5-ac38-30693788ce19" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S6" ID="b7448511-a894-49c8-a002-ed782c653a3d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X6</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49266,7 +49775,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S7" ID="e9eb5c6a-a136-4c58-82ab-2a548159b4bc" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S7" ID="eb88b5ca-179f-4bb5-ac38-30693788ce19" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X7</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49312,7 +49821,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S8" ID="7e1ca319-0932-47c3-bb25-da93695fadeb" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S8" ID="e9eb5c6a-a136-4c58-82ab-2a548159b4bc" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X8</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49358,7 +49867,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S9" ID="559fdd22-7730-4f9d-b23c-3f17809c9bfc" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S9" ID="7e1ca319-0932-47c3-bb25-da93695fadeb" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X9</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49404,7 +49913,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S10" ID="1e7bddac-74d4-4f8e-9a73-602b18eea38b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S10" ID="559fdd22-7730-4f9d-b23c-3f17809c9bfc" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X10</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49450,7 +49959,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S11" ID="40060b74-ce82-4e56-b3ea-271201645b9b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S11" ID="1e7bddac-74d4-4f8e-9a73-602b18eea38b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X11</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49496,7 +50005,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S12" ID="cbb91951-618d-4b2c-8848-46d560b0e1c8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S12" ID="40060b74-ce82-4e56-b3ea-271201645b9b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X12</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49542,7 +50051,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S13" ID="d853aeaf-3c84-44f3-b970-71113cd13562" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S13" ID="cbb91951-618d-4b2c-8848-46d560b0e1c8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X13</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49588,7 +50097,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S14" ID="b11f55d8-900e-4e99-8a9b-951fcec86658" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S14" ID="d853aeaf-3c84-44f3-b970-71113cd13562" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X14</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49634,7 +50143,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S15" ID="6efb77ea-ffa6-4972-8c08-cc1fefcc6460" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="S15" ID="b11f55d8-900e-4e99-8a9b-951fcec86658" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Select X15</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49680,8 +50189,19 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X0" ID="a0589e50-ccb9-4351-95fb-c01f3da15ada" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Output if S0=1</Description>
+            <ExternalInterface Name="S16" ID="6efb77ea-ffa6-4972-8c08-cc1fefcc6460" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+              <Description>Select X16</Description>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -49703,30 +50223,19 @@
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
-              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
               <Attribute Name="SignalClass" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
-                <Value>Analogue</Value>
+                <Value>Binary</Value>
                 <Constraint Name="LegalValues">
                   <NominalScaledType>
-                    <RequiredValue>Analogue</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                    <RequiredValue>Binary</RequiredValue>
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X1" ID="f06fd183-cdc9-4cc3-b112-690689605a31" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X1" ID="a0589e50-ccb9-4351-95fb-c01f3da15ada" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S1=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -49772,7 +50281,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X2" ID="9c4e6f56-12fa-4350-b211-db1259960396" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X2" ID="f06fd183-cdc9-4cc3-b112-690689605a31" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S2=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -49818,7 +50327,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X3" ID="7fd8de3a-a571-43c3-9914-e7a6982f5c08" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X3" ID="9c4e6f56-12fa-4350-b211-db1259960396" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S3=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -49864,7 +50373,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X4" ID="1604a6d8-86de-4a4c-a49c-5fb0f772c3ab" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X4" ID="7fd8de3a-a571-43c3-9914-e7a6982f5c08" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S4=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -49910,7 +50419,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X5" ID="6b4ea1c0-34ee-4506-8474-25ed7a65dbb7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X5" ID="1604a6d8-86de-4a4c-a49c-5fb0f772c3ab" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S5=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -49956,7 +50465,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X6" ID="58716c46-f7f8-41fb-b1a3-7f11010f1095" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X6" ID="6b4ea1c0-34ee-4506-8474-25ed7a65dbb7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S6=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50002,7 +50511,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X7" ID="9e30d70a-4a6b-44b6-9902-9cd586d64d7a" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X7" ID="58716c46-f7f8-41fb-b1a3-7f11010f1095" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S7=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50048,7 +50557,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X8" ID="09a78dcf-2900-4047-b17f-ee7f2af88330" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X8" ID="9e30d70a-4a6b-44b6-9902-9cd586d64d7a" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S8=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50094,7 +50603,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X9" ID="77a5d5c7-5f36-400a-832c-61392a88dced" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X9" ID="09a78dcf-2900-4047-b17f-ee7f2af88330" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S9=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50140,7 +50649,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X10" ID="2e83b96c-b0e3-4979-a745-f6d17aa9db51" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X10" ID="77a5d5c7-5f36-400a-832c-61392a88dced" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S10=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50186,7 +50695,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X11" ID="031e817b-38fc-4382-ab05-456b61aeb4d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X11" ID="2e83b96c-b0e3-4979-a745-f6d17aa9db51" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S11=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50232,7 +50741,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X12" ID="3db4d58b-ec0f-468c-8fb0-0d6768b13cff" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X12" ID="031e817b-38fc-4382-ab05-456b61aeb4d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S12=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50278,7 +50787,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X13" ID="98dbcaea-901d-4316-b547-baa6979032d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X13" ID="3db4d58b-ec0f-468c-8fb0-0d6768b13cff" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S13=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50324,7 +50833,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X14" ID="d6c1c76a-f7ad-47e4-aaba-5d384c23d7ad" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X14" ID="98dbcaea-901d-4316-b547-baa6979032d2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S14=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -50370,8 +50879,54 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X15" ID="6cb22715-bfd6-46dc-8ed0-c2470f152285" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X15" ID="d6c1c76a-f7ad-47e4-aaba-5d384c23d7ad" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Output if S15=1</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="X16" ID="6cb22715-bfd6-46dc-8ed0-c2470f152285" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Output if S16=1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -50537,7 +51092,7 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
-          <SystemUnitClass Name="#SEL14" ID="7f835b8b-589b-4589-8d14-a9c17ea1bd89" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#SEL14" ID="7f835b8b-589b-4589-8d14-a9c17ea1bd89" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Selector">
             <Description>Mutually Exclusive Selector</Description>
             <ExternalInterface Name="RX" ID="6d46f97d-2ef3-428a-becd-058f346a7aca" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>HMI command Yn=0</Description>
@@ -51156,7 +51711,7 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
-          <SystemUnitClass Name="#SEL16" ID="269cbc7f-68a8-42f3-8340-a5e202b5402c" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#SEL16" ID="269cbc7f-68a8-42f3-8340-a5e202b5402c" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Selector">
             <Description>Select Min/Max/Average of 16Real</Description>
             <Attribute Name="PSel" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Selector-type. 0=&gt;Y=MinValue, 1=&gt;Y=MaxValue, 2=&gt;Y=AverageValue</Description>
@@ -51165,7 +51720,7 @@
               <Description>Number of Values in use (1..16)</Description>
             </Attribute>
             <ExternalInterface Name="X1" ID="2924dbf7-7090-4edc-a230-0673bebb654b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 00</Description>
+              <Description>Input Value 1</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51211,7 +51766,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X2" ID="f612b67e-ac9c-4dbc-8265-2bb77f653027" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 01</Description>
+              <Description>Input Value 2</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51257,7 +51812,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X3" ID="26d20f87-6351-4cc4-820d-9600a1680d76" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 02</Description>
+              <Description>Input Value 3</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51303,7 +51858,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X4" ID="ca3edae5-6db6-4e13-a8b2-b5ec8ed07217" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 03</Description>
+              <Description>Input Value 4</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51349,7 +51904,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X5" ID="51618fb4-a128-47d2-8bb2-f2a54b5a82e6" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 04</Description>
+              <Description>Input Value 5</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51395,7 +51950,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X6" ID="64ac6395-20ed-42d0-9375-c234a4eb0e02" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 05</Description>
+              <Description>Input Value 6</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51441,7 +51996,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X7" ID="ffff0a17-9425-4567-b9cd-43d96f99a950" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 06</Description>
+              <Description>Input Value 7</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51487,7 +52042,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X8" ID="8a988d4d-71ff-4900-a6fe-b72b3157825b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 07</Description>
+              <Description>Input Value 8</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51533,7 +52088,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X9" ID="7c3d7e58-9c94-4c78-a0f9-64a78caa74db" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 08</Description>
+              <Description>Input Value 9</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51579,52 +52134,6 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="X10" ID="575113b5-cdaf-4ee2-b01b-c07de3dad742" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-              <Description>Input Value 09</Description>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>In</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>In</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Last Valid</RequiredValue>
-                    <RequiredValue>Min Range</RequiredValue>
-                    <RequiredValue>Max Range</RequiredValue>
-                    <RequiredValue>Substitute Value</RequiredValue>
-                    <RequiredValue>Current Value</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Analogue</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Analogue</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="X11" ID="86258084-0636-44c6-97d0-6e07a9c9bbbb" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Input Value 10</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -51670,7 +52179,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X12" ID="d0118052-c2dd-4158-a4b8-66fcba4d7043" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X11" ID="86258084-0636-44c6-97d0-6e07a9c9bbbb" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Input Value 11</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -51716,7 +52225,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X13" ID="43cb1c7a-bac5-4dcb-818a-4c1e1807f62c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X12" ID="d0118052-c2dd-4158-a4b8-66fcba4d7043" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Input Value 12</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -51762,7 +52271,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X14" ID="71c52489-2e91-4837-8ee6-25afb097ffa4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X13" ID="43cb1c7a-bac5-4dcb-818a-4c1e1807f62c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Input Value 13</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -51808,7 +52317,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X15" ID="f19421e3-f778-4b2e-ad44-0c958adc53a9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X14" ID="71c52489-2e91-4837-8ee6-25afb097ffa4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Input Value 14</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -51854,7 +52363,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="X16" ID="b80b195a-9ece-46a8-a817-b33e5f28c930" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X15" ID="f19421e3-f778-4b2e-ad44-0c958adc53a9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Input Value 15</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -51900,8 +52409,54 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
+            <ExternalInterface Name="X16" ID="b80b195a-9ece-46a8-a817-b33e5f28c930" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Input Value 16</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
             <ExternalInterface Name="BCX1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="0e40ccb7-9098-43de-8f1e-6ced5cd36a10">
-              <Description>True=&gt; X00=Selected Value</Description>
+              <Description>True=&gt; X1=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51935,7 +52490,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="5cb693c1-686e-4976-a2f7-7634f383e1b2">
-              <Description>True=&gt; X01=Selected Value</Description>
+              <Description>True=&gt; X2=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -51969,7 +52524,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX3" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="ffc57a60-b6dc-4df5-87d1-75d5ba9085ad">
-              <Description>True=&gt; X02=Selected Value</Description>
+              <Description>True=&gt; X3=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52003,7 +52558,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="91da701f-f8a3-40e1-ae71-0a11345530a5">
-              <Description>True=&gt; X03=Selected Value</Description>
+              <Description>True=&gt; X4=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52037,7 +52592,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX5" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="9d15c11a-948c-48f9-8df5-4dec26b69d2c">
-              <Description>True=&gt; X04=Selected Value</Description>
+              <Description>True=&gt; X5=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52071,7 +52626,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX6" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="f2f3127d-0366-40ac-a2a1-f3b3e6e53e08">
-              <Description>True=&gt; X05=Selected Value</Description>
+              <Description>True=&gt; X6=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52105,7 +52660,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="479f5b2e-a3be-453e-9a0b-f12620dbe2ae">
-              <Description>True=&gt; X06=Selected Value</Description>
+              <Description>True=&gt; X7=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52139,7 +52694,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="9fb12f77-20b4-4115-95f3-72822d0d8f67">
-              <Description>True=&gt; X07=Selected Value</Description>
+              <Description>True=&gt; X8=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52173,7 +52728,7 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="6579946f-52c0-4990-82bd-f23b9d52d280">
-              <Description>True=&gt; X08=Selected Value</Description>
+              <Description>True=&gt; X9=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52207,40 +52762,6 @@
               </Attribute>
             </ExternalInterface>
             <ExternalInterface Name="BCX10" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="c6ac883e-2929-4917-a3ac-d033d726e15f">
-              <Description>True=&gt; X09=Selected Value</Description>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Out</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Out</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="BCX11" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="b998a2bf-36ac-43d9-9bc6-411952c3b213">
               <Description>True=&gt; X10=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -52274,7 +52795,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="BCX12" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="64b43fad-fa7c-42a4-84ed-b2704082ae49">
+            <ExternalInterface Name="BCX11" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="b998a2bf-36ac-43d9-9bc6-411952c3b213">
               <Description>True=&gt; X11=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -52308,7 +52829,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="BCX13" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="cc8a141d-71ae-403c-b2b1-d31e77ee6c37">
+            <ExternalInterface Name="BCX12" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="64b43fad-fa7c-42a4-84ed-b2704082ae49">
               <Description>True=&gt; X12=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -52342,7 +52863,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="BCX14" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="14ed20f0-d579-43a0-920d-d9babbfbc503">
+            <ExternalInterface Name="BCX13" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="cc8a141d-71ae-403c-b2b1-d31e77ee6c37">
               <Description>True=&gt; X13=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -52376,7 +52897,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="BCX15" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="d578c2ad-f6ff-44d0-9307-1fb9e538ebba">
+            <ExternalInterface Name="BCX14" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="14ed20f0-d579-43a0-920d-d9babbfbc503">
               <Description>True=&gt; X14=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
@@ -52410,8 +52931,42 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="BCX16" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="674a7e46-f684-458b-b134-1f10f7df9243">
+            <ExternalInterface Name="BCX15" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="d578c2ad-f6ff-44d0-9307-1fb9e538ebba">
               <Description>True=&gt; X15=Selected Value</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="BCX16" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="674a7e46-f684-458b-b134-1f10f7df9243">
+              <Description>True=&gt; X16=Selected Value</Description>
               <Attribute Name="Direction" AttributeDataType="xs:string">
                 <Description />
                 <DefaultValue />
@@ -52602,6 +53157,221 @@
                 <Constraint Name="LegalValues">
                   <NominalScaledType>
                     <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+          </SystemUnitClass>
+        </SystemUnitClass>
+        <SystemUnitClass Name="Voting" ID="082455d1-e2f8-46e8-9e4c-f5e886d1b718" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens">
+          <Description>Voting</Description>
+          <SystemUnitClass Name="#2OO3D" ID="4f882c7f-d412-44b9-99bc-509868e0440b" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Voting">
+            <Description>Voting Digital 2oo3</Description>
+            <Attribute Name="Ts" AttributeDataType="xs:duration">
+              <Description>OB scan time in sec</Description>
+            </Attribute>
+            <ExternalInterface Name="X1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="477c89d7-50bf-41d8-8b08-93239cded19e">
+              <Description>Input 1</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="X2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="33f6d0c4-24b4-4790-89bf-fb9aa9c0efad">
+              <Description>Input 2</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="X3" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="07e8ad6d-60a9-4185-87d7-1b62f9555306">
+              <Description>Input 3</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="Y" ID="0923e2fd-3cd9-41c8-a5eb-aa32ef2419f6" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+              <Description>Output</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="YN" ID="0dd036db-641e-4c53-ac7d-4efb3d72d3ce" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+              <Description>Low extremum detected on X. Active one cycle</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
                   </NominalScaledType>
                 </Constraint>
               </Attribute>

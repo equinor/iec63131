@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.0.14
+
+### Added
+
+- #ABS and #2003D and #ValRmp
+- Corrected pin names for #SEL_R16,#SEL14, #SEL16,#MB14,#RB16 and #SA8
+- Added parameters PSubst and PSubstV for #SEL_R16
+
 ## 0.0.13
 
 ### Added
