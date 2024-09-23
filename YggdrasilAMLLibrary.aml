@@ -1,10 +1,9 @@
-﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
     <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.15" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
-  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2024-09-23T16:31:51.6967397+02:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
       <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -41524,8 +41523,8 @@
             </Attribute>
           </ExternalInterface>
         </SystemUnitClass>
-        <SystemUnitClass Name="#CURVE" ID="a496927f-6232-43ca-bf37-ed50f5ad2d83" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
-          <Description>Monitoring of binary variable with external timestamp</Description>
+        <SystemUnitClass Name="#CRV" ID="a496927f-6232-43ca-bf37-ed50f5ad2d83" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <Description>Curve Block for level profiler Tracerco T229-2</Description>
           <ExternalInterface Name="BU" ID="8095e252-49ca-4101-a30b-59eb42f7b4c8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
             <Description>Suppress active</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
