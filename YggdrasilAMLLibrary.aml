@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.15" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.16" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -41525,6 +41525,52 @@
         </SystemUnitClass>
         <SystemUnitClass Name="#CRV" ID="a496927f-6232-43ca-bf37-ed50f5ad2d83" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Curve Block for level profiler Tracerco T229-2</Description>
+          <ExternalInterface Name="X" ID="31e9fae4-a651-41f6-afee-0ab6650b584f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <Description>External fault</Description>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
           <ExternalInterface Name="BU" ID="8095e252-49ca-4101-a30b-59eb42f7b4c8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
             <Description>Suppress active</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
@@ -41797,40 +41843,6 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="ActAlarms" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut" ID="4f2ef431-054c-4c86-8c0d-d4f4244ffd89">
-            <Description>Number of active alarms</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description>Time counting up</Description>
-              <DefaultValue />
-              <Value>Out</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Out</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Analogue</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Analogue</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
           <ExternalInterface Name="LSand" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut" ID="ac143330-8c45-427a-99c8-b39e120691e3">
             <Description>Level Sand</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -41865,16 +41877,25 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="StatusCode" ID="c2efdc87-c255-49e3-9755-61bbf8097d76" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/CustomOut">
-            <Description>T229-2 Status Code</Description>
+          <ExternalInterface Name="ActAlarms" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut" ID="4f2ef431-054c-4c86-8c0d-d4f4244ffd89">
+            <Description>Number of active alarms</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description>Time counting up</Description>
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
-              <Value />
+              <Value>Analogue</Value>
               <Constraint Name="LegalValues">
                 <NominalScaledType>
                   <RequiredValue>Analogue</RequiredValue>
-                  <RequiredValue>Binary</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -41886,16 +41907,6 @@
                 <NominalScaledType>
                   <RequiredValue>GeneralSignal</RequiredValue>
                   <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Out</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Out</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -41936,6 +41947,598 @@
           </ExternalInterface>
           <ExternalInterface Name="DetBErr" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="f88f22dd-3cff-42ca-a086-1a7b19e7f811">
             <Description>Detector B error</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="97c51e3e-78ad-4618-8911-f34d0c9f4886">
+            <Description>Status code 1</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="b2362741-5111-4836-9921-720b1d5cc764">
+            <Description>Status code 2</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y3" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="b1c0a1f4-9d90-4061-a31e-92a35775f06f">
+            <Description>Status code 3</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="81357591-8770-4934-baed-a784a9103a5d">
+            <Description>Status code 4</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y5" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="125bbc77-13fb-4508-9faf-35c0baef9310">
+            <Description>Status code 5</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y6" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="c5fac321-2d39-436a-9bad-c594d36a126b">
+            <Description>Status code 6</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="9639fcc0-8300-469b-b508-d81c971e40fc">
+            <Description>Status code 7</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="3f54874e-e315-49df-926a-e5abbeff13e1">
+            <Description>Status code 8</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="dbd35980-7426-47c9-b8d1-b8afc8df3dc6">
+            <Description>Status code 9</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y10" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="f0cba61d-bead-4a53-a17c-764175e77c56">
+            <Description>Status code 10</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y11" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="f55925cf-600b-447b-95c7-c899d5643565">
+            <Description>Status code 11</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y12" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="6c6db3ea-be5e-420b-9b57-da9933354869">
+            <Description>Status code 12</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y13" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="88a1fe37-2525-4f53-a3bb-bd252d126b86">
+            <Description>Status code 13</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y14" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="d6fc6bf0-e7e2-4a0b-9d36-4013efca72e2">
+            <Description>Status code 14</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y15" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="2f99277b-cfcc-49b2-8c29-7e3a8d7edc56">
+            <Description>Status code 15</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y16" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="e40dec9f-8e6b-49a9-a697-dd3ea721f672">
+            <Description>Status code 16</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
