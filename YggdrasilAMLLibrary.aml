@@ -48109,7 +48109,7 @@
           </SystemUnitClass>
           <SystemUnitClass Name="#CTUD" ID="13e09648-cb0f-41aa-b9fa-988576aab76c" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Logic">
             <Description>Up and down counter</Description>
-            <ExternalInterface Name="CU" ID="0d4cc428-293c-44bf-b639-27398416c674" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="XH" ID="0d4cc428-293c-44bf-b639-27398416c674" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Up-count pulse</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -48155,7 +48155,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="CD" ID="48dfb6b9-c835-404c-9c18-891fb38d4345" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="XL" ID="48dfb6b9-c835-404c-9c18-891fb38d4345" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Down-count pulse</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -48201,7 +48201,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="R" ID="a79d8276-74be-4546-8709-5c885b59db48" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="P_Reset" ID="a79d8276-74be-4546-8709-5c885b59db48" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Reset</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -48247,7 +48247,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="S" ID="9ebaf463-685e-4012-8e60-eeb430256635" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="P_Set" ID="9ebaf463-685e-4012-8e60-eeb430256635" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Set</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -48293,7 +48293,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="PV" ID="5307b762-23e5-4b1f-8605-8ee1a19c53ce" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <ExternalInterface Name="X" ID="5307b762-23e5-4b1f-8605-8ee1a19c53ce" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Load Value</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -48339,75 +48339,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="QU" ID="b3bf724d-c026-4032-89f9-cbcf81a40626" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
-              <Description>Counter at high limit</Description>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Out</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Out</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="QD" ID="b8344ed2-d411-4a51-bd57-7ebb3b447977" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
-              <Description>Counter at low limit</Description>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Out</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Out</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="CV" ID="b7ffb162-4bb1-45e4-b683-7d40238a4bb2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <ExternalInterface Name="Y" ID="b7ffb162-4bb1-45e4-b683-7d40238a4bb2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
               <Description>Counter value</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -48440,6 +48372,53 @@
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="YF" ID="9eee9013-7eb9-427c-a488-169ffee5a064" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated">
+              <Description>Function failed</Description>
+              <Attribute Name="Active" AttributeDataType="xs:boolean">
+                <Description>Placed on SCD</Description>
+                <DefaultValue>false</DefaultValue>
+                <Value>false</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>true</RequiredValue>
+                    <RequiredValue>false</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+              <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
             </ExternalInterface>
           </SystemUnitClass>
           <SystemUnitClass Name="#I_R" ID="535b1b8c-03c5-4e23-a6a4-2f7a7246a716" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Logic">
