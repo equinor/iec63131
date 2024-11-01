@@ -81,7 +81,7 @@ There will exist 2 files that should hold the same information regarding logic. 
 ## 2.2 SCD - AML discrepancies
 
 AML file that is generated from a SCD contains the SCD and individuals and signal relations.
- It also contains the corresponding class-library, and the receiving application can use this to check the design.
+It also contains the corresponding class-library, and the receiving application can use this to check the design.
 
 It is recommended that the AML-generator in both **source** and **destination application** , create a log with errors and warnings.
 
@@ -231,7 +231,7 @@ Level 4: InternalLinks between individuals in Level 5
 Grouping of SystemUnitClass information.
 
 Level 5: Individuals of the different SystemUnitClasses
- Note: Individuals must have unique names in same folder.
+Note: Individuals must have unique names in same folder.
 
 ![](illustrations/image020.png)
 
@@ -401,12 +401,14 @@ NorsokElementaryFunctionClass and InputParameterClass
 | --- | --- |
 | ![](illustrations/image055.png) | ![](illustrations/image056.png) <br><br>Additional attributes for Pulse and Timer: <br> ![](illustrations/image058.png) <br>![](illustrations/image060.png) |
 
-Some of the NorsokElementary functions can have n-number of input or output terminals.
- The AML-writer shall add additional terminals and use the same RefBaseClassPath as the existing terminals.
- Example:
+Some of the NorsokElementary functions support expansion with n-number of input or output terminals.  
+The AML-writer shall add additional terminals and may (or shall) use the same RefBaseClassPath as the existing terminals (same RefBaseClassPath shall be used for interchangeable terminals, eg, split outputs).  
+Examples:  
 
-- Split and Opt: can have one input **X** and several output **Y1**, **Y2**, &quot;**Yn**&quot;.
-- Or, XOR, AND, Add and Mul: can have several input **X1**, **X2**, &quot;**Xn**&quot; and one output **Y**.
+- Split: has a single input (**X**) and can have several _interchangeable_ outputs (**Y1**, **Y2**, **...**, **Yn**).
+- Or, XOR, AND, Add and Mul: can have several _interchangeable_ inputs (**X1**, **X2**, ..., **Xn**) and has a single output (**Y**).
+- Opt has a single output (**Y**) and can have multiple inputs (but they are typically specialized and not _interchangeable_).
+- BlackBox can have multiple inputs and outputs (but they are typically specialized and not _interchangeable_).
 
 ### 4.6.1 NodeSplit class
 
