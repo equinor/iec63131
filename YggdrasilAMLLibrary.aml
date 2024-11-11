@@ -49492,7 +49492,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="P_Reset" ID="a79d8276-74be-4546-8709-5c885b59db48" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="Reset" ID="a79d8276-74be-4546-8709-5c885b59db48" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Reset</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
@@ -49538,7 +49538,7 @@
                 </Constraint>
               </Attribute>
             </ExternalInterface>
-            <ExternalInterface Name="P_Set" ID="9ebaf463-685e-4012-8e60-eeb430256635" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <ExternalInterface Name="Set" ID="9ebaf463-685e-4012-8e60-eeb430256635" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
               <Description>Set</Description>
               <Attribute Name="CommunicationType" AttributeDataType="xs:string">
                 <Description>Type of signal communcication</Description>
