@@ -41975,19 +41975,8 @@
         </SystemUnitClass>
         <SystemUnitClass Name="#CRV" ID="a496927f-6232-43ca-bf37-ed50f5ad2d83" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Curve Block for level profiler Tracerco T229-2</Description>
-          <ExternalInterface Name="X" ID="31e9fae4-a651-41f6-afee-0ab6650b584f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
-            <Description>External fault</Description>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
+          <ExternalInterface Name="X" ID="7eaef2fa-3ae0-4031-8579-6c38fdf304be" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <Description>External function input</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -42009,14 +41998,25 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
-              <Value>Binary</Value>
+              <Value>Analogue</Value>
               <Constraint Name="LegalValues">
                 <NominalScaledType>
-                  <RequiredValue>Binary</RequiredValue>
+                  <RequiredValue>Analogue</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
