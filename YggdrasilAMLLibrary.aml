@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.17" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.18" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -15163,6 +15163,40 @@
           </ExternalInterface>
           <ExternalInterface Name="YH" ID="2c268921-0123-4cfd-8f01-7d0d1cf854e1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
             <Description>Pulsed normal function output high</Description>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="YHH" ID="07aece0b-bfb1-42cc-9951-7f8a88e4d5e1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+            <Description>Timer elapsed,active until timer restarts</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
               <DefaultValue />
@@ -47453,192 +47487,6 @@
             <DefaultValue />
             <Value />
           </Attribute>
-          <SystemUnitClass Name="F_TOF" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/SignalOperation" ID="37b53b25-9754-4d7d-a748-28d6db8c524c">
-            <Description>F_:Timer Switch Off Delay</Description>
-            <Attribute Name="Notation" AttributeDataType="xs:string">
-              <Description>Character in symbol</Description>
-              <DefaultValue />
-              <Value>T</Value>
-            </Attribute>
-            <Attribute Name="TimeDelay" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Time delay</Description>
-              <DefaultValue />
-              <Value />
-            </Attribute>
-            <ExternalInterface Name="IN" ID="fc965315-b925-4033-a447-4fc5796fefbe" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
-              <Description>START INPUT</Description>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>In</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>In</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Last Valid</RequiredValue>
-                    <RequiredValue>Min Range</RequiredValue>
-                    <RequiredValue>Max Range</RequiredValue>
-                    <RequiredValue>Substitute Value</RequiredValue>
-                    <RequiredValue>Current Value</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="Q" ID="929508a2-b5ac-43e6-ab4e-b6775fb6e525" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
-              <Description>OUTPUT</Description>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Out</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Out</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-          </SystemUnitClass>
-          <SystemUnitClass Name="F_TON" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/SignalOperation" ID="d9901aca-a58b-4115-9bf2-5552fd42e909">
-            <Description>F_:Timer Switch On Delay</Description>
-            <Attribute Name="Notation" AttributeDataType="xs:string">
-              <Description>Character in symbol</Description>
-              <DefaultValue />
-              <Value>T</Value>
-            </Attribute>
-            <Attribute Name="TimeDelay" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Time delay</Description>
-              <DefaultValue />
-              <Value />
-            </Attribute>
-            <ExternalInterface Name="IN" ID="728b1f69-766c-4e5a-9e54-88195c70db4d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
-              <Description>START INPUT</Description>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>In</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>In</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Last Valid</RequiredValue>
-                    <RequiredValue>Min Range</RequiredValue>
-                    <RequiredValue>Max Range</RequiredValue>
-                    <RequiredValue>Substitute Value</RequiredValue>
-                    <RequiredValue>Current Value</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-            <ExternalInterface Name="Q" ID="628286f1-ff16-40d9-8903-18745b4c1b9b" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
-              <Description>OUTPUT</Description>
-              <Attribute Name="Direction" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Out</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Out</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="SignalClass" AttributeDataType="xs:string">
-                <Description />
-                <DefaultValue />
-                <Value>Binary</Value>
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>Binary</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-                <Description>Type of signal communcication</Description>
-                <DefaultValue />
-                <Value />
-                <Constraint Name="LegalValues">
-                  <NominalScaledType>
-                    <RequiredValue>GeneralSignal</RequiredValue>
-                    <RequiredValue>DataCommunicationLink</RequiredValue>
-                  </NominalScaledType>
-                </Constraint>
-              </Attribute>
-            </ExternalInterface>
-          </SystemUnitClass>
         </SystemUnitClass>
         <SystemUnitClass Name="Logic" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens" ID="24a1e38f-47fb-4f0d-9e05-7f2a4966cf27">
           <Description>Group of logic classes</Description>
