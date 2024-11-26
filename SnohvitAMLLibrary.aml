@@ -14886,7 +14886,185 @@
       </Attribute>
       <SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/LogicObject" />
       <SystemUnitClass Name="KM" ID="dfc80911-0c21-4710-8860-4a5b9b9bdab9" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass" />
-      <SystemUnitClass Name="ABB" ID="c0257568-1ad0-478b-a844-17eec298b01f" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass" />
+      <SystemUnitClass Name="ABB" ID="c0257568-1ad0-478b-a844-17eec298b01f" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass">
+        <SystemUnitClass Name="TOn" ID="REUSEcommon.TOn_Type" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/ABB">
+          <Description>Control Module type provides a CMD interface for the AC 800M Connect function block type: BasicLib.TOn.</Description>
+          <ExternalInterface Name="SequenceIn" ID="REUSEcommon.TOn_Type.SequenceIn" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In">
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string" />
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communication</Description>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+          </ExternalInterface>
+          <ExternalInterface Name="SequenceOut" ID="REUSEcommon.TOn_Type.SequenceOut" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out">
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string" />
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communication</Description>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="X" ID="REUSEcommon.TOn_Type.X" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <Description>IN NODE Input.</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communication</Description>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+          </ExternalInterface>
+          <ExternalInterface Name="Y" ID="REUSEcommon.TOn_Type.Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+            <Description>OUT NODE Output. Set to true when X has been true for the specified time (TIME_DELAY).</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communication</Description>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="TIME_DELAY" ID="REUSEcommon.TOn_Type.TIME_DELAY" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In">
+            <Description>IN Time delay (Range: &gt;= 0s, else LVV + ParError, SV=0s).</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string" />
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communication</Description>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+          </ExternalInterface>
+          <ExternalInterface Name="TIME_ELAPSED" ID="REUSEcommon.TOn_Type.TIME_ELAPSED" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out">
+            <Description>OUT Time Elapsed.</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string" />
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communication</Description>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+        </SystemUnitClass>
+      </SystemUnitClass>
       <SystemUnitClass Name="Siemens" ID="ff681f77-50a8-47af-ac3a-8f1d0a4a3f1c" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass" />
     </SystemUnitClass>
     <SystemUnitClass Name="NonStandardFunctionBlockClass">
