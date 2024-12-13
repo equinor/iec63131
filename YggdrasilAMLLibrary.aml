@@ -47673,6 +47673,40 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
+          <ExternalInterface Name="BZ" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="de28477b-4f5a-45ea-a884-7778b0406a1a">
+            <Description>Ramping frozen</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
           <ExternalInterface Name="FBB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="bff87b81-38db-4a18-939e-7b3b26a39e26">
             <Description>Force Block Safeguarding</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -47859,6 +47893,52 @@
           </ExternalInterface>
           <ExternalInterface Name="FU" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="9ac1ee4c-ddcd-4d7c-9c83-83596b7bf18e">
             <Description>Force suppression</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="FZ" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="c1e48f91-6240-4576-b585-648ca7a1b1bd">
+            <Description>Freeze ramping</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -48477,32 +48557,6 @@
                 <NominalScaledType>
                   <RequiredValue>GeneralSignal</RequiredValue>
                   <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="SequenceIn" ID="31ac3273-a9bb-4e07-8914-a21c937b0a50" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
-            <Description>Representation of connection from Sequence flag</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>In</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>In</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="SequenceOut" ID="55d2c65a-9260-43dc-b2c4-ce190e0b2196" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
-            <Description>Representation of connection to Sequence flag</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Out</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Out</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -49319,6 +49373,32 @@
                 <NominalScaledType>
                   <RequiredValue>GeneralSignal</RequiredValue>
                   <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="SequenceIn" ID="31ac3273-a9bb-4e07-8914-a21c937b0a50" RefBaseClassPath="InterfaceClassLibrary/SignalReference/In">
+            <Description>Representation of connection from Sequence flag</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="SequenceOut" ID="55d2c65a-9260-43dc-b2c4-ce190e0b2196" RefBaseClassPath="InterfaceClassLibrary/SignalReference/Out">
+            <Description>Representation of connection to Sequence flag</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Out</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Out</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
