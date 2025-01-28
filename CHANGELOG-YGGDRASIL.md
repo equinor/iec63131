@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## 0.0.21
+
+### Updated
+
+- #HA16 : Pin renumbering from X0 to X1 (..X16) and Y0 to Y1(...Y16)
+- #SEL14 : LA,LM and BA pins are added and connection points reduced to 10
 ## 0.0.20
 
 ### Updated
