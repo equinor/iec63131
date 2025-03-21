@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.21" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.22" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -15595,7 +15595,53 @@
         </SystemUnitClass>
         <SystemUnitClass Name="#HA16" ID="d3514dba-b6bb-42fe-b089-4bc865fba237" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Receive 16 Analogue Values from HMI</Description>
-          <ExternalInterface Name="X1" ID="48a85ec0-500b-4997-9a8e-835e88fa2488" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X0" ID="48a85ec0-500b-4997-9a8e-835e88fa2488" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+            <Description>External input 0</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Analogue</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Analogue</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="X1" ID="920f0340-ade5-4443-8652-045cd359d0fa" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 1</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15641,7 +15687,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X2" ID="920f0340-ade5-4443-8652-045cd359d0fa" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X2" ID="8cee6bb8-36a1-4dc9-9516-485c889c3870" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 2</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15687,7 +15733,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X3" ID="8cee6bb8-36a1-4dc9-9516-485c889c3870" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X3" ID="56f004df-b162-42a4-b5d6-38029ccd97a7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 3</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15733,7 +15779,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X4" ID="56f004df-b162-42a4-b5d6-38029ccd97a7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X4" ID="c926ba06-7f84-4f98-a3cf-381b5d830238" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 4</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15779,7 +15825,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X5" ID="c926ba06-7f84-4f98-a3cf-381b5d830238" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X5" ID="fdc9d142-200d-49e6-a282-91d4c371af10" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 5</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15825,7 +15871,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X6" ID="fdc9d142-200d-49e6-a282-91d4c371af10" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X6" ID="3f513fbb-39ba-4577-aabe-e95a2c629354" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 6</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15871,7 +15917,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X7" ID="3f513fbb-39ba-4577-aabe-e95a2c629354" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X7" ID="1e419757-8479-48f9-98b2-7924893acf24" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 7</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15917,7 +15963,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X8" ID="1e419757-8479-48f9-98b2-7924893acf24" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X8" ID="cbd3eb76-fc88-4384-b6b5-e1d082b322f8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 8</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -15963,7 +16009,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X9" ID="cbd3eb76-fc88-4384-b6b5-e1d082b322f8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X9" ID="c556b973-518a-4e9a-8ea3-6b9f5e10f9c2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 9</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -16009,7 +16055,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X10" ID="c556b973-518a-4e9a-8ea3-6b9f5e10f9c2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X10" ID="ce37ee96-7e28-41ff-8df4-a7623737cf13" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 10</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -16055,7 +16101,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X11" ID="ce37ee96-7e28-41ff-8df4-a7623737cf13" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X11" ID="fc36eccb-5713-4e69-83e8-7f27676415c2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 11</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -16101,7 +16147,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X12" ID="fc36eccb-5713-4e69-83e8-7f27676415c2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X12" ID="11b665ca-edc9-4def-91f3-708badf37316" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 12</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -16147,7 +16193,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X13" ID="11b665ca-edc9-4def-91f3-708badf37316" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X13" ID="a7dc8b75-5d08-4f53-9e4f-013f7eba6e3c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 13</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -16193,7 +16239,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X14" ID="a7dc8b75-5d08-4f53-9e4f-013f7eba6e3c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X14" ID="57fe9585-3ee0-42b3-874c-0d4f27d9a1f8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 14</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -16239,7 +16285,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X15" ID="57fe9585-3ee0-42b3-874c-0d4f27d9a1f8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+          <ExternalInterface Name="X15" ID="2512504c-dc4c-4fe0-8c61-e0d9afb8f56e" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>External input 15</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
@@ -16285,54 +16331,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="X16" ID="2512504c-dc4c-4fe0-8c61-e0d9afb8f56e" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-            <Description>External input 16</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>In</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>In</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Last Valid</RequiredValue>
-                  <RequiredValue>Min Range</RequiredValue>
-                  <RequiredValue>Max Range</RequiredValue>
-                  <RequiredValue>Substitute Value</RequiredValue>
-                  <RequiredValue>Current Value</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Analogue</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Analogue</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="Y1" ID="cad4590e-20d7-4c2a-90bf-8d663543227c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y0" ID="cad4590e-20d7-4c2a-90bf-8d663543227c" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 0</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16365,8 +16365,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y2" ID="74c6d42f-f6a9-45b6-ac5e-ea9eb49cc8c9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y1" ID="74c6d42f-f6a9-45b6-ac5e-ea9eb49cc8c9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 1</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16399,8 +16399,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y3" ID="0752450c-92c3-42ed-acf3-98857f8c3640" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y2" ID="0752450c-92c3-42ed-acf3-98857f8c3640" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 2</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16433,8 +16433,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y4" ID="c5ca34c6-4df6-4d8c-a860-164ac985397f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y3" ID="c5ca34c6-4df6-4d8c-a860-164ac985397f" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 3</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16467,8 +16467,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y5" ID="8a101282-bc5c-4f6a-8f55-115fc603ea4d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y4" ID="8a101282-bc5c-4f6a-8f55-115fc603ea4d" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 4</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16501,8 +16501,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y6" ID="5110e908-787d-4c45-9529-9c84e695dd19" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y5" ID="5110e908-787d-4c45-9529-9c84e695dd19" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 5</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16535,8 +16535,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y7" ID="8a65b376-50a4-4377-b8df-d17704e21589" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y6" ID="8a65b376-50a4-4377-b8df-d17704e21589" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 6</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16569,8 +16569,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y8" ID="98a69995-a819-44a3-983a-47c67e78f6e2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y7" ID="98a69995-a819-44a3-983a-47c67e78f6e2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 7</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16603,8 +16603,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y9" ID="a356a429-abc6-47be-a421-a56489d283cd" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y8" ID="a356a429-abc6-47be-a421-a56489d283cd" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 8</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16637,8 +16637,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y10" ID="fcfc2a17-a868-499b-84b3-28e5c5b51625" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y9" ID="fcfc2a17-a868-499b-84b3-28e5c5b51625" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 9</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16671,8 +16671,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y11" ID="f808523f-e727-4de9-987d-5df0bd8d2cf1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y10" ID="f808523f-e727-4de9-987d-5df0bd8d2cf1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 10</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16705,8 +16705,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y12" ID="f8843788-e8b6-4e59-a8e8-3dd61f5b0eaa" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y11" ID="f8843788-e8b6-4e59-a8e8-3dd61f5b0eaa" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 11</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16739,8 +16739,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y13" ID="dc710e82-f9db-41ed-bc2e-f95c95dac6d7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y12" ID="dc710e82-f9db-41ed-bc2e-f95c95dac6d7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 12</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16773,8 +16773,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y14" ID="aeb8c1c1-ecff-425b-8af9-1e6042ec8bd2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y13" ID="aeb8c1c1-ecff-425b-8af9-1e6042ec8bd2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 13</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16807,8 +16807,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y15" ID="3aca3fd4-8abd-4e8a-be6c-bf265cc2e075" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y14" ID="3aca3fd4-8abd-4e8a-be6c-bf265cc2e075" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 14</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -16841,8 +16841,8 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="Y16" ID="c17de4a9-8879-4e11-82a5-7bce7dd7eff2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
-            <Description>Normal function output</Description>
+          <ExternalInterface Name="Y15" ID="c17de4a9-8879-4e11-82a5-7bce7dd7eff2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut">
+            <Description>Normal function output 15</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
