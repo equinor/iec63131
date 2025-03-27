@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.22" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.23" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -14899,6 +14899,52 @@
           </Attribute>
           <ExternalInterface Name="XH" ID="7b51a871-bc04-4a22-b5ab-3683b32695b2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
             <Description>External set high</Description>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="XH1" ID="5bf10375-39a9-4bad-ac80-63335bcefcf7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+            <Description>External start/restart/continue cut as pulse</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
               <DefaultValue />
