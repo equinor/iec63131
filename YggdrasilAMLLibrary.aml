@@ -39737,7 +39737,7 @@
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="Y1_TRANS" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="c7a68193-137b-499e-865c-5abde7365b14">
-            <Description>Transitioning</Description>
+            <Description>IWIS 1 : Alarm suppression</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -39771,7 +39771,7 @@
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="Y1TRAN" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="58837fbc-b512-4a28-b275-6c5ddcd03237">
-            <Description>Interface 1 transisitoning</Description>
+            <Description>IWIS 1 : Transitioning</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -40179,7 +40179,7 @@
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="Y2TRAN" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="39233c6e-0539-4387-b9c2-5c950f9351e6">
-            <Description>Transitioning</Description>
+            <Description>IWIS  2 : Transitioning</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -40213,7 +40213,7 @@
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="Y2_TRANS" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="768271e4-7faf-46f9-98b4-dc6be20c82fc">
-            <Description>Alarm suppression (IWIS)</Description>
+            <Description>IWIS 2 : Alarm suppression</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
