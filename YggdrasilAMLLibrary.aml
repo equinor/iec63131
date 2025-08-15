@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.26" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.27" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -45250,7 +45250,7 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X1" ID="501e496b-d7ed-4c5b-b271-f41e8f2d6823" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X1" ID="224aa521-4de0-44b7-891d-d6121e049df0" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 1</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45284,7 +45284,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45295,8 +45295,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X2" ID="25fef772-f133-41f1-9dab-c65692bf31bb" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X2" ID="77f849db-b17f-4633-9ae2-858f141798cf" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 2</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45330,7 +45336,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45341,8 +45347,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X3" ID="6c2ca19a-4438-4d3c-8241-566d5bac08c9" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X3" ID="a6e9e397-8c26-479d-a2fd-a4574fc0feca" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 3</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45376,7 +45388,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45387,8 +45399,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X4" ID="9879ed6c-ac87-4442-b9e1-b2f0d42ad756" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X4" ID="3d84733b-b0a4-4ba5-a1ca-2db52a7cc404" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 4</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45422,7 +45440,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45433,8 +45451,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X5" ID="6bb6a41d-ec0e-4a1b-b916-68231cf06c8c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X5" ID="0e86b3ed-87e3-464f-96b3-dc0ce1626ed3" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 5</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45468,7 +45492,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45479,8 +45503,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X6" ID="0ba2c503-d1c6-46b8-aff4-14ebc77fd3ac" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X6" ID="178a77e2-8c8a-45d1-84ee-7d0a4e551953" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 6</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45514,7 +45544,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45525,8 +45555,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X7" ID="efb27f62-4547-4672-aa22-4e4553c06458" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X7" ID="b2f5c6e3-7c92-4463-9242-fbf59095a1ad" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 7</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45560,7 +45596,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45571,8 +45607,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X8" ID="bf0f634b-8ebd-4c90-be06-dd4f3896be55" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X8" ID="0499cc92-32e9-4d5f-9725-833aa1ac3b6d" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 8</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45606,7 +45648,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45617,8 +45659,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X9" ID="27ba29af-026d-43ed-b68a-9dff581f9815" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X9" ID="8977acd1-ec13-4c15-abd1-003667335f7c" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 9</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45652,7 +45700,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45663,8 +45711,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X10" ID="a83634dd-b5e7-44b8-bfe3-5f1f7b5a4c24" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X10" ID="d644c326-e83a-42c2-8d36-d3b1c05725d1" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 10</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45698,7 +45752,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45709,8 +45763,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X11" ID="9561902a-0031-49a2-9587-d58f4737b264" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X11" ID="9d8a1b18-0446-4240-ad8b-fa98b6c1b530" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 11</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45744,7 +45804,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45755,8 +45815,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X12" ID="fcbedb2d-00a3-44cf-aca6-85d5772d88b7" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X12" ID="981229d9-c958-4e4d-b509-b52d5de2ad68" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 12</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45790,7 +45856,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45801,8 +45867,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X13" ID="09ea0ec6-f4d3-4954-9d84-38380a5a0b68" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X13" ID="a71cb623-0b70-4bb3-a81a-a312bc69ab1b" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 13</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45836,7 +45908,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45847,8 +45919,14 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
+            </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="P_EN_X14" ID="50688d39-230e-43d0-8096-6c807d19142e" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
+          <ExternalInterface Name="P_EN_X14" ID="37d5e821-a9fd-48ac-bf1d-f2035a0e67ab" RefBaseClassPath="InterfaceClassLibrary/VendorSignalClass/Siemens/BinaryInWithText">
             <Description>Enable button 14</Description>
             <Attribute Name="CommunicationType" AttributeDataType="xs:string">
               <Description>Type of signal communcication</Description>
@@ -45882,7 +45960,7 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="FallbackValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
             <Attribute Name="SignalClass" AttributeDataType="xs:string">
               <Description />
               <DefaultValue />
@@ -45892,6 +45970,12 @@
                   <RequiredValue>Binary</RequiredValue>
                 </NominalScaledType>
               </Constraint>
+            </Attribute>
+            <Attribute Name="String0" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 0</Description>
+            </Attribute>
+            <Attribute Name="String1" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:string">
+              <Description>Text when value is 1</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut" ID="0cb1fd9d-6eda-4ccb-b6df-d6a5990bd9fb">
