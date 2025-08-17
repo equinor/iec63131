@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## 0.0.28
+
+### Updated
+
+- #SKB : Typo error fix for the pins YV4 and XBCLV7
+- #CTV : Signal type update from digital in to analog out ( YIPRESS_OS & YOPRESS_OS & YLF_HF_OS)
+- #CIM : Typor error fix for the pins Y1TRAN and Y1_TRANS
+- #WSP : Signal type update from analogue out to digital in (S1,2,3,4....14)
+
+
 ## 0.0.27
 
 ### Updated
