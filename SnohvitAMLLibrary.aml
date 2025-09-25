@@ -15094,22 +15094,6 @@
             <Description>IN Enable operation events. True: Events generated when output or feedback position are changed. False: No operation events are generated.</Description>
             <DefaultValue>true</DefaultValue>
           </Attribute>
-          <Attribute Name="PDAC" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Conflict alarm/event configuration (0: no alarm/event, 1: event, 2: alarm and event, 3: alarm, else 2).</Description>
-            <DefaultValue>2</DefaultValue>
-          </Attribute>
-          <Attribute Name="PDASF" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Safeguarding failure alarm/event configuration (0: no alarm/event, 1: event, 2: alarm and event, 3: alarm, else 2).</Description>
-            <DefaultValue>2</DefaultValue>
-          </Attribute>
-          <Attribute Name="PDAW" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Warning alarm/event conf (0: no alarm/event, 1: event, 2: alarm and event, 3: alarm, else 2)</Description>
-            <DefaultValue>2</DefaultValue>
-          </Attribute>
-          <Attribute Name="PDE" AttributeDataType="xs:boolean" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Enable HMI interaction events. True: HMI commands generate events. False: HMI commands do not generate events.</Description>
-            <DefaultValue>true</DefaultValue>
-          </Attribute>
           <Attribute Name="PHighCommandText" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Text used for high command button and operator event. Event generated when PDE is true. (" commanded" added in event message text.)</Description>
             <DefaultValue>||NLSID_Rco_Close</DefaultValue>
