@@ -16,5 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- ABB vendor type 'TOn' from REUSE library REUSEcommon
 - AML library 'SnohvitPartialLibrary' including Shutdown Hierarchy and C&H related classes
 - AML library 'SnohvitAmlLibrary' as XML merge of iec63131 AML library v0.0.12 ('main') and 'SnohvitPartialLibrary'
