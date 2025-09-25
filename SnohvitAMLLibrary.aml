@@ -15074,10 +15074,6 @@
             <Description>IN Severity for safeguarding failure alarm/event (Range 1-1000, else 1000).</Description>
             <DefaultValue>950</DefaultValue>
           </Attribute>
-          <Attribute Name="PPriF" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Severity for fault alarm/event and fault type events (Range 1-1000, else 1000).</Description>
-            <DefaultValue>650</DefaultValue>
-          </Attribute>
           <Attribute Name="PPriW" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Severity for warning alarm/event and fault type events (Range 1-1000, else 1000).</Description>
             <DefaultValue>550</DefaultValue>
@@ -15104,10 +15100,6 @@
           </Attribute>
           <Attribute Name="PDASF" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Safeguarding failure alarm/event configuration (0: no alarm/event, 1: event, 2: alarm and event, 3: alarm, else 2).</Description>
-            <DefaultValue>2</DefaultValue>
-          </Attribute>
-          <Attribute Name="PDAF" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Fault alarm/event configuration (0: no alarm/event, 1: event, 2: alarm and event, 3: alarm, else 2).</Description>
             <DefaultValue>2</DefaultValue>
           </Attribute>
           <Attribute Name="PDAW" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
@@ -15141,10 +15133,6 @@
           <Attribute Name="PMsgW" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Message text for warning alarm and on-event. (' off' added in off-event message).</Description>
             <DefaultValue>||NLSID_CondW</DefaultValue>
-          </Attribute>
-          <Attribute Name="PDelayFault" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Fault delay/filter time, used for external fault and IO fault detection (t &gt;= 0s, else considered 0s).</Description>
-            <DefaultValue>t#0s</DefaultValue>
           </Attribute>
           <Attribute Name="PDelayW" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Warning delay/filter time (t &gt;= 0s, else considered 0s).</Description>
@@ -15574,8 +15562,19 @@
               </Constraint>
             </Attribute>
           </ExternalInterface>
-          <ExternalInterface Name="YF" ID="REUSEProcessElectroLib.SBBEx.YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+          <ExternalInterface Name="YF" ID="REUSEProcessElectroLib.SBBEx.YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated">
             <Description>OUT NODE Fault. Feedback error or external fault (XF) or IO fault (bad status of IO signals) or not available (XE). Affected by suppress.</Description>
+            <Attribute Name="Active" AttributeDataType="xs:boolean">
+              <Description>Placed on SCD</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>true</RequiredValue>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Value>Out</Value>
               <Constraint Name="LegalValues">
@@ -15601,6 +15600,8 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
           </ExternalInterface>
           <ExternalInterface Name="YWarning" ID="REUSEProcessElectroLib.SBBEx.YWarning" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
             <Description>OUT NODE Warning. XWarning for PDelayW. Affected by Suppress</Description>
