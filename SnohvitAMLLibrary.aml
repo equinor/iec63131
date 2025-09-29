@@ -15315,6 +15315,9 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="PulseDuration" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
             </Attribute>
@@ -15346,6 +15349,9 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="PulseDuration" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
             </Attribute>
@@ -15376,6 +15382,9 @@
                   <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
+            </Attribute>
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="PulseDuration" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
@@ -15500,6 +15509,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
@@ -15549,6 +15561,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
@@ -15598,6 +15613,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
@@ -15647,6 +15665,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
@@ -15696,6 +15717,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
               <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
@@ -15745,6 +15769,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -15789,6 +15816,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -15833,6 +15863,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -15877,6 +15910,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -15921,6 +15957,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -15965,6 +16004,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -16009,6 +16051,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -16053,6 +16098,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -16097,6 +16145,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -16141,6 +16192,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -16185,6 +16239,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
@@ -16229,6 +16286,9 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalName" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
+              <Description>IN EDIT Name of the signal</Description>
+            </Attribute>
             <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
             <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
