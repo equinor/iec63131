@@ -15319,7 +15319,7 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="PulseDuration" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
+              <Description>IN Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="YB2" ID="REUSEProcessElectroLib.SBBEx.YBoolEx.YBool2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
@@ -15353,7 +15353,7 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="PulseDuration" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
+              <Description>IN Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="YB3" ID="REUSEProcessElectroLib.SBBEx.YBoolEx.YBool3" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
@@ -15387,7 +15387,7 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="PulseDuration" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
+              <Description>IN Pulse duration.(0: continuous, &gt;0: pulsed)</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="XGH" ID="REUSEProcessElectroLib.SBBEx.XGH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
@@ -15513,13 +15513,13 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
+              <Description>IN Signal configuration (0:status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
             <Attribute Name="Config" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Event configuration (0: no event, 1: event, else 1)</Description>
+              <Description>IN Event configuration (0: no event, 1: event, else 1)</Description>
             </Attribute>
             <Attribute Name="Priority" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Priority for events.</Description>
+              <Description>IN Priority for input change events.</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="XB2" ID="REUSEProcessElectroLib.SBBEx.XBoolEx.XBool2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
@@ -15565,13 +15565,13 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
+              <Description>IN Signal configuration (0:status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
             <Attribute Name="Config" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Event configuration (0: no event, 1: event, else 1)</Description>
+              <Description>IN Event configuration (0: no event, 1: event, else 1)</Description>
             </Attribute>
             <Attribute Name="Priority" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Priority for events.</Description>
+              <Description>IN Priority for input change events.</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="XB3" ID="REUSEProcessElectroLib.SBBEx.XBoolEx.XBool3" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
@@ -15617,13 +15617,13 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
+              <Description>IN Signal configuration (0:status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
             <Attribute Name="Config" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Event configuration (0: no event, 1: event, else 1)</Description>
+              <Description>IN Event configuration (0: no event, 1: event, else 1)</Description>
             </Attribute>
             <Attribute Name="Priority" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Priority for events.</Description>
+              <Description>IN Priority for input change events.</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="XB4" ID="REUSEProcessElectroLib.SBBEx.XBoolEx.XBool4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
@@ -15669,13 +15669,13 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
+              <Description>IN Signal configuration (0:status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
             <Attribute Name="Config" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Event configuration (0: no event, 1: event, else 1)</Description>
+              <Description>IN Event configuration (0: no event, 1: event, else 1)</Description>
             </Attribute>
             <Attribute Name="Priority" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Priority for events.</Description>
+              <Description>IN Priority for input change events.</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="XB5" ID="REUSEProcessElectroLib.SBBEx.XBoolEx.XBool5" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
@@ -15721,13 +15721,13 @@
               <Description>IN EDIT Name of the signal</Description>
             </Attribute>
             <Attribute Name="Category" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Signal configuration (0:normal status, 1:warning, 2:fault, else 0)</Description>
+              <Description>IN Signal configuration (0:status, 1:warning, 2:fault, else 0)</Description>
             </Attribute>
             <Attribute Name="Config" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Event configuration (0: no event, 1: event, else 1)</Description>
+              <Description>IN Event configuration (0: no event, 1: event, else 1)</Description>
             </Attribute>
             <Attribute Name="Priority" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
-              <Description>Priority for events.</Description>
+              <Description>IN Priority for input change events.</Description>
             </Attribute>
           </ExternalInterface>
           <ExternalInterface Name="XR1" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal1" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
