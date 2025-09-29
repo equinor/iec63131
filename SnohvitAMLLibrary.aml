@@ -15081,6 +15081,10 @@
             <Description>IN Enable operation events. True: Events generated when output or feedback position are changed. False: No operation events are generated.</Description>
             <DefaultValue>true</DefaultValue>
           </Attribute>
+          <Attribute Name="PDE" AttributeDataType="xs:boolean" RefAttributeType="AttributeTypeLib/Parameter">
+            <Description>IN Enable HMI interaction events. True: HMI commands generate events. False: HMI commands do not generate events.</Description>
+            <DefaultValue>true</DefaultValue>
+          </Attribute>
           <Attribute Name="PHighCommandText" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Text used for high command button and operator event. Event generated when PDE is true. (" commanded" added in event message text.)</Description>
           </Attribute>
