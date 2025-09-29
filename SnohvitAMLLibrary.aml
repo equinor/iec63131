@@ -15745,6 +15745,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR2" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal2" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -15785,6 +15789,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR3" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal3" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -15825,6 +15833,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR4" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -15865,6 +15877,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR5" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal5" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -15905,6 +15921,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR6" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal6" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -15945,6 +15965,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR7" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal7" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -15985,6 +16009,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR8" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal8" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -16025,6 +16053,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR9" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal9" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -16065,6 +16097,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR10" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal10" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -16105,6 +16141,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR11" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal11" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -16145,6 +16185,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="XR12" ID="REUSEProcessElectroLib.SBBEx.XRealEx.XReal12" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
             <Description>IN Extended real input.</Description>
@@ -16185,6 +16229,10 @@
               </Constraint>
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="Min" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Max" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Fraction" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="Unit" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="BS" ID="REUSEProcessElectroLib.SBBEx.BS" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
             <Description>OUT NODE Safeguarding status. Set by any safeguarding input LSL, LSH, FSL or FSH.</Description>
