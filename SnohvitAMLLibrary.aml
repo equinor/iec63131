@@ -15068,15 +15068,15 @@
           <Description>Switching binary control of breaker devices, with manual/auto mode and close/open activation by safeguarding inputs, local mode external inputs, auto inputs, or manual commands, extended boolean outputs, real inputs and configurable boolean inputs. Fault handling: External fault, IO fault, feedback fault, unavailable fault. Suppress of fault output and fault alarms. Block of safeguarding inputs. Conflict detection (Safeguarding input + block commanded or any output forced). Configurable boolean inputs(Fault, Warning, Boolean status). Real input status for indication. Boolean outputs(only commanded from HMI).</Description>
           <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="SafeguardingAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
-          <Attribute Name="PPriHMI" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PPriHMI" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Severity for HMI command events. (Range 1-1000, else 1000).</Description>
             <DefaultValue>350</DefaultValue>
           </Attribute>
-          <Attribute Name="PPriFB" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PPriFB" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Severity for feedback position changed events. (Range 1-1000, else 1000).</Description>
             <DefaultValue>350</DefaultValue>
           </Attribute>
-          <Attribute Name="PPriOp" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PPriOp" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Severity for output change events. (Range 1-1000, else 1000).</Description>
             <DefaultValue>350</DefaultValue>
           </Attribute>
@@ -15102,7 +15102,7 @@
           <Attribute Name="PMsgW" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Message text for warning alarm and on-event. (' off' added in off-event message).</Description>
           </Attribute>
-          <Attribute Name="PFBConfig" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PFBConfig" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Feedback configuration (0=XGH and XGL, 1=XGH, 2=XGH inv., 3=XGH inv. and XGL inv., 4=XGL, 5=XGL inv., 6=None, else XGH and XGL).</Description>
             <DefaultValue>0</DefaultValue>
           </Attribute>
@@ -15122,11 +15122,11 @@
             <Description>IN Configuration of device output action on loss of available signal, while running (false: no action, true: open breaker).</Description>
             <DefaultValue>true</DefaultValue>
           </Attribute>
-          <Attribute Name="PStartupMode" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PStartupMode" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Mode after cold start (1= Manual, 2= Auto, 3= Previous state, else 3). Set to manual on init start if previous state selected.</Description>
             <DefaultValue>1</DefaultValue>
           </Attribute>
-          <Attribute Name="PStartupPosition" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PStartupPosition" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Position after cold start in Manual (1= based on feedback, 2= Open, 3= Closed, else 1).</Description>
             <DefaultValue>1</DefaultValue>
           </Attribute>
@@ -15138,11 +15138,11 @@
             <Description>IN Pulse duration for the close (YH) and open (YL) outputs.</Description>
             <DefaultValue>PT4.99S</DefaultValue>
           </Attribute>
-          <Attribute Name="POutPulseReactConfig" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="POutPulseReactConfig" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Configuration of YH/YL output pulses reactivation on repeated commands/inputs (0= none, 1= manual, 2= auto, 3= auto and manual, else 0).</Description>
             <DefaultValue>0</DefaultValue>
           </Attribute>
-          <Attribute Name="PUnavailableFaultAlarmConfig" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
+          <Attribute Name="PUnavailableFaultAlarmConfig" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Configuration of unavailable fault alarm generation when PDAF &gt; 1 (0: never, 1: when breaker closed, 2: always, else: always).</Description>
             <DefaultValue>2</DefaultValue>
           </Attribute>
