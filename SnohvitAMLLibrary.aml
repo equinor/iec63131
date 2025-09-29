@@ -15138,11 +15138,11 @@
           </Attribute>
           <Attribute Name="PFeedbackTimeout" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Maximum allowed time from close/open command is given to corresponding feedback is received. (t &gt;= 0s, else considered 0s).</Description>
-            <DefaultValue>t#9s990ms</DefaultValue>
+            <DefaultValue>PT9.99S</DefaultValue>
           </Attribute>
           <Attribute Name="POutPulseDuration" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Pulse duration for the close (YH) and open (YL) outputs.</Description>
-            <DefaultValue>t#4s990ms</DefaultValue>
+            <DefaultValue>PT4.99S</DefaultValue>
           </Attribute>
           <Attribute Name="POutPulseReactConfig" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Configuration of YH/YL output pulses reactivation on repeated commands/inputs (0= none, 1= manual, 2= auto, 3= auto and manual, else 0).</Description>
