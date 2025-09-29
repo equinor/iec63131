@@ -15092,27 +15092,21 @@
           </Attribute>
           <Attribute Name="PHighCommandText" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Text used for high command button and operator event. Event generated when PDE is true. (" commanded" added in event message text.)</Description>
-            <DefaultValue>||NLSID_Rco_Close</DefaultValue>
           </Attribute>
           <Attribute Name="PLowCommandText" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Text used for low command button and operator event. Event generated when PDE is true. (" commanded" added in event message text.)</Description>
-            <DefaultValue>||NLSID_Rco_Open</DefaultValue>
           </Attribute>
           <Attribute Name="PMsgC" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Message text for coincidence alarm and on-event. (' off' added in off-event message).</Description>
-            <DefaultValue>||NLSID_Rco_Conflict</DefaultValue>
           </Attribute>
           <Attribute Name="PMsgSF" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Message text for safeguarding failure alarm and on-event. (' off' added in off-event message).</Description>
-            <DefaultValue>||NLSID_Rco_SafeguardingFailure</DefaultValue>
           </Attribute>
           <Attribute Name="PMsgF" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Message text for fault alarm and on-event. (' off' added in off-event message).</Description>
-            <DefaultValue>||NLSID_Rco_Fault</DefaultValue>
           </Attribute>
           <Attribute Name="PMsgW" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Message text for warning alarm and on-event. (' off' added in off-event message).</Description>
-            <DefaultValue>||NLSID_CondW</DefaultValue>
           </Attribute>
           <Attribute Name="PFBConfig" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Feedback configuration (0=XGH and XGL, 1=XGH, 2=XGH inv., 3=XGH inv. and XGL inv., 4=XGL, 5=XGL inv., 6=None, else XGH and XGL).</Description>
