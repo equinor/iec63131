@@ -15066,14 +15066,8 @@
         </SystemUnitClass>
         <SystemUnitClass Name="SBBEx" ID="REUSEProcessElectroLib.SBBEx" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/ABB">
           <Description>Switching binary control of breaker devices, with manual/auto mode and close/open activation by safeguarding inputs, local mode external inputs, auto inputs, or manual commands, extended boolean outputs, real inputs and configurable boolean inputs. Fault handling: External fault, IO fault, feedback fault, unavailable fault. Suppress of fault output and fault alarms. Block of safeguarding inputs. Conflict detection (Safeguarding input + block commanded or any output forced). Configurable boolean inputs(Fault, Warning, Boolean status). Real input status for indication. Boolean outputs(only commanded from HMI).</Description>
-          <Attribute Name="PPriC" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Severity for conflict alarm/event (Range 1-1000, else 1000).</Description>
-            <DefaultValue>850</DefaultValue>
-          </Attribute>
-          <Attribute Name="PPriSF" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Severity for safeguarding failure alarm/event (Range 1-1000, else 1000).</Description>
-            <DefaultValue>950</DefaultValue>
-          </Attribute>
+          <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
+          <Attribute Name="SafeguardingAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
           <Attribute Name="PPriHMI" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Severity for HMI command events. (Range 1-1000, else 1000).</Description>
             <DefaultValue>350</DefaultValue>
