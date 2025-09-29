@@ -16152,7 +16152,7 @@
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
           </ExternalInterface>
-          <ExternalInterface Name="XWarning" ID="REUSEProcessElectroLib.SBBEx.XWarning" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+          <ExternalInterface Name="XW" ID="REUSEProcessElectroLib.SBBEx.XWarning" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
             <Description>IN Warning detected. Generates warning alarm (if configured) and activates YWarning. (Filtered according to PDelayW)</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Value>In</Value>
@@ -16192,7 +16192,7 @@
             </Attribute>
             <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
           </ExternalInterface>
-          <ExternalInterface Name="LinkFaultIndication" ID="REUSEProcessElectroLib.SBBEx.LinkFaultIndication" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
+          <ExternalInterface Name="XFL" ID="REUSEProcessElectroLib.SBBEx.LinkFaultIndication" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
             <Description>IN Link communication fault. Only HMI indication and separate fault type event.</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Value>In</Value>
