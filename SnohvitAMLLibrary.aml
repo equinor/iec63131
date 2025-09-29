@@ -15540,17 +15540,6 @@
           </ExternalInterface>
           <ExternalInterface Name="YF" ID="REUSEProcessElectroLib.SBBEx.YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated">
             <Description>OUT NODE Fault. Feedback error or external fault (XF) or IO fault (bad status of IO signals) or not available (XE). Affected by suppress.</Description>
-            <Attribute Name="Active" AttributeDataType="xs:boolean">
-              <Description>Placed on SCD</Description>
-              <DefaultValue>false</DefaultValue>
-              <Value>false</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>true</RequiredValue>
-                  <RequiredValue>false</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Value>Out</Value>
               <Constraint Name="LegalValues">
@@ -15576,8 +15565,19 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
-            <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
-            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
+            <Attribute Name="Active" AttributeDataType="xs:boolean">
+              <Description>Placed on SCD</Description>
+              <DefaultValue>false</DefaultValue>
+              <Value>false</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>true</RequiredValue>
+                  <RequiredValue>false</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Priority" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="TimeDelay" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="YW" ID="REUSEProcessElectroLib.SBBEx.YWarning" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated">
             <Description>OUT NODE Warning. XWarning for PDelayW. Affected by Suppress</Description>
