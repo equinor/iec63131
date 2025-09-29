@@ -15074,10 +15074,6 @@
             <Description>IN Severity for safeguarding failure alarm/event (Range 1-1000, else 1000).</Description>
             <DefaultValue>950</DefaultValue>
           </Attribute>
-          <Attribute Name="PPriW" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Severity for warning alarm/event and fault type events (Range 1-1000, else 1000).</Description>
-            <DefaultValue>550</DefaultValue>
-          </Attribute>
           <Attribute Name="PPriHMI" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Severity for HMI command events. (Range 1-1000, else 1000).</Description>
             <DefaultValue>350</DefaultValue>
@@ -15117,10 +15113,6 @@
           <Attribute Name="PMsgW" AttributeDataType="xs:string" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Message text for warning alarm and on-event. (' off' added in off-event message).</Description>
             <DefaultValue>||NLSID_CondW</DefaultValue>
-          </Attribute>
-          <Attribute Name="PDelayW" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter">
-            <Description>IN Warning delay/filter time (t &gt;= 0s, else considered 0s).</Description>
-            <DefaultValue>t#0s</DefaultValue>
           </Attribute>
           <Attribute Name="PFBConfig" AttributeDataType="xs:integer" RefAttributeType="AttributeTypeLib/Parameter">
             <Description>IN Feedback configuration (0=XGH and XGL, 1=XGH, 2=XGH inv., 3=XGH inv. and XGL inv., 4=XGL, 5=XGL inv., 6=None, else XGH and XGL).</Description>
@@ -15587,7 +15579,7 @@
             <Attribute Name="Priority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
             <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
           </ExternalInterface>
-          <ExternalInterface Name="YWarning" ID="REUSEProcessElectroLib.SBBEx.YWarning" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
+          <ExternalInterface Name="YW" ID="REUSEProcessElectroLib.SBBEx.YWarning" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOutAnnunciated">
             <Description>OUT NODE Warning. XWarning for PDelayW. Affected by Suppress</Description>
             <Attribute Name="Direction" AttributeDataType="xs:string">
               <Value>Out</Value>
@@ -15614,6 +15606,19 @@
                 </NominalScaledType>
               </Constraint>
             </Attribute>
+            <Attribute Name="Active" AttributeDataType="xs:boolean">
+              <Description>Placed on SCD</Description>
+              <DefaultValue>False</DefaultValue>
+              <Value>False</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>True</RequiredValue>
+                  <RequiredValue>False</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="Priority" AttributeDataType="xs:int" RefAttributeType="AttributeTypeLib/Parameter" />
+            <Attribute Name="TimeDelay" AttributeDataType="xs:duration" RefAttributeType="AttributeTypeLib/Parameter" />
           </ExternalInterface>
           <ExternalInterface Name="BB" ID="REUSEProcessElectroLib.SBBEx.BB" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut">
             <Description>OUT NODE Blocked status, HMI command or FB input. True: Safeguarding and force disable inputs blocked.</Description>
