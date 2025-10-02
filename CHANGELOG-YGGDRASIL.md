@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 
 - #SCS : 2 new pins XCMDIP and YCMDIP
+- #HB6 : YF pin is added 
 
 ### Added
 
