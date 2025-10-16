@@ -7,6 +7,7 @@ Snohvit branch contains library and tools for Snohvit project specifics
 Development of Snohvit specific AML library parts:
 - Context & Hiding
 - Shutdown Hierarchies
+- ABB vendor specific function blocks and elementary functions
 - Project specific function blocks and elementary functions
 - Fire & Gas specifics
 
