@@ -62644,7 +62644,7 @@
             </Attribute>
           </ExternalInterface>
         </SystemUnitClass>
-        <SystemUnitClass Name="#UCCT" ID="de132d5d-1e66-4c56-81b5-5ba27533a34d" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+        <SystemUnitClass Name="#UCT" ID="de132d5d-1e66-4c56-81b5-5ba27533a34d" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
           <Description>Turing Control Module Topside</Description>
           <ExternalInterface Name="FU" ID="b8f53abd-6512-4c53-8c40-807dd6a5661e" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn">
             <Description>Force suppression mode</Description>
