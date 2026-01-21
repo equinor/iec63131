@@ -15690,7 +15690,7 @@
       </SystemUnitClass>
       <SystemUnitClass Name="InputParameter" RefBaseClassPath="ElementaryFunctionLibrary/NorsokElementaryFunctionClass">
         <Description>process parameters, numbers and logical operands </Description>
-        <Attribute Name="Parameter" AttributeDataType="xs:decimal">
+        <Attribute Name="Parameter" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter">
           <Description />
           <DefaultValue />
           <Value />
