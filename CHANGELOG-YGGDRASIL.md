@@ -5,223 +5,240 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.0.32
+
+### Updated
+
+* \#WPD : Moved from Function block library to Elementary Function block library. New pin added PSampT , DT pin data type is updated as duration.
+
 ## 0.0.31
 
 ### Updated
 
-- #OA1 : 2 new pins FH and FL
+* \#OA1 : 2 new pins FH and FL
 
 ### Added
 
-- #CA1 
+* \#CA1
 
 ## 0.0.30
 
 ### Updated
 
-- #SCS : 2 new pins XCMDIP and YCMDIP
-- #HB6 : YF pin is added 
+* \#SCS : 2 new pins XCMDIP and YCMDIP
+* \#HB6 : YF pin is added
 
 ### Added
 
-- #OA1 , #AIV , #TIV and #UCC
+* \#OA1 , #AIV , #TIV and #UCC
 
 ## 0.0.29
 
 ### Updated
 
-- #SA8 : YF Pin is added for SA8_HW typical
+* \#SA8 : YF Pin is added for SA8\_HW typical
 
 ## 0.0.28
 
 ### Updated
 
-- #SKB : Typo error fix for the pins YV4 and XBCLV7
-- #CTV : Signal type update from digital in to analog out ( YIPRESS_OS & YOPRESS_OS & YLF_HF_OS)
-- #CIM : Typor error fix for the pins Y1TRAN and Y1_TRANS
-- #WSP : Signal type update from analogue out to digital in (S1,2,3,4....14)
+* \#SKB : Typo error fix for the pins YV4 and XBCLV7
+* \#CTV : Signal type update from digital in to analog out ( YIPRESS\_OS \& YOPRESS\_OS \& YLF\_HF\_OS)
+* \#CIM : Typor error fix for the pins Y1TRAN and Y1\_TRANS
+* \#WSP : Signal type update from analogue out to digital in (S1,2,3,4....14)
+
 
 
 ## 0.0.27
 
 ### Updated
 
-- #WSP : P_EN_X1..X14 : Signal attributes are updated for String0 and 1
+* \#WSP : P\_EN\_X1..X14 : Signal attributes are updated for String0 and 1
 
 ## 0.0.26
 
 ### Updated
 
-- #RB16 : YF pin is added. Pin number correction.
+* \#RB16 : YF pin is added. Pin number correction.
 
 ## 0.0.25
 
 ### Added
 
-- #PLGN
+* \#PLGN
 
 ## 0.0.24
 
 ### Updated
 
-- #WCA : Pin renaming and 2 new pins
-- #WPD : Pin renaming
+* \#WCA : Pin renaming and 2 new pins
+* \#WPD : Pin renaming
 
 ## 0.0.23
 
 ### Updated
 
-- #HT : XH1 pin is added
+* \#HT : XH1 pin is added
 
 ## 0.0.22
 
 ### Updated
 
-- #HA16 : Pin renumbering from X1 to X0 (..X15) and Y1 to Y0(...Y15)
+* \#HA16 : Pin renumbering from X1 to X0 (..X15) and Y1 to Y0(...Y15)
 
 ## 0.0.21
 
 ### Updated
 
-- #HA16 : Pin renumbering from X0 to X1 (..X16) and Y0 to Y1(...Y16)
-- #SEL14 : LA,LM and BA pins are added and connection points reduced to 10
+* \#HA16 : Pin renumbering from X0 to X1 (..X16) and Y0 to Y1(...Y16)
+* \#SEL14 : LA,LM and BA pins are added and connection points reduced to 10
+
 ## 0.0.20
 
 ### Updated
 
-- #SA - Added Y pin
+* \#SA - Added Y pin
+
 ## 0.0.19
 
 ### Updated
 
-- #SHV , #SEL14 moved to function blocks
+* \#SHV , #SEL14 moved to function blocks
+
 ### Added
 
-- #WCA , #WPD and #WSP
+* \#WCA , #WPD and #WSP
 
 ## 0.0.18
 
 ### Updated
 
-- #HT , added YHH pin
+* \#HT , added YHH pin
 
 ### Deleted
 
-- F_TON & F_TOF
+* F\_TON \& F\_TOF
 
 ## 0.0.17
 
 ### Updated
 
-- #CTUD, Subsea Blocks, #CRV
+* \#CTUD, Subsea Blocks, #CRV
 
 ### Added
 
-- #STU
+* \#STU
+
 ## 0.0.16
 
 ### Updated
 
-- #CRV 
+* \#CRV
+
 ## 0.0.15
 
 ### Added
 
-- #CRV and #W_BO
+* \#CRV and #W\_BO
 
 ## 0.0.14
 
 ### Added
 
-- #ABS and #2003D and #ValRmp
-- Corrected pin names for #SEL_R16,#SEL14, #SEL16,#MB14,#RB16 and #SA8
-- Added parameters PSubst and PSubstV for #SEL_R16
+* \#ABS and #2003D and #ValRmp
+* Corrected pin names for #SEL\_R16,#SEL14, #SEL16,#MB14,#RB16 and #SA8
+* Added parameters PSubst and PSubstV for #SEL\_R16
 
 ## 0.0.13
 
 ### Added
 
-- #MAFG and #MBFG
+* \#MAFG and #MBFG
+
 
 
 ## 0.0.12
 
 ### Added
 
-- Added additional SequenceFlowTimeout attributes for timeout behaviour descriptions
+* Added additional SequenceFlowTimeout attributes for timeout behaviour descriptions
 
 ## 0.0.11
 
 ### Added
 
-- #I_R
+* \#I\_R
 
 ### Moved
--#SEL_R16 , #SEL14 and #SEL16 blocks have been moved from function block class to elementary function class
+
+-#SEL\_R16 , #SEL14 and #SEL16 blocks have been moved from function block class to elementary function class
 
 ## 0.0.10
 
 ### Added
 
-- #RValSap
+* \#RValSap
+
 
 
 ## 0.0.9
 
 ### Added
 
-- #HB6 , #Avg , #ValChg , #RDBuf , #ADD8_R . #SEL16 , #SaplR
+* \#HB6 , #Avg , #ValChg , #RDBuf , #ADD8\_R . #SEL16 , #SaplR
 
 ## 0.0.8
 
 ### Added
 
-- Added subsea specific off-page connectors
+* Added subsea specific off-page connectors
 
 ## 0.0.7
 
 ### Added
 
-- Added Siemens subsea blocks , #SEL_R16 and #SEL14
+* Added Siemens subsea blocks , #SEL\_R16 and #SEL14
 
 ## 0.0.6
 
 ### Added
 
-- Added Siemens block #CTUD Up and down counter
+* Added Siemens block #CTUD Up and down counter
 
 ## 0.0.5
 
 ### Added
 
-- Added Siemens block R_I Converter
+* Added Siemens block R\_I Converter
+
 ## 0.0.4
 
 ### Changed
 
-- Updated Siemens blocks AND16L, OR16L
+* Updated Siemens blocks AND16L, OR16L
 
 ## 0.0.3
 
 ### Added
 
-- Base AML Library updated to v.0.0.12
-- Added parameter interfaces to Siemens #MA1 FB
+* Base AML Library updated to v.0.0.12
+* Added parameter interfaces to Siemens #MA1 FB
 
 ## 0.0.2
 
 ### Changed
 
-- Base AML Library updated to v.0.0.11
-- Updated Siemens interfaces, FB's and EFB's according to base library v.0.0.11
+* Base AML Library updated to v.0.0.11
+* Updated Siemens interfaces, FB's and EFB's according to base library v.0.0.11
 
 ## 0.0.1 - 2023-06-01
 
 ### Added
 
-- AML library 'YggdrasilAmlLibrary' as XML merge of iec63131 AML library v0.0.10 ('main') and 'YggdrasilPartialLibrary'
-- Added part of Siemens vendor function templates and interface classes
+* AML library 'YggdrasilAmlLibrary' as XML merge of iec63131 AML library v0.0.10 ('main') and 'YggdrasilPartialLibrary'
+* Added part of Siemens vendor function templates and interface classes
 
 ### Changed
-- 'CombineYggdrasilLibrary.ps1' script updated to preserve vendor sections
-- README-YGGDRASIL updated to allow editing vendor sections of YggdrasilAmlLibrary
+
+* 'CombineYggdrasilLibrary.ps1' script updated to preserve vendor sections
+* README-YGGDRASIL updated to allow editing vendor sections of YggdrasilAmlLibrary
