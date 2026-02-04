@@ -1,9 +1,10 @@
-<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
     <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.33" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2026-02-04T06:37:53.6892768+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
       <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -72354,7 +72355,7 @@
               </Attribute>
             </ExternalInterface>
           </SystemUnitClass>
-          <SystemUnitClass Name="#WPD" ID="8b346a5a-4557-4ab9-b46a-ee7bf396fc0c" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
+          <SystemUnitClass Name="#WPD" ID="8b346a5a-4557-4ab9-b46a-ee7bf396fc0c" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Signal Sampling">
             <Description>Well Pressure Drop</Description>
             <ExternalInterface Name="X" ID="2d8fee94-b806-4fd6-b2d6-d50ff9b79037" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
               <Description>Process value</Description>
