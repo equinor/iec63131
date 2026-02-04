@@ -1,9 +1,10 @@
-<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+﻿<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="YggdrasilAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.32" />
+    <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.33" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2026-02-04T11:04:46.2964989+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
       <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -14985,6 +14986,52 @@
               <Constraint Name="LegalValues">
                 <NominalScaledType>
                   <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+          </ExternalInterface>
+          <ExternalInterface Name="FDH" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="f9501d2a-e6d8-4d53-ae8a-6817cbd4b6bb">
+            <Description>Force disable transition high</Description>
+            <Attribute Name="Direction" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>In</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>In</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Last Valid</RequiredValue>
+                  <RequiredValue>Min Range</RequiredValue>
+                  <RequiredValue>Max Range</RequiredValue>
+                  <RequiredValue>Substitute Value</RequiredValue>
+                  <RequiredValue>Current Value</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+            <Attribute Name="SignalClass" AttributeDataType="xs:string">
+              <Description />
+              <DefaultValue />
+              <Value>Binary</Value>
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>Binary</RequiredValue>
+                </NominalScaledType>
+              </Constraint>
+            </Attribute>
+            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+              <Description>Type of signal communcication</Description>
+              <DefaultValue />
+              <Value />
+              <Constraint Name="LegalValues">
+                <NominalScaledType>
+                  <RequiredValue>GeneralSignal</RequiredValue>
+                  <RequiredValue>DataCommunicationLink</RequiredValue>
                 </NominalScaledType>
               </Constraint>
             </Attribute>
@@ -50395,310 +50442,6 @@
             </Attribute>
           </ExternalInterface>
         </SystemUnitClass>
-        <SystemUnitClass Name="#WPD" ID="457cc700-9652-4b22-9c88-bb1ca4f20e51" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens">
-          <Description>Well Pressure Drop</Description>
-          <ExternalInterface Name="X" ID="77e5e144-7408-4d52-acda-71c66b03fe8a" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-            <Description>Process value</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>In</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>In</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Last Valid</RequiredValue>
-                  <RequiredValue>Min Range</RequiredValue>
-                  <RequiredValue>Max Range</RequiredValue>
-                  <RequiredValue>Substitute Value</RequiredValue>
-                  <RequiredValue>Current Value</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Analogue</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Analogue</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="PNumV_A" ID="b8aa5bfc-a1cb-4523-9d14-42b9105cc636" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-            <Description>Number of values to read for A</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>In</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>In</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Last Valid</RequiredValue>
-                  <RequiredValue>Min Range</RequiredValue>
-                  <RequiredValue>Max Range</RequiredValue>
-                  <RequiredValue>Substitute Value</RequiredValue>
-                  <RequiredValue>Current Value</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Analogue</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Analogue</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="PNumV_B" ID="1b2eb549-4e30-4418-b983-3ff0b0dec7d4" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-            <Description>Number of values to read for B</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>In</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>In</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Last Valid</RequiredValue>
-                  <RequiredValue>Min Range</RequiredValue>
-                  <RequiredValue>Max Range</RequiredValue>
-                  <RequiredValue>Substitute Value</RequiredValue>
-                  <RequiredValue>Current Value</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Analogue</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Analogue</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="DT" ID="d5eb1551-80bc-41ce-8b6d-f28b4a01f7aa" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
-            <Description>Time between</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>In</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>In</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Last Valid</RequiredValue>
-                  <RequiredValue>Min Range</RequiredValue>
-                  <RequiredValue>Max Range</RequiredValue>
-                  <RequiredValue>Substitute Value</RequiredValue>
-                  <RequiredValue>Current Value</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Analogue</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Analogue</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="RX" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="28006b3d-c3ee-4ede-a1ab-e2b9d12346b9">
-            <Description>Reset calculation</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>In</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>In</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Last Valid</RequiredValue>
-                  <RequiredValue>Min Range</RequiredValue>
-                  <RequiredValue>Max Range</RequiredValue>
-                  <RequiredValue>Substitute Value</RequiredValue>
-                  <RequiredValue>Current Value</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Binary</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Binary</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut" ID="e97bb76e-f542-4154-a057-a3c9827a8846">
-            <Description>Function Output</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description>Time counting up</Description>
-              <DefaultValue />
-              <Value>Out</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Out</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Analogue</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Analogue</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-          </ExternalInterface>
-          <ExternalInterface Name="YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="7af35990-97a4-447e-8fb0-1dbdf604ca5e">
-            <Description>Not valid</Description>
-            <Attribute Name="Direction" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Out</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Out</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="SignalClass" AttributeDataType="xs:string">
-              <Description />
-              <DefaultValue />
-              <Value>Binary</Value>
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>Binary</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="CommunicationType" AttributeDataType="xs:string">
-              <Description>Type of signal communcication</Description>
-              <DefaultValue />
-              <Value />
-              <Constraint Name="LegalValues">
-                <NominalScaledType>
-                  <RequiredValue>GeneralSignal</RequiredValue>
-                  <RequiredValue>DataCommunicationLink</RequiredValue>
-                </NominalScaledType>
-              </Constraint>
-            </Attribute>
-            <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
-            <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
-            <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
-          </ExternalInterface>
-        </SystemUnitClass>
         <SystemUnitClass Name="#OA1" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens" ID="9eb37603-32e8-4840-9091-7265419e723a">
           <Description>Output of analogue signal</Description>
           <Attribute Name="DisplayRangeMin" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
@@ -58632,7 +58375,7 @@
           </ExternalInterface>
         </SystemUnitClass>
         <SystemUnitClass Name="#AIVT" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens" ID="b3e919f1-6285-4ce8-8c5a-c15e519869d7">
-          <Description>AccuPuls ICV</Description>
+          <Description>AccuPuls ICV Topside</Description>
           <Attribute Name="TravelTimeClose" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
           <Attribute Name="TravelTimeOpen" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
           <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
@@ -72610,6 +72353,356 @@
                   </NominalScaledType>
                 </Constraint>
               </Attribute>
+            </ExternalInterface>
+          </SystemUnitClass>
+          <SystemUnitClass Name="#WPD" ID="8b346a5a-4557-4ab9-b46a-ee7bf396fc0c" RefBaseClassPath="ElementaryFunctionLibrary/VendorElementaryFunctionClass/Siemens/Signal Sampling">
+            <Description>Well Pressure Drop</Description>
+            <ExternalInterface Name="X" ID="2d8fee94-b806-4fd6-b2d6-d50ff9b79037" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Process value</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="PNumV_A" ID="d07cba70-21b5-41df-bc7e-671297a5a1aa" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Number of values to read for A</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="PNumV_B" ID="9f28ca4f-e880-4a83-b55a-deebf6d8b260" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Number of values to read for B</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="DT" ID="3f725ee3-9aa2-4fb3-95ac-b5fafc87c2ee" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Time between</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:duration">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="PSampT" ID="655ac725-eeb5-431e-8fef-f9769bb4c543" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/AnalogueIn">
+              <Description>Sampling Time</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:duration">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="RX" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/In/BinaryIn" ID="b070895a-28d9-4acd-be73-afdfb0ac4408">
+              <Description>Reset calculation</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>In</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>In</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="FallbackFunction" AttributeDataType="xs:string">
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Last Valid</RequiredValue>
+                    <RequiredValue>Min Range</RequiredValue>
+                    <RequiredValue>Max Range</RequiredValue>
+                    <RequiredValue>Substitute Value</RequiredValue>
+                    <RequiredValue>Current Value</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SubstituteValue" AttributeDataType="xs:decimal" />
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut" ID="114a99c8-1777-4ad0-8e3f-c41dac7c6594">
+              <Description>Function Output</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description>Time counting up</Description>
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Analogue</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Analogue</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+            </ExternalInterface>
+            <ExternalInterface Name="YF" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/BinaryOut" ID="595cd138-dec2-488e-9f29-c9e18e845f95">
+              <Description>Function Failed</Description>
+              <Attribute Name="Direction" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Out</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Out</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="SignalClass" AttributeDataType="xs:string">
+                <Description />
+                <DefaultValue />
+                <Value>Binary</Value>
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>Binary</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="CommunicationType" AttributeDataType="xs:string">
+                <Description>Type of signal communcication</Description>
+                <DefaultValue />
+                <Value />
+                <Constraint Name="LegalValues">
+                  <NominalScaledType>
+                    <RequiredValue>GeneralSignal</RequiredValue>
+                    <RequiredValue>DataCommunicationLink</RequiredValue>
+                  </NominalScaledType>
+                </Constraint>
+              </Attribute>
+              <Attribute Name="Limit" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" />
+              <Attribute Name="Hysteresis" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:decimal" Unit="%" />
+              <Attribute Name="TimeDelay" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
             </ExternalInterface>
           </SystemUnitClass>
         </SystemUnitClass>
