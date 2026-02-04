@@ -4,7 +4,7 @@
     <Document DocumentIdentifier="YggdrasilAmlLibrary" Version="0.0.33" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
-  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2026-02-04T06:37:53.6892768+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2026-02-04T11:04:46.2964989+01:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
   <InterfaceClassLib Name="InterfaceClassLibrary">
     <InterfaceClass Name="NorsokSignalClass" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface">
       <Attribute Name="Direction" AttributeDataType="xs:string">
@@ -58375,7 +58375,7 @@
           </ExternalInterface>
         </SystemUnitClass>
         <SystemUnitClass Name="#AIVT" RefBaseClassPath="FunctionBlockLibrary/VendorFunctionBlockClass/Siemens" ID="b3e919f1-6285-4ce8-8c5a-c15e519869d7">
-          <Description>AccuPuls ICV</Description>
+          <Description>AccuPuls ICV Topside</Description>
           <Attribute Name="TravelTimeClose" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
           <Attribute Name="TravelTimeOpen" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:duration" />
           <Attribute Name="ConflictAlarmPriority" RefAttributeType="AttributeTypeLib/Parameter" AttributeDataType="xs:int" />
