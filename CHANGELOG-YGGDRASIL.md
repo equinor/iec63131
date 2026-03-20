@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
+## 0.0.36
+
+### Added
+
+* \#QA1
+* \#2OO2D
+
+
+
 ## 0.0.35
 
 ### Updated
@@ -198,7 +207,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Moved
 
--#SEL\_R16 , #SEL14 and #SEL16 blocks have been moved from function block class to elementary function class
+\-#SEL\_R16 , #SEL14 and #SEL16 blocks have been moved from function block class to elementary function class
 
 ## 0.0.10
 
@@ -269,3 +278,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * 'CombineYggdrasilLibrary.ps1' script updated to preserve vendor sections
 * README-YGGDRASIL updated to allow editing vendor sections of YggdrasilAmlLibrary
+
