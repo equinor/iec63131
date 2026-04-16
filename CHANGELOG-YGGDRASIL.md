@@ -5,11 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
+## 0.0.38
+
+### Updated
+
+* \#OA1: Y\_MAN output pin is added.
+* \#ITOT : new pins XAct1..16 are added.
+
 ## 0.0.37
 
 ### Updated
 
-\#CA1: Y output pin is added.
+* \#CA1: Y output pin is added.
 
 ## 0.0.36
 
