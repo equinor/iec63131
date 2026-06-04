@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* \#HB1 : Copy of HB with additional pins X\_S1,X\_S1 and X\_S3
+* \#HB1 : Copy of HB with additional pins X\_S1,X\_S2 and X\_S3
 
 
 
