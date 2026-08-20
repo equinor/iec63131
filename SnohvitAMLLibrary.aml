@@ -1,7 +1,7 @@
 <CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" SchemaVersion="3.0" FileName="SnohvitAMLLibrary.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
   <!-- reference to Whitepaper Part1 -->
   <AdditionalInformation DocumentVersions="Recommendations">
-    <Document DocumentIdentifier="SnohvitAmlLibrary" Version="0.0.2" />
+    <Document DocumentIdentifier="SnohvitAmlLibrary" Version="0.0.3" />
   </AdditionalInformation>
   <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
   <InterfaceClassLib Name="InterfaceClassLibrary">
@@ -18464,12 +18464,12 @@
       </SystemUnitClass>
       <SystemUnitClass Name="InputParameter" RefBaseClassPath="ElementaryFunctionLibrary/NorsokElementaryFunctionClass">
         <Description>process parameters, numbers and logical operands </Description>
-        <Attribute Name="Parameter" AttributeDataType="xs:decimal">
+        <Attribute Name="Parameter" AttributeDataType="xs:decimal" RefAttributeType="AttributeTypeLib/Parameter">
           <Description />
           <DefaultValue />
           <Value />
         </Attribute>
-        <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out/AnalogueOut" ID="6b2117e3-8475-7e4b-9309-fed0ce98bac7">
+        <ExternalInterface Name="Y" RefBaseClassPath="InterfaceClassLibrary/NorsokSignalClass/Out" ID="6b2117e3-8475-7e4b-9309-fed0ce98bac7">
           <Description>Normal function output</Description>
           <Attribute Name="Direction" AttributeDataType="xs:string">
             <Description />
@@ -18483,11 +18483,12 @@
           </Attribute>
           <Attribute Name="SignalClass" AttributeDataType="xs:string">
             <Description />
-            <DefaultValue />
-            <Value>Analogue</Value>
+            <DefaultValue>Analogue</DefaultValue>
+            <Value />
             <Constraint Name="LegalValues">
               <NominalScaledType>
                 <RequiredValue>Analogue</RequiredValue>
+                <RequiredValue>Binary</RequiredValue>
               </NominalScaledType>
             </Constraint>
           </Attribute>
