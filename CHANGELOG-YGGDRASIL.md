@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
+## 0.0.44
+
+### Added
+
+* Rev09 51PO-05800.100-F-007\_08\_004 #VFL : Virtual Flow
+
+### Updated
+
+* Rev09 51PO-05800.100-F-007\_08\_004 : #CTV, #TIV , #UCC and #SMA
+* FUI-SIE-I-SP-0006 : #TIVT : New pin YRSTEPF
+* \#APC : Typo is fixed for YSTAT pin
+
+
+
 ## 0.0.43
 
 ### Added
