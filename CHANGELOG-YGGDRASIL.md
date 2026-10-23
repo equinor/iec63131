@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Updated
 
-* FUI-SIE-I-SP-0006 : #ITOT : New pin XSP1--16 and UpdVal
+* FUI-SIE-I-SP-0006 : #ITOT : New pin XSP1--16 and UpdVal and #HT : New pins RX1 and YHH1
 * Rev09 51PO-05800.100-F-007\_08\_004 #VFL : Virtual Flow . No updates to pins but moved from FB to EFB
 
 
