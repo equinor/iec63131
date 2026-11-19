@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
+## 0.0.46
+
+### Added
+
+* FUI-SIE-I-SP-0006 : New Functions : #E\_FIL,#LimX,#LimX2,#SelWLim,#ICV\_XF,#InsdDeadBnd,#OutRng,#MATH2,#EQ\_i and #EQ\_R
+
+### Updated
+
+* FUI-SIE-I-SP-0006 : #ITOT : New pins Y16-Y32,XAct16-32 and XSP16-32
+
 
 
 ## 0.0.45
